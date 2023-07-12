@@ -1,0 +1,41 @@
+{% raw %}
+
+<script>
+var tiers = [
+    {
+        minimum: 5000,
+        free_shipping_remaining: "You are {{remaining_amount}} away from <b>FREE SHIPPING</b>",
+        free_shipping_reached: "🎉 Congrats! You've unlocked <b>FREE SHIPPING!</b>",
+    },
+    {
+        minimum: 7500,
+        free_shipping_remaining: "You've unlocked <b>FREE SHIPPING</b>! You are {{remaining_amount}} away from a free brow band",
+        free_shipping_reached: "🎉 Congrats! You've unlocked <b>free shipping!</b> and a free <b>brow brand!</b>",
+    }
+]
+
+var applyTier = function(index){
+  Rebuy.SmartCart.settings.free_shipping.minimum = tiers[index].minimum;
+  Rebuy.SmartCart.settings.language.free_shipping_remaining = tiers[index].free_shipping_remaining;
+  Rebuy.SmartCart.settings.language.free_shipping_reached = tiers[index].free_shipping_reached;
+}
+
+document.addEventListener('rebuy:cart.change', function (event) {
+    Rebuy.getGeolocation().then(function (location) {
+        if (location.country_code == 'US') {
+
+            if (Rebuy.Cart.cart.total_price <= 5000) {
+                applyTier(0)
+            } else {
+                applyTier(1)
+            }
+        }
+    });
+});
+  
+</script>
+
+<!-- GWP POPUP  -->
+<div data-rebuy-id="33277"></div>
+
+{% endraw %}

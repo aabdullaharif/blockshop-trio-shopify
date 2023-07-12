@@ -1,0 +1,39 @@
+<div class="beginning-container overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column">
+                <div class="content-container">
+                    <h2 class="mb-4 text-align-center">{{section.settings.title1}}</h2>
+                    <p>{{section.settings.subtitle1}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "003-ph-rich",
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Our Beginning"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "desc",
+"default": "Like a butterfly’s metamorphosis, it has taken us time to discover who we are and what we want to become."
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "003-ph-rich",
+"category": "custom"
+}
+]
+}
+{% endschema %}

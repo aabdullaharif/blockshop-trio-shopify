@@ -1,0 +1,117 @@
+{% section 'product-main-new' %}
+{% if product.title == 'The Brow Trio™'%}
+<div class="custom-content--root" >
+  <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/0ED51B49-486A-4DDB-8213-008E601AA273_77d073d6-73c4-40a9-9b3e-effc0f83be21.png?v=1622638357">
+</div> 
+{% endif %}
+<div class="section-reviews-width">
+  <div class="container">
+    {% render 'okendo-reviews-widget', product: product %}
+  </div>
+</div>
+
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+<script>
+  var count = 0;
+  var selectCallback = function(variant, selector) {
+
+    if (variant) {
+      var form = jQuery('#' + selector.domIdPrefix).closest('form');
+      for (var i=0,length=variant.options.length; i<length; i++) {
+        var radioButton = form.find('.swatch[data-option-index="' + i + '"] :radio[value="' + variant.options[i] +'"]');
+        if (radioButton.size()) {
+          radioButton.get(0).checked = true;
+        }
+      }
+    }
+    if(count == 1){
+      if ($(window).width() > 767){
+        var act_slides = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-slider");
+        $('.tr_slick_thumb').slick('slickUnfilter');
+        $('.tr_slick_thumb').slick('slickFilter','.'+act_slides).slick('refresh');
+        $('.tr_slick_main').slick('slickUnfilter');
+        $('.tr_slick_main').slick('slickFilter','.'+act_slides).slick('refresh');
+        var image_id = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-image-id");
+        var img_class= '.move_'+image_id;
+        var slide_index= $('.tr_slick_thumb').find(img_class).parent().attr('data-slick-index');
+        $('.tr_slick_main').slick('slickGoTo', slide_index);
+      }else {
+        var act_slides = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-slider");
+        $('.tr_slick_main').slick('slickUnfilter');
+        $('.tr_slick_main').slick('slickFilter','.'+act_slides).slick('refresh');
+        var image_ids = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-image-id");
+        var img_classs= '.mob_move_'+image_ids;
+        var slide_indexs= $('.tr_slick_main').find(img_classs).parent().attr('data-slick-index');
+        $('.tr_slick_main').slick('slickGoTo', slide_indexs);
+      }
+    }
+    jQuery('.tagline').css("display","none");
+    if(count == 0){
+      setTimeout(function(){
+        var optin_0 = jQuery('input[name=option-0]:checked').attr("data-target");
+        jQuery('.'+optin_0).css("display","block");
+      }, 2000);
+    }else{
+      var optin_0 = jQuery('input[name=option-0]:checked').attr("data-target");
+      jQuery('.'+optin_0).css("display","block");
+    }
+    count = 1;
+  };
+
+  $(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+    $('.selector-wrapper:eq(0)').append('<i class="fas fa-chevron-down arrow-down"></i>');
+    {% endif %}
+
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+    $('.selector-wrapper').hide();
+    {% endif %}
+  });
+
+</script>
+
+<!-- Klaviyo product tracking -->
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+  document.querySelector('.product-form--add-to-cart').addEventListener('click',function (){
+    _learnq.push(['track', 'Added to Cart', item]);
+  });
+</script>
+<!-- End of Klaviyo product tracking -->

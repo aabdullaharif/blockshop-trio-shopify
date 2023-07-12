@@ -1,0 +1,307 @@
+{% assign variant = product.selected_or_first_available_variant %}
+<div class="product-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-img-otr">
+        <div class="sliders-holder">
+          <div class="tr_slick_main">
+            {% for media in product.media %}
+            <div class="slide {{ media.src.alt }}"><a class="mob_move_{{ media.id }}" href="javascript:void(0);" class="{{ media.src.alt }}"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+            {% endfor %}
+          </div>
+          <div class="tr_slick_thumb">
+            {% for media in product.media %}
+            <div class="slide {{ media.src.alt }}"><a class="move_{{ media.id }} {{ media.src.alt }}" href="javascript:void(0);"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+            {% endfor %}
+          </div>
+        </div>
+        {% if product.title contains 'The Brow' %}
+        <div class="video-main web box4">
+          <video id="ocScreencapVideo"  autoplay="autoplay" muted loop="loop" playsinline="playsinline" preload="metadata" class="poster-image" poster="{{ section.settings.video_poster | img_url: 'master' }}" src="{{ section.settings.video_link }}" data-overlay="0"></video>
+        </div>
+
+        <script>
+
+          function toggleMute() {
+
+            var video=document.getElementById("ocScreencapVideo")
+
+            if(video.muted){
+              video.muted = false;
+            } else {
+              video.muted = true;
+            }
+
+          }
+
+        </script>
+
+
+        {% endif %}
+      </div>
+      <div class="col-content-otr">
+        <div class="col-content-inr">
+          <div class="product-info box3">
+            <h1 class="heading-brow" style="font-family: 'Nantes' !important;">{{ product.title }}</h1>
+            <div style="margin-top:12px;margin-bottom:12px;">
+              {% render 'okendo-reviews-product-rating-summary', product: product %}          
+            </div>
+
+            <p class="prcie" id="tr_price">{{ variant.price | money }}</p>
+
+            {% if product.title contains 'The Brow Trio' %}
+            <strong class="color" id="ingredients">+ What are the ingredients?</strong>
+            <div class="color-content" id="ingredient-content">
+              <p class="color-panel para">
+                Ingredients: cyclopentasiloxane, isododecane, cyclohexasiloxane, silica, polyethylene, trimet-hylsiloxysilicaye, ozokerite/synthetic wax, bis-diglyceryl polyacyladipate-2, silica dimethyl silt-late, mica, tocopheryl acetate, caprylyl glycol, ethylhexylglycerin, May contain (+/-) iron oxides (CI 77491, CI 77492, CI 77499), titanium dioxide CI 77891), bismuth oxychloride (CI 77163)
+              </p>
+
+            </div>
+            {% endif %}
+            <br>
+
+            {% if product.title contains 'The Brow Trio' %}
+            <strong class="color" id="colors">+ What's my color?</strong>
+            <div class="color-content" id="colors-content">
+              <p class="color-panel para">
+                Match pomade color to your brow hair, not your head hair. If you feel like you’re in between two adjacent shades, either one will likely blend well.
+              </p>
+              <p class="color-panel para">BLONDE: Great for neutral-colored light blondes</p>
+              <p class="color-panel para">TAUPE: Good option for ash-toned blondes</p>
+              <p class="color-panel para">SOFT BROWN: Most versatile for mid-toned hair</p>
+              <p class="color-panel para">MEDIUM BROWN: Great for dark hair</p>
+              <p class="color-panel para">DARK BROWN: Good match for very dark brown or black hair</p>
+              <p class="color-panel para">CARAMEL: Perfect for red hair</p>
+            </div>
+            {% endif %}
+
+            {% if product.title contains 'Eyebrow Setting Gel' %}
+            <strong class="color" id="eyebrow">+ What are the ingredients?</strong>
+            <div class="color-content" id="eyebrow-content">
+              <p class="color-panel para">
+                INGREDIENTS:
+                AQUA(WATER),ALCOHOL, ACRYLATES COPOLYMER, AMP-ACRYLATES, COPOLYMER, HYDROXYETHYILCELLULOSE, PHENOXYETHANOL, PEG-12DIMETHICONE, CAPRYLYL GLYCOL, PANTHENOL, BUTYLENE GLYCOL, GOSSYPIUM, HERBACIUM(COTTON) EXTRACT.
+              </p>
+
+            </div>
+            {% endif %}
+
+
+
+            {% form 'product', product, data-productid: product.id %}
+            {% if product.variants.size > 1 %}
+            {% if product.options.size > 1 %}
+            <div class="prome-code">
+              <div class="wrapper">
+                <select id="productSelect" name="id" class="multi_select" data-variant-selector>
+                  {% for v in product.variants %}
+                  <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-image-id="{{ v.featured_media.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+                  {% endfor %}
+                </select>
+                <i class="fas fa-chevron-down arrow-down"></i>
+              </div>
+            </div>
+            {% elsif product.options.size == 1 and product.variants.size > 1 or product.options.size == 1 and product.options[0] != "Title" %}
+            <div class="prome-code">
+              <p class="prome">{{ product.options[0] }}</p>
+              <div class="wrapper">
+                <select id="productSelect" name="id" data-variant-selector>
+                  {% for v in product.variants %}
+                  <option {% if v == variant %}selected="selected"{% endif %} data-target="{{ v.image.src }}" value="{{ v.id }}" data-image-id="{{ v.featured_media.id }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+                  {% endfor %}
+                </select>
+
+              </div>
+            </div>
+
+            {% endif %}
+            {% else %}
+            <input name="id" type="hidden" class="variant-id" value="{{ variant.id }}">
+            {% endif %}
+
+            <div class="number-input">
+              <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input class="quantity" min="1" name="quantity" value="1" type="number" />
+              <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+            <div class="action">
+              <button type="submit" name="add" class="cart-btn btn product-form--add-to-cart">ADD TO CART</button>
+{% comment %} {{ form | payment_button }}{% endcomment %}
+
+
+            </div>
+
+            {% endform %}
+            
+            {% if product.id == 7239418511522 %}
+            <p>{{ product.description }}</p>
+            {% endif %}
+            
+            {% if product.title contains 'The Brow' %}
+            <div class="video-main mobile box4">
+              <video class="poster-image" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" poster="{{ section.settings.video_poster | img_url: 'master' }}" src="{{ section.settings.video_link }}" data-overlay="0"></video>
+              <!--               <i class="fas fa-play"></i> -->
+            </div>
+            {% endif %}
+            {% comment %}
+            <div class="image-content box4">
+              {{ product.description | split: '<!-- split -->' | first }}
+            </div>
+            {% endcomment %}
+            
+            <!-- product-main-tabs-html-code -->
+            {% assign product_handle = product.handle %}
+            {% for block in section.blocks %}
+            {% if block.settings.product_handle == product_handle %}
+            <div class="tabs">
+              <ul class="tab-links">
+                <li class="active"><a href="#details">Details</a></li>
+                <li><a href="#videos">Videos</a></li>
+                {% if block.settings.ingredients%}
+                <li><a href="#ingredients">Ingredients</a></li>
+                {% endif %}
+              </ul>
+
+              <div class="tab-content">
+                <div id="details" class="tab active">
+                  <div class="holder">
+                    {{ product.description }}
+                  </div>
+                  <div class="accordion">
+                    {% if block.settings.how_to_apply %}
+                    <div class="accordion-section">
+                      <a class="accordion-section-title" href="#accordion-2">
+                        How to apply
+                        <i class="fas fa-angle-up"></i>
+                        <i class="fas fa-angle-down"></i>
+                      </a>
+                      <div id="accordion-2" class="accordion-section-content">
+                        <ul class="list">
+                          {{ block.settings.how_to_apply }}
+                        </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if block.settings.why_love %}
+                    <div class="accordion-section">
+                      <a class="accordion-section-title" href="#accordion-1">
+                        Why you'll love it
+                        <i class="fas fa-angle-up"></i>
+                        <i class="fas fa-angle-down"></i>
+                      </a>
+                      <div id="accordion-1" class="accordion-section-content">
+                        <ul class="list">
+                          {{ block.settings.why_love }}
+                        </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+                {% if block.settings.tab_video_link %}
+                <div id="videos" class="tab">
+                  <div class="holder">
+                    <video width="700px"  autoplay muted loop playsinline type="video/mp4">
+                      <source src="{{ block.settings.tab_video_link }}" type="video/mp4" /> 
+                    </video>
+                  </div>
+                </div>
+                {% endif %}
+                
+                {% if block.settings.ingredients%}
+                <div id="ingredients" class="tab">
+                  <div class="holder">
+                    {{ block.settings.ingredients }}
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <!-- end-products-main-tabs-html-code -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- custom-content-html -->
+<div
+     class="custom-content--root"
+     data-item="rte-content"
+     data-section-id="{{ section.id }}"
+     >
+  {{ section.settings.custom_html }}
+</div>
+<!-- end-custom-content-html -->
+
+
+
+
+{% schema %}
+{
+ "name": "Product",
+ "settings": [
+        {
+          "id": "video_poster",
+          "type": "image_picker",
+          "label": "Video Poster"
+        },
+        {
+          "id": "video_link",
+          "type": "url",
+          "label": "Video Link"
+        },
+        {
+          "id": "custom_html",
+          "label": "HTML",
+          "type": "html",
+          "default":"<div><p>Some HTML content</p></div>"
+        }
+
+	],
+      "blocks": [
+       {
+          "type": "select",
+          "name": "Products Tabs",
+          "settings": [
+             {
+               "type": "product",
+               "id": "product_handle",
+               "label": "Select a product"
+             },
+              {
+                "type": "textarea",
+                "id": "how_to_apply",
+                "label": "How to Apply"
+              },
+              {
+                "type": "textarea",
+                "id": "why_love",
+                "label": "Why Love It"
+              },
+              {
+                "type": "text",
+                "id": "tab_video_link",
+                "label": "Video Link"
+              },
+              {
+                "type": "textarea",
+                "id": "ingredients",
+                "label": "Ingredients"
+              }
+            ]
+	     }
+      ]
+  } 
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+

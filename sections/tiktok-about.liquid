@@ -1,0 +1,56 @@
+<div class="queue content-justify-center">
+  <div class="column-12 column-md-7 column-lg-6">
+    <div class="about-block text-center">
+      {% if section.settings.title != blank %}<h2>{{ section.settings.title }}</h2>{% endif %}
+      {% if section.settings.content != blank %}<p>{{ section.settings.content }}</p>{% endif %}
+    </div>
+    <div class="widget-box" style="padding-top: 0;">
+      {% if section.settings.review_url != blank %}<h3><span><a href="{{ section.settings.review_url }}" style="color:#fff;">{{ section.settings.review_title }}</a></span></h3>{% endif %}
+      {% if section.settings.about_img != blank %}
+      <div class="image-holder">
+        <img src="{{ section.settings.about_img | img_url: 'master' }}" alt="icons">
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "About Content",
+    "settings": [
+	  {
+        "type":      "text",
+        "id":        "title",
+        "label":     "Add Title"
+      },
+      {
+        "type":      "text",
+        "id":        "content",
+        "label":     "Add Content"
+      },
+      {
+        "type":      "text",
+        "id":        "review_title",
+        "label":     "Review Text"
+      },
+      {
+        "type":      "url",
+        "id":        "review_url",
+        "label":     "Review Url"
+      },
+      {
+        "type":      "image_picker",
+        "id":        "about_img",
+        "label":     "Add Image"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,72 @@
+{% if section.settings.banner_image != blank %}
+<div class="image-box">
+  <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="image">
+</div>
+{% endif %}
+
+<div class="product-box">
+  <div class="box d-flex align-items-center">
+    <div class="text-box">
+      {% if section.settings.title != blank %}<h2>{{ section.settings.title }}</h2>{% endif %}
+      {% if section.settings.content != blank %}<p>{{ section.settings.content }}</p>{% endif %}
+      {% if section.settings.btn_url != blank %}<a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_title }}</a>{% endif %}
+    </div>
+  </div>
+  <div class="box">
+    <div class="image-holder">
+      {% if section.settings.product_img != blank %}<img src="{{ section.settings.product_img | img_url: 'master' }}" alt="image">{% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Image-Text Block",
+    "settings": [
+          {
+            "type":      "image_picker",
+            "id":        "banner_image",
+            "label":     "Banner Image"
+          },
+          {
+            "type":      "text",
+            "id":        "title",
+            "label":     "Product Title"
+          },
+          {
+            "type":      "text",
+            "id":        "content",
+            "label":     "Product Content"
+          },
+          {
+            "type":      "text",
+            "id":        "btn_title",
+            "label":     "Btn Title"
+          },
+          {
+            "type":      "url",
+            "id":        "btn_url",
+            "label":     "Btn Url"
+          },
+          {
+            "type":      "image_picker",
+            "id":        "product_img",
+            "label":     "Product Image"
+          }
+	],    
+	"presets": [
+        {
+          "name": "Image-Text Block",
+          "category": "section"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

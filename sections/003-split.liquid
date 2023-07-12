@@ -1,0 +1,82 @@
+<div class="ultimate-wrapper overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue mb-4 justify-content-lg-center">
+            {% for block in section.blocks %}
+            {% if block.type == 'image' %}
+            <div class="column-12 order-1 column-md-6 column-lg-6 order-md-0">
+                <div class="image-container">
+                    <img src="{{ block.settings.img | img_url: 'master' }}" alt="img">
+                </div>
+            </div>
+            {% endif %}
+            {% if block.type == 'card' %}
+            <div class="column-12 mb-4 column-md-6 column-lg-5 mb-md-0">
+                <div class="content-container">
+                    <h2 class="mb-3">{{block.settings.title1}}</h2>
+                    <p>{{block.settings.subtitle1}}</p>
+                    {% if block.settings.btntxt1 != '' %}
+                    <a href="{{block.settings.btnurl1}}" class="btn btn-outline-primary">{{block.settings.btntxt1}}</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "003-split",
+"max_blocks": 4,
+"settings": [
+],
+"blocks": [
+{
+"type": "image",
+"name":"image",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+}
+]
+},
+{
+"type": "card",
+"name":"card",
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Brow Trio"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "subtitle1",
+"default": "your best Brow shape"
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "btntxt1",
+"default": "SHOP THE KIT"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "btnurl1"
+}
+]
+}
+],
+"presets": [
+{
+"name": "003-split",
+"category": "custom"
+}
+]
+}
+{% endschema %}

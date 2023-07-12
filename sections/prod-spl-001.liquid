@@ -1,0 +1,73 @@
+<div class="how-works">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column-12">
+                <h2>{{ section.settings.title }}</h2>
+            </div>
+        </div>
+        <div class="queue">
+            <div class="column-12 column-md-6 order-2 order-md-1">
+                <div class="text-box">
+                    <p class="lead">{{ section.settings.sub_title }}</p>
+                    <ol>
+                        {% for block in section.blocks %}
+                        <li>{{ block.settings.point_txt }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+            <div class="column-12 column-md-6 order-1 order-md-2">
+                <div class="image-holder">
+                    <!--           <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/image.jpg?v=1644406753" alt="image"> -->
+                    <div class="brow_trio_holder"><video width="700px" autoplay="autoplay" muted="" loop="loop"
+                            playsinline="" type="video/mp4" controls="controls">
+                            <source src="{{ section.settings.mp4_link }}" type="video/mp4">
+                        </video></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "prod-spl-001",
+"settings": [
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "How It Works"
+},
+{
+"type": "textarea",
+"id": "sub_title",
+"label": "sub_title",
+"default": "step by step"
+},
+{
+"type": "textarea",
+"id": "mp4_link",
+"label": "mp4_link",
+"default": "https://cdn.shopify.com/s/files/1/0417/9004/6370/files/Untitled_3_1.mp4?v=1637777737"
+}
+],
+"blocks": [
+{
+"type": "block",
+"name": "point",
+"settings": [
+{
+"type": "textarea",
+"id": "point_txt",
+"label": "point_txt",
+"default": "Gently tap the sponge"
+}
+]
+}
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

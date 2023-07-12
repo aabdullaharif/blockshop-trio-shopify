@@ -1,0 +1,168 @@
+{% assign variant = product.selected_or_first_available_variant %}
+<div class="product-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-img-otr">
+        <div class="sliders-holder">
+          <div class="tr_slick_main">
+          {% for media in product.media %}
+          <div class="slide {{ media.src.alt }}"><a class="mob_move_{{ media.id }}" href="javascript:void(0);" class="{{ media.src.alt }}"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+          {% endfor %}
+        </div> 
+          <div class="tr_slick_thumb">
+            {% for media in product.media %}
+            <div class="slide {{ media.src.alt }}"><a class="move_{{ media.id }} {{ media.src.alt }}" href="javascript:void(0);"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+            {% endfor %}
+          </div>
+        </div>
+        {% if product.title contains 'The Brow' %}
+        <div class="video-main web box4">
+          <video id="ocScreencapVideo"  autoplay="autoplay" muted loop="loop" playsinline="playsinline" preload="metadata" class="poster-image" poster="{{ section.settings.video_poster | img_url: 'master' }}" src="{{ section.settings.video_link }}" data-overlay="0"></video>
+        </div>
+
+        <script>
+
+          function toggleMute() {
+
+            var video=document.getElementById("ocScreencapVideo")
+
+            if(video.muted){
+              video.muted = false;
+            } else {
+              video.muted = true;
+            }
+
+          }
+
+        </script>
+
+
+        {% endif %}
+      </div>
+      <div class="col-content-otr">
+        <div class="col-content-inr">
+          <div class="product-info box3">
+            <h1 class="heading-brow">{{ product.title }}</h1>
+
+            <p class="prcie" id="tr_price">{{ variant.price | money }}</p>
+
+
+
+            {% if product.title contains 'The Brow Trio' %}
+            <strong class="color" id="ingredients">+ What are the ingredients?</strong>
+            <div class="color-content" id="ingredient-content">
+              <p class="color-panel para">
+                Ingredients: cyclopentasiloxane, isododecane, cyclohexasiloxane, silica, polyethylene, trimet-hylsiloxysilicaye, ozokerite/synthetic wax, bis-diglyceryl polyacyladipate-2, silica dimethyl silt-late, mica, tocopheryl acetate, caprylyl glycol, ethylhexylglycerin, May contain (+/-) iron oxides (CI 77491, CI 77492, CI 77499), titanium dioxide CI 77891), bismuth oxychloride (CI 77163)
+              </p>
+
+            </div>
+            {% endif %}
+            <br>
+
+            {% if product.title contains 'The Brow Trio' %}
+            <strong class="color" id="colors">+ What's my color?</strong>
+            <div class="color-content" id="colors-content">
+              <p class="color-panel para">
+                Match pomade color to your brow hair, not your head hair. If you feel like you’re in between two adjacent shades, either one will likely blend well.
+              </p>
+              <p class="color-panel para">BLONDE: Great for neutral-colored light blondes</p>
+              <p class="color-panel para">TAUPE: Good option for ash-toned blondes</p>
+              <p class="color-panel para">SOFT BROWN: Most versatile for mid-toned hair</p>
+              <p class="color-panel para">MEDIUM BROWN: Great for dark hair</p>
+              <p class="color-panel para">DARK BROWN: Good match for very dark brown or black hair</p>
+              <p class="color-panel para">CARAMEL: Perfect for red hair</p>
+            </div>
+            {% endif %}
+
+            {% if product.title contains 'Eyebrow Setting Gel' %}
+            <strong class="color" id="eyebrow">+ What are the ingredients?</strong>
+            <div class="color-content" id="eyebrow-content">
+              <p class="color-panel para">
+                INGREDIENTS:
+                AQUA(WATER),ALCOHOL, ACRYLATES COPOLYMER, AMP-ACRYLATES, COPOLYMER, HYDROXYETHYILCELLULOSE, PHENOXYETHANOL, PEG-12DIMETHICONE, CAPRYLYL GLYCOL, PANTHENOL, BUTYLENE GLYCOL, GOSSYPIUM, HERBACIUM(COTTON) EXTRACT.
+              </p>
+
+            </div>
+            {% endif %}
+
+
+
+            {% form 'product', product, data-productid: product.id %}
+            <select name="id" id="productSelect" style="display:none;" class="product-single__variants">
+          {% for variant in product.variants %}
+          {% if variant.available %}
+
+          <option data-slider="{{ variant.title | handleize }}" data-image-id="{{ variant.featured_media.id }}" {% if variant.title contains 'Soft' %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+
+          {% else %}
+          <option disabled="disabled">
+            {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+          </option>
+          {% endif %}
+          {% endfor %}
+        </select>
+            {% if product.available and product.variants.size > 1 %}
+            {% for option in product.options %}
+            {% include 'swatch' with option %}
+            {% endfor %}
+            {% endif %}
+            <div class="number-input">
+              <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input class="quantity" min="1" name="quantity" value="1" type="number" />
+              <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+            <div class="action">
+              <button type="submit" name="add" class="cart-btn btn product-form--add-to-cart">ADD TO CART</button>
+
+              {{ form | payment_button }}
+
+
+            </div>
+
+            {% endform %}
+            {% if product.title contains 'The Brow' %}
+            <div class="video-main mobile box4">
+              <video class="poster-image" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" poster="{{ section.settings.video_poster | img_url: 'master' }}" src="{{ section.settings.video_link }}" data-overlay="0"></video>
+              <!--               <i class="fas fa-play"></i> -->
+            </div>
+            {% endif %}
+            <div class="image-content box4">
+              {{ product.description | split: '<!-- split -->' | first }}
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Product",
+"settings": [
+{
+"id": "video_poster",
+"type": "image_picker",
+"label": "Video Poster"
+},
+{
+"id": "video_link",
+"type": "url",
+"label": "Video Link"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+

@@ -1,0 +1,63 @@
+<div class="faq-pro-detail position-relative">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column-12 column-lg-6 padding-0 mb-4 mb-md-0">
+                <div class="img-wrap"><img src="{{ section.settings.img | img_url: 'master' }}" alt="image"></div>
+            </div>
+            <div class="column-12 column-lg-6">
+                <div class="faq-wrap">
+                    <h2>{{ section.settings.title }}</h2>
+                    {% for block in section.blocks %}
+                    <div class="faq0 position-relative">
+                        <p class="question">{{ block.settings.qtxt }}<i class="down" aria-hidden="true"></i>
+                        </p>
+                        <p class="answer">{{ block.settings.atxt }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "003-pdp-faq",
+"settings": [
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "Frequently Asked Questions"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+}
+],
+"blocks": [
+{
+"type": "block",
+"name": "point",
+"settings": [
+{
+"type": "textarea",
+"id": "qtxt",
+"label": "qtxt",
+"default": "what's included?"
+},
+{
+"type": "textarea",
+"id": "atxt",
+"label": "atxt",
+"default": "Lorem ipsum"
+}
+]
+}
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

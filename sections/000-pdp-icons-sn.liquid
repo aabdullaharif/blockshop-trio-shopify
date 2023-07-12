@@ -1,0 +1,43 @@
+<div class="column-12 icon-wrap0">
+    <div class="queue justify-content-center">
+        {% for block in section.blocks %}
+        <div class="column-4 text-align-center" style="font-size:14px">
+            <span class="bottom-i">
+                <img src="{{ block.settings.img | img_url: 'master' }}" alt="image"></span>{{ block.settings.ictxt }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+{
+"name": "000-pdp-icons-sn",
+"max_blocks": 10,
+"settings": [
+],
+"blocks": [
+{
+"type": "icon",
+"name":"icon",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+},
+{
+"type": "textarea",
+"id": "ictxt",
+"label": "ictxt",
+"default": "vegan"
+}
+]
+}
+],
+"presets": [
+{
+"name": "000-pdp-icons-sn",
+"category": "custom"
+}
+]
+}
+{% endschema %}

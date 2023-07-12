@@ -1,0 +1,84 @@
+<div class="iq-mission-section">
+  <div class="h-container">
+    <h2 class="iq-heading">{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.content }}</p>
+  </div>
+</div>
+ 
+<div class="iq-product-section">
+  <div class="h-container">
+    <div class="holder">
+      {% for block in section.blocks %}
+      <div class="product-col">
+        <div class="inner-body">
+          <div class="img-holder">
+            <img src="{{ block.settings.block_img | img_url: '300x300', crop:'center' }}">
+          </div>
+          <div class="text-box">
+            <h4>{{ block.settings.title }}</h4>
+            <p>{{ block.settings.description }}</p>
+            <a class="btn" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Our Products",
+    "settings": [
+          {
+            "type":      "text",
+            "id":        "heading",
+            "label":     "Add Heading"
+          },
+          {
+            "type":      "textarea",
+            "id":        "content",
+            "label":     "Add Content"
+          }
+	],
+      "blocks": [
+      {
+        "type": "select",
+        "name": "More Column",
+        "settings": [
+          {
+            "type":      "image_picker",
+            "id":        "block_img",
+            "label":     "Add Image"
+          },
+          {
+            "type":      "text",
+            "id":        "title",
+            "label":     "Add Title"
+          },
+          {
+            "type":      "textarea",
+            "id":        "description",
+            "label":     "Add Description"
+          },
+          {
+            "type":      "text",
+            "id":        "btn_text",
+            "label":     "Add Btn Text"
+          },
+          {
+            "type":      "url",
+            "id":        "btn_url",
+            "label":     "Add Btn Url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

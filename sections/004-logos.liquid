@@ -1,0 +1,53 @@
+<div class="ultimate-wrapper overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column-12">
+                <div class="featured-container text-align-center">
+                    <span class="text-uppercase mb-3 mb-lg-4 mb-xl-5">{{section.settings.title1}}</span>
+                    <div class="image-wrapper d-flex align-items-center justify-content-center">
+                        {% for block in section.blocks %}
+                        {% if block.type == 'image' %}
+                        <div class="image">
+                            <img src="{{ block.settings.img | img_url: 'master' }}" alt="img">
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "004-logos",
+"max_blocks": 20,
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "FEATURED IN"
+}
+],
+"blocks": [
+{
+"type": "image",
+"name":"image",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "004-logos",
+"category": "custom"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,3778 @@
+{
+  "current": {
+    "color--accent": "#f6dadf",
+    "color-text": "#212121",
+    "color--alternative": "#ffffff",
+    "color-page-bg": "#fcfcfc",
+    "color-panel-bg": "#f8fbf8",
+    "color-border": "#ffffff",
+    "color-button": "#ffffff",
+    "color-button-bg": "#212121",
+    "color-header-bg": "#fcfcfc",
+    "color-header": "#212121",
+    "color-header-cart": "#272727",
+    "bg-color--footer": "#ffeff0",
+    "color--footer": "#212121",
+    "color-slider-caption": "#212121",
+    "color-slider-caption-bg": "#ffffff",
+    "color-slider-button": "#ffffff",
+    "color-slider-button-bg": "#212121",
+    "color-slider-nav": "#212121",
+    "color-tabs-accordions": "#f7f7f7",
+    "typography--heading": "roboto_n5",
+    "typography--heading--uppercase": false,
+    "typography--heading--size": "small",
+    "typography--accent": "karla_n4",
+    "typography--paragraph": "roboto_n4",
+    "typography--paragraph--size": "medium",
+    "hover-image-enabled": true,
+    "search--show-in-header": true,
+    "favicon": "shopify:\/\/shop_images\/BrowSwipePenBoxOutlined-02_7c814022-2f0b-4fa2-9ed3-89669b1e8ea9.png",
+    "cart--type": "drawer",
+    "cart--show-note": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Checkoutbrowtriologo_1_1_of_1.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_accent_color": "#5005cc",
+    "checkout_button_color": "#5005cc",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "transparent-menu": false,
+          "header-account-show": true,
+          "cart--icon": "text",
+          "header-menu-center": true,
+          "menu": "new-menu",
+          "show-currency-selector": true,
+          "show-locale-selector": true,
+          "header-logo-center": true,
+          "logo": "shopify:\/\/shop_images\/triooo.png",
+          "logo-height": 55
+        }
+      },
+      "framework--footer": {
+        "type": "framework--footer",
+        "blocks": {
+          "footer--about": {
+            "type": "about",
+            "settings": {
+              "about-title": "Store",
+              "text": "<p>© The Brow Trio<\/p>",
+              "subscribe--show-social-icons": true
+            }
+          },
+          "footer--menu": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Info",
+              "menu": "footer"
+            }
+          },
+          "footer--subscribe": {
+            "type": "subscribe",
+            "settings": {
+              "newsletter--heading": "Subscribe",
+              "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+              "subscribe--show-newsletter": true
+            }
+          }
+        },
+        "block_order": [
+          "footer--about",
+          "footer--menu",
+          "footer--subscribe"
+        ],
+        "settings": {
+          "show-currency-selector": true,
+          "show-locale-selector": true,
+          "show-payment-icons": true
+        }
+      },
+      "product": {
+        "type": "product",
+        "settings": {
+          "product-breadcrumbs-show": true,
+          "variant-style": "dropdowns",
+          "swatches-enabled": false,
+          "smart-payment-button": true,
+          "product-unavailable-form-show": true,
+          "low-in-stock-amount": 0,
+          "product-pickup-enabled": true,
+          "modal-enabled": true,
+          "image-zoom-enabled": true,
+          "loop-enabled": false,
+          "cart-form-position": "right",
+          "product-size-chart-enabled": false,
+          "product-size-chart-option": "size",
+          "product-size-chart-page-content": "",
+          "product-share-show": true,
+          "product-share-twitter": true,
+          "product-share-facebook": true,
+          "product-share-pinterest": true
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "collections-breadcrumbs-show": false,
+          "collections-tags-show": false,
+          "show-title": false,
+          "collections-products-per-row": "4",
+          "mobile-items-per-row": "2"
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enabled": true,
+          "home-page-only": false,
+          "background-color": "accent",
+          "alternative-color": false,
+          "text": "Free Shipping on Orders Over $50",
+          "link": "https:\/\/www.thebrowtrio.com\/collections\/shop"
+        }
+      },
+      "framework--product-recommendations": {
+        "type": "framework--product-recommendations",
+        "settings": {
+          "product-similar-products-show": true,
+          "product-similar-products-heading": "You may also like"
+        }
+      },
+      "pages": {
+        "type": "pages",
+        "settings": {
+          "center-content--enabled": true
+        }
+      },
+      "product-main": {
+        "type": "product-main",
+        "blocks": {
+          "4597e434-376e-4977-93ad-8da58d48ee00": {
+            "type": "select",
+            "settings": {
+              "product_handle": "replacement-sponge",
+              "how_to_apply": "<li>Place stencil on the eyebrow using a widened two finger hold, using either the short or long length guide<\/li>\n              <li>Gently tap the sponge into the pomade and tap into the lid of the pomade to remove any excess product<\/li>\n              <li>Apply using a tapping motion starting at the tail of the eyebrow<\/li>\n<li>Wipe stencil and flip stencil over to complete the other eyebrow<\/li>\n<li>Use enclosed spoolie to blend the pomade (especially at the front of the eyebrow for a softer look)<\/li>",
+              "why_love": "<li>Waterproof and smudge-proof formula<\/li>\n              <li>Create perfect brows in seconds<\/li>\n              <li>Washable signature sponge applicator<\/li>\n              <li>Includes 9 stencil designs with 2 length options<\/li>\n              <li>Available in 8 different shades<\/li>\n<li>Waterproof formula is blend-able until dry<\/li>\n<li>Buildable pomade formula to create looks from natural to bold<\/li>",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+              "ingredients": ""
+            }
+          }
+        },
+        "block_order": [
+          "4597e434-376e-4977-93ad-8da58d48ee00"
+        ],
+        "settings": {
+          "video_poster": "shopify:\/\/shop_images\/F816FCF4-4150-441F-B2D7-F6C6D002918F_800x_993a9c6a-5534-46a9-9bbe-eaba67692307.jpg",
+          "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+          "custom_html": "<div class=\"ww_featured_content\">\n<img class=\"ww_fet_img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Life_and_style_glamour.png?v=1625768731\">\n<\/div>"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "email_text": "info@thebrowtrio.com",
+          "email_link": "mailto:info@thebrowtrio.com",
+          "contact_title": "Contact Us",
+          "contact_url": "shopify:\/\/pages\/contact",
+          "insta_url": "",
+          "fb_url": "",
+          "yt_url": "",
+          "footer_linklists": "first-footer-menu",
+          "footer_linklists_two": "second-footer-menu",
+          "add_one": "The Brow Trio",
+          "add_two": "P.O. Box 7030",
+          "add_three": "Chandler, AZ",
+          "add_four": "85246"
+        }
+      },
+      "about-banner": {
+        "type": "about-banner",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/banner_2000x_2ab91378-58a2-4d1d-9b3f-276d4bafac2a.jpg"
+        }
+      },
+      "about-img-text": {
+        "type": "about-img-text",
+        "settings": {
+          "heading": "<em>Brow<\/em> First Beauty",
+          "content": "Eyebrows frame the face, they accentuate our unique features and help convey our emotions. Brows say so much, so we decided to create an entire line of beauty products for them.<br><br>Our name Brow Trio is inspired by the magic  the number 3 holds in creating, shaping and maintaining our best brows. Each brow shape is broken down into 3 parts: front, arch and tail. Each of these parts requires attention when creating your best brows. Understanding your brow shape is key to creating a balanced look. <br><br>They say the best things come in 3s and we believe that also includes your brows.  It only takes 3 steps to create and emphasize beautiful brows using our trio method.",
+          "img": "shopify:\/\/shop_images\/Screen_Shot_2021-11-01_at_3.02.34_PM.png"
+        }
+      },
+      "our-products": {
+        "type": "our-products",
+        "blocks": {
+          "7c93e794-5c9b-45cd-be62-03a0765d0819": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/Screen_Shot_2022-02-16_at_3.07.19_PM.png",
+              "title": "The Brow Trio",
+              "description": "Meet our most popular kit. It includes 12 stencils, waterproof and smudge-proof pomade and our signature sponge brush. Transform your brows in a few easy steps.",
+              "btn_text": "Shop now",
+              "btn_url": "shopify:\/\/products\/the-brow-trio-kit"
+            }
+          },
+          "94c34037-9d59-49e1-9f3a-172981b2e719": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/browtrio-2-2.jpg",
+              "title": "Brow Sets",
+              "description": "Shop our brow sets and transform your brow routine. Our sets offer the perfect opportunity to try our popular kits, explore other brow products in our collection and save.",
+              "btn_text": "SHOP NOW",
+              "btn_url": "shopify:\/\/collections\/sets"
+            }
+          },
+          "9858fbe8-d0b5-428e-820a-0097bd0a7ec1": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/btfinal19_websize.jpg",
+              "title": "Eyebrow Setting Gel",
+              "description": "Need help taming brow hair and keeping it in place? Our long-wearing clear gel thickens and tames brow hair, without flaking. Setting gel can also create a more fluffy brow look. Our formula is vegan and cruelty- free.",
+              "btn_text": "SHOP NOW",
+              "btn_url": "shopify:\/\/products\/eyebrow-setting-gel"
+            }
+          }
+        },
+        "block_order": [
+          "7c93e794-5c9b-45cd-be62-03a0765d0819",
+          "94c34037-9d59-49e1-9f3a-172981b2e719",
+          "9858fbe8-d0b5-428e-820a-0097bd0a7ec1"
+        ],
+        "settings": {
+          "heading": "Our Most Popular Products",
+          "content": ""
+        }
+      },
+      "color-match": {
+        "type": "color-match",
+        "settings": {
+          "title": "Color Match",
+          "heading": "FIND YOUR <span>perfect<\/span> COLOR MATCH",
+          "content": "Don't know what color is your perfect match? Don't worry, we have you covered. We offer a free home try-on kit to help you find your ideal shade. Each home try-on kit comes with 3-5 small sample wefts that you can match to the ends of your hair. If you need further assistance we offer video chat over Skype and in-house color matches which you can book on our website. For Skype calls we highly recommend ordering a home try-on kit before your call. All color matching services can be booked here.",
+          "btn_text": "ORDER MY KIT"
+        }
+      },
+      "images-block": {
+        "type": "images-block",
+        "blocks": {
+          "4bf0fbfb-d9e9-46dc-addc-4e1699b84492": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          },
+          "f6e835ba-f8ea-4930-b497-9320f8fa6582": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          },
+          "eeb40074-d6ce-4033-956a-3552e9e14b94": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          },
+          "a9ca6900-801a-46fd-a0bf-23af76f283be": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          },
+          "efd27fd2-2308-4321-8f7c-cf0dcd981114": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          },
+          "6b3c58d2-5ef8-48fb-835c-fdf083a705e7": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/BC4F53EB-F7A5-44E1-A765-7EA5368003EE_2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "4bf0fbfb-d9e9-46dc-addc-4e1699b84492",
+          "f6e835ba-f8ea-4930-b497-9320f8fa6582",
+          "eeb40074-d6ce-4033-956a-3552e9e14b94",
+          "a9ca6900-801a-46fd-a0bf-23af76f283be",
+          "efd27fd2-2308-4321-8f7c-cf0dcd981114",
+          "6b3c58d2-5ef8-48fb-835c-fdf083a705e7"
+        ],
+        "settings": {
+          "content": ""
+        }
+      },
+      "pro-new-tabs": {
+        "type": "pro-new-tabs",
+        "blocks": {
+          "e38cb2af-dda9-4a85-b7e2-672327baa7fe": {
+            "type": "select",
+            "settings": {
+              "product_handle": "the-brow-trio-kit",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": "Ingredients: cyclopentasiloxane, isododecane, cyclohexasiloxane, silica, trimethylsiloxysilicate, ozokerite\/synthetic wax, bis-diglyceryl polyacyladipate-2, silica dimethyl silylate, mica, tocopheryl acetate, caprylyl glycol, ethylhexylglycerin, CI 77491, CI 77492, CI 77499, CI 77891, CI 77163, bismuth oxychloride, titanium dioxide"
+            }
+          },
+          "6aad50b1-e69c-48c7-a4f7-122f8a3d320c": {
+            "type": "select",
+            "settings": {
+              "product_handle": "replacement-pomade",
+              "how_to_apply": "Use with The Brow Trio signature sponge applicator and stencils.",
+              "why_love": "<li>Waterproof and smudge-proof formula<\/li>\n<li>Available in 8 different shades<\/li>\n<li>Waterproof formula is blend-able until dry<\/li>\n<li>Buildable pomade formula to create looks from natural to bold<\/li>",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+              "ingredients": "Ingredients: cyclopentasiloxane, isododecane, cyclohexasiloxane, silica, trimethylsiloxysilicate, ozokerite\/synthetic wax, bis-diglyceryl polyacyladipate-2, silica dimethyl silylate, mica, tocopheryl acetate, caprylyl glycol, ethylhexylglycerin, CI 77491, CI 77492, CI 77499, CI 77891, CI 77163, bismuth oxychloride, titanium dioxide"
+            }
+          },
+          "29663c0c-3c0b-42b1-b4bf-54b1061b1f4c": {
+            "type": "select",
+            "settings": {
+              "product_handle": "eyebrow-setting-gel",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_May_11_2_47_11_PM.mp4?v=1652306277",
+              "ingredients": "INGREDIENTS:\nAqua, Alcohol, Acrylates Copolymer, Amp-Acrylates, Copolymer, Hydroxyethylcellulose, Phenoxyethanol, PEG-12 Dimethicone, Caprylyl Glycol, Panthenol, Butylene Glycol. Gossypium Herbarium (Cotton) Extract"
+            }
+          },
+          "5406e189-0d12-47b4-95f8-a91bed3cbc46": {
+            "type": "select",
+            "settings": {
+              "product_handle": "signature-sponge-brush-cleanser",
+              "how_to_apply": "Directions: Run sponge under water for 1 minute until sponge expands. Swirl sponge around in soap, then rub sponge gently on the textured mat to loosen pomade. Pomade will peel from sponge.\nParaben and sulfate free.",
+              "why_love": "<li>Our rose scented Signature Sponge Brush Cleanser is specially formulated to remove pomade from Signature Sponge Brush without damaging the integrity of the sponge material<\/li>\n\n<li>Vegan and cruelty free, this cleanser is a must have for maintaining a clean, grime-free sponge brush. When paired with the anti-microbial, textured silicone mat contained in the lid, even our long-lasting 24 hour pomade will be easily cleansed from the sponge<\/li>",
+              "tab_video_link": "",
+              "ingredients": "Ingredients: sodium oleate, sodium palm kernelate, sucrose, propylene glycol, water, glycerol, trehalose, butyrospermum parkii fruit oil, olea europaea fruit oil, algin, menthol, glucoside ascorbate, glycyrrhiza uralensis root extract, mentha arvensis leaf extract, CI 19140"
+            }
+          },
+          "2c8618ab-eeae-4591-b0b0-ff02f698ae6a": {
+            "type": "select",
+            "settings": {
+              "product_handle": "replacement-sponge",
+              "how_to_apply": "Dip sponge applicator into The Brow Trio pomade and apply using eyebrow stencil.",
+              "why_love": "Replacement Signature Sponge Brush for The Brow Trio\n\nRounded tip, washable sponge brush is specialized to apply the perfect amount of pomade according to your desired density",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+              "ingredients": ""
+            }
+          },
+          "65f01b73-f2eb-4d37-aa6b-ff0ce8bc6aaf": {
+            "type": "select",
+            "settings": {
+              "product_handle": "the-extras",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "02063feb-19ce-417a-b9e8-bdc2b9a3c603": {
+            "type": "select",
+            "settings": {
+              "product_handle": "3-pack-eyebrow-razors",
+              "how_to_apply": "After using The Brow Trio, use against the growth of the hair to remove stray hairs.",
+              "why_love": "Perfect for after applying The Brow Trio to further perfect your brow shape. Remove stray brow hairs quickly, easily, and painlessly with our pack of 3 eyebrow razors. Each razor includes a stainless steel safety cover and precision protective cover to protect the blade when not in use.",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "2a4b91ef-cfef-46f9-8910-e166c7a73962": {
+            "type": "select",
+            "settings": {
+              "product_handle": "stencil-expansion-pack",
+              "how_to_apply": "For use with The Brow Trio",
+              "why_love": "Includes 3 XL stencils each with a varying arch type, low, regular, and high. Create thick, perfect brows in seconds!",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+              "ingredients": ""
+            }
+          },
+          "461c5b41-655c-426c-a7e3-ed43991f6239": {
+            "type": "select",
+            "settings": {
+              "product_handle": "stencils",
+              "how_to_apply": "Unpack the brow stencils and find your best brow shape. The stencil that incorporates the most of your brow hair will be the correct one. If you have little to no brow hair, you can be more flexible with your stencil choice. \n\nWhen applying pomade, place stencil on brow using a widened two finger hold, using either the short or long length guide.",
+              "why_love": "By using a custom-developed 2-in-1 measuring system, each stencil allows for your brow shape to be applied in a long and short length. This allows you to achieve your accurate length. These stencils are perfect for using at home with our pomade and are also great for microblading, makeup artists or for estheticians (think tinting\/waxing).",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Untitled_3_1.mp4?v=1637777737",
+              "ingredients": ""
+            }
+          },
+          "1efcbabe-4a67-4295-a825-53026f42f483": {
+            "type": "select",
+            "settings": {
+              "product_handle": "3x-bundle-replacement-signature-sponge-brush",
+              "how_to_apply": "Dip sponge applicator into The Brow Trio pomade and apply using eyebrow stencil.",
+              "why_love": "3 Replacement Signature Sponge Brushes for The Brow Trio\nRounded tip, washable sponge brush is specialized to apply the perfect amount of pomade according to your desired density",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301",
+              "ingredients": ""
+            }
+          },
+          "aa38464b-e8d9-4554-b689-39c2e0ade2f3": {
+            "type": "select",
+            "settings": {
+              "product_handle": "brow-highlighter",
+              "how_to_apply": "You can apply our highlighter below the brow bone for an instant brow lift,  the inner corner of the eye for an eye-brightening effect and even on your cupid's bow. Feel free to experiment and apply wherever you want a touch of light to appear.",
+              "why_love": "<li>Buildable and Blend-able<\/li><li>\n<\/li><li>Vegan Formula<\/li><li>\n<\/li><li>Cruelty Free<\/li><li>",
+              "tab_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Lauren_Brow_highlight_1.mp4?v=1634692184",
+              "ingredients": "Tridecyl Trimellitate, Triethylhexanoin, Diphenylsiloxy Phenyl Trimethicone, Neopentyl Glycol Dicaprate, Phenyl Trimethicone, Mica, Dibutyl Lauroyl Glutamide, Dibutyl Ethylhexanoyl Glutamide, Polyethylene, Sorbitan Sesquiisostearate, Diisostearyl Malate, Synthetic Fluorphlogopite, Zinc Myristate, Synthetic Wax, Silica, Tocopherol, Simethicone"
+            }
+          },
+          "106f7c8e-40bf-4d4c-8ab4-3728cee2d239": {
+            "type": "select",
+            "settings": {
+              "product_handle": "brow-swipe-pen",
+              "how_to_apply": "<p>Apply Brow Swipe™ pen using a flicking motion to create definition, depth and to add texture to your brows. <\/p>\n\n<p>Follow after the Brow Trio® to add individual strokes for a more defined brow.<\/p>",
+              "why_love": "<p>The pen is vegan, cruelty-free and has a smudge-proof and waterproof formula.<\/p>",
+              "tab_video_link": "",
+              "ingredients": "Water, Acrylates, Copolymer, Propylene Glycol, CI 77492, CI 77491, CI 77499, Polysorbate 20, Hydroxyethylcellulose, Phenoxyethanol"
+            }
+          },
+          "f2706d04-326a-4d1d-85f5-b150ae3e07ff": {
+            "type": "select",
+            "settings": {
+              "product_handle": "gift-card",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "ea3d21b5-9b80-4bb7-8c10-9b70929c662a": {
+            "type": "select",
+            "settings": {
+              "product_handle": "brow-makeup-wipes",
+              "how_to_apply": "",
+              "why_love": "Easily removes our waterproof and smudge-proof pomade from your brows.",
+              "tab_video_link": "",
+              "ingredients": "Aqua, Glycerol, Aloe Barbadensis Leaf Juice, Lauryl glucoside, Citric Acid, Rosa Damascena Flower Water, Chamomilla Recutita Flower Extract, PPG-12-BUTETH-16, Sodium Benzoate, Parfum."
+            }
+          },
+          "58992d21-e0ad-4459-b103-f2f938db59ba": {
+            "type": "select",
+            "settings": {
+              "product_handle": "brow-lifting-wax",
+              "how_to_apply": "Brush brow hairs up using the brow application wand, follow with the comb to separate brow hair and secure in place. Follow with the brow swipe pen for extra density.",
+              "why_love": "Extreme hold, flake free formula gives a laminated look that lasts all day.\n\nNutrient-rich candelilla wax makes for easy application and an all-day hold.",
+              "tab_video_link": "",
+              "ingredients": "Aqua, Euphorbia Cerifera (Candelilla) Wax, Isopropyl Myristate, Tocopheryl Acetate, acetylene Alcohol, Glyceryl Stearate, Magnesium Stearate, Carbomer, Panthenol\n\n<style>\n.tabs .ckin__player video {\n    \n    position: relative;\n}\n.tabs .ckin__player:before {\n    padding-top: 1px;\n}\n<\/style>"
+            }
+          },
+          "0424e779-e8b0-4b41-9240-2b1e505906b6": {
+            "type": "select",
+            "settings": {
+              "product_handle": "pink-browband",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "ce5efbcb-2419-4b63-96bb-d03e7b6fcb60": {
+            "type": "select",
+            "settings": {
+              "product_handle": "berry-browband",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "e5fe08c3-68b2-4854-af2c-6aa3b92d4366": {
+            "type": "select",
+            "settings": {
+              "product_handle": "peach-brow-band",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "17221714-767b-4e99-8e40-46adce421661": {
+            "type": "select",
+            "settings": {
+              "product_handle": "dual-ended-angled-spoolie-brush",
+              "how_to_apply": "Gently dip the angled brush edge into the pomade and apply. Blend with the spoolie end of the brush for a blended look.\n\n\n\n \n<style>\n.tabs .ckin__player video {\n    \n    position: relative;\n}\n.tabs .ckin__player:before {\n    padding-top: 1px;\n}\n<\/style>",
+              "why_love": "Dual ended brush precisely applies pomade while the spoolie blends pomade for a flawless finish.",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "e9c71f56-dd83-4c87-ab2d-500c928b3296": {
+            "type": "select",
+            "settings": {
+              "product_handle": "fill-and-blend-brow-pair",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "7a02117b-ca9e-4f94-93b1-d58f348dbc60": {
+            "type": "select",
+            "settings": {
+              "product_handle": "micro-fill-brow-pencil",
+              "how_to_apply": "After using the pencil, blend and groom your brow hair with the brush.",
+              "why_love": "Our microfine pencil tip fills in brows with beautifully soft hair strokes. \n\nComes with a spoolie for blending and grooming.",
+              "tab_video_link": "",
+              "ingredients": "Hydrogenated Coco-glycerides, Titanium Dioxide, Ci 77499, Mica, Hydrogenated Castor Oil, Cellulose, Ci 77492, Ci 77491, Synthetic Wax, Sorbitan Sesquiisostearate, Simmondsia Chinensis Seed Oil"
+            }
+          },
+          "79fa906e-8d05-493a-9ea3-a82f5ec08001": {
+            "type": "select",
+            "settings": {
+              "product_handle": "trio-texture-set",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "2c019002-7eb9-4a3b-9e3b-3da6a41586d7": {
+            "type": "select",
+            "settings": {
+              "product_handle": "trio-cleanse-set",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "9dfec0aa-f280-418c-99a0-8a9b86dc206a": {
+            "type": "select",
+            "settings": {
+              "product_handle": "laminate-lift-set",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          },
+          "02125665-d817-425a-a789-5cd6a5cf77cb": {
+            "type": "select",
+            "settings": {
+              "product_handle": "trio-glow-set",
+              "how_to_apply": "",
+              "why_love": "",
+              "tab_video_link": "",
+              "ingredients": ""
+            }
+          }
+        },
+        "block_order": [
+          "e38cb2af-dda9-4a85-b7e2-672327baa7fe",
+          "6aad50b1-e69c-48c7-a4f7-122f8a3d320c",
+          "29663c0c-3c0b-42b1-b4bf-54b1061b1f4c",
+          "5406e189-0d12-47b4-95f8-a91bed3cbc46",
+          "2c8618ab-eeae-4591-b0b0-ff02f698ae6a",
+          "65f01b73-f2eb-4d37-aa6b-ff0ce8bc6aaf",
+          "02063feb-19ce-417a-b9e8-bdc2b9a3c603",
+          "2a4b91ef-cfef-46f9-8910-e166c7a73962",
+          "461c5b41-655c-426c-a7e3-ed43991f6239",
+          "1efcbabe-4a67-4295-a825-53026f42f483",
+          "aa38464b-e8d9-4554-b689-39c2e0ade2f3",
+          "106f7c8e-40bf-4d4c-8ab4-3728cee2d239",
+          "f2706d04-326a-4d1d-85f5-b150ae3e07ff",
+          "ea3d21b5-9b80-4bb7-8c10-9b70929c662a",
+          "58992d21-e0ad-4459-b103-f2f938db59ba",
+          "0424e779-e8b0-4b41-9240-2b1e505906b6",
+          "ce5efbcb-2419-4b63-96bb-d03e7b6fcb60",
+          "e5fe08c3-68b2-4854-af2c-6aa3b92d4366",
+          "17221714-767b-4e99-8e40-46adce421661",
+          "e9c71f56-dd83-4c87-ab2d-500c928b3296",
+          "7a02117b-ca9e-4f94-93b1-d58f348dbc60",
+          "79fa906e-8d05-493a-9ea3-a82f5ec08001",
+          "2c019002-7eb9-4a3b-9e3b-3da6a41586d7",
+          "9dfec0aa-f280-418c-99a0-8a9b86dc206a",
+          "02125665-d817-425a-a789-5cd6a5cf77cb"
+        ],
+        "settings": {
+        }
+      },
+      "pro-collection-tabs": {
+        "type": "pro-collection-tabs",
+        "blocks": {
+          "23b6e853-38a1-48a6-bfee-e0a04e592c26": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/softbrown-7.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "a69e6fef-77eb-4102-a40b-b782a14137bd": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.49.20_AM.png",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "shop",
+              "btn_title": ""
+            }
+          },
+          "d526f178-fbf2-4b83-9c7f-aa2648643ba0": {
+            "type": "select",
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.44.54_AM.png",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "frontpage",
+              "btn_title": ""
+            }
+          },
+          "fe68a312-99ba-4608-9cba-6fd0202bc13a": {
+            "type": "select",
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.45.25_AM.png",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "brow-favorites",
+              "btn_title": ""
+            }
+          },
+          "014c16ea-96a0-4268-8bd6-11e49016b3dc": {
+            "type": "select",
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Screen_Shot_2021-10-21_at_1.24.25_PM.png",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "frontpage",
+              "btn_title": ""
+            }
+          },
+          "677777dd-83af-495b-bca2-51d5f9fdcd7e": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_9_55_27_AM.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "customers-also-viewd",
+              "btn_title": ""
+            }
+          },
+          "68230d50-3e6e-4d60-be34-3881c7ea3891": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_9_58_21_AM.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "brow-favorites",
+              "btn_title": ""
+            }
+          },
+          "c1ce46bd-96b4-426e-95be-97101316fc6f": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_9_58_38_AM-1.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "shop",
+              "btn_title": ""
+            }
+          },
+          "9bd25716-c2be-49d2-99e6-fc09265f9bf7": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_9_59_21_AM-2.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "frontpage",
+              "btn_title": ""
+            }
+          },
+          "4b7516d5-1247-4e9b-bf8b-233361f4e3dd": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_00_28_AM-3.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "use-with",
+              "btn_title": ""
+            }
+          },
+          "a6cfd3ef-ca63-445d-b367-f61ae720aede": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_01_00_AM-4.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "738cd51f-4353-49d7-a7ca-c578b49b3769": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_01_57_AM-6.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "d6b42b20-08fb-402d-9b0f-26ab94bd3fd6": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_15_25_AM-8.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "45600367-135f-4d1b-bf46-f63dff95945c": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_01_19_AM-5.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "07c00385-188b-4945-8c06-85b01a1de7ae": {
+            "type": "select",
+            "settings": {
+              "collection_image": "shopify:\/\/shop_images\/Photo_Jun_23_10_17_37_AM-9.jpg",
+              "collection_title": "SHOP THE LOOK",
+              "collection": "",
+              "btn_title": ""
+            }
+          },
+          "b054f533-4ed2-406a-8650-0c08a09d5a15": {
+            "type": "custom-card",
+            "disabled": true,
+            "settings": {
+              "img": "shopify:\/\/shop_images\/stencilss.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "23b6e853-38a1-48a6-bfee-e0a04e592c26",
+          "a69e6fef-77eb-4102-a40b-b782a14137bd",
+          "d526f178-fbf2-4b83-9c7f-aa2648643ba0",
+          "fe68a312-99ba-4608-9cba-6fd0202bc13a",
+          "014c16ea-96a0-4268-8bd6-11e49016b3dc",
+          "677777dd-83af-495b-bca2-51d5f9fdcd7e",
+          "68230d50-3e6e-4d60-be34-3881c7ea3891",
+          "c1ce46bd-96b4-426e-95be-97101316fc6f",
+          "9bd25716-c2be-49d2-99e6-fc09265f9bf7",
+          "4b7516d5-1247-4e9b-bf8b-233361f4e3dd",
+          "a6cfd3ef-ca63-445d-b367-f61ae720aede",
+          "738cd51f-4353-49d7-a7ca-c578b49b3769",
+          "d6b42b20-08fb-402d-9b0f-26ab94bd3fd6",
+          "45600367-135f-4d1b-bf46-f63dff95945c",
+          "07c00385-188b-4945-8c06-85b01a1de7ae",
+          "b054f533-4ed2-406a-8650-0c08a09d5a15"
+        ],
+        "settings": {
+          "section_title": "Brow Trio Besties"
+        }
+      },
+      "use-with-pro": {
+        "type": "use-with-pro",
+        "blocks": {
+          "a5c4f9d3-4d6d-4dd0-aebd-ca4bd469c0d4": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "the-brow-trio-kit",
+              "section_title": "Use With",
+              "collection": "use-with"
+            }
+          },
+          "a4426a95-5703-453c-8cfe-eeb84d921554": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "replacement-pomade",
+              "section_title": "Use With",
+              "collection": "use-with-replacement-pomade"
+            }
+          },
+          "ce94b13b-17c6-4142-892d-889f94bddd48": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "eyebrow-setting-gel",
+              "section_title": "Use With",
+              "collection": "use-with-eyebrow-setting-gel"
+            }
+          },
+          "a425da72-55ef-4301-8596-80afdc5fb6a2": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "signature-sponge-brush-cleanser",
+              "section_title": "USE WITH",
+              "collection": "use-with-sponge-cleanser"
+            }
+          },
+          "4eb5a95f-92cc-405e-9d89-e92e855bdc32": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "replacement-sponge",
+              "section_title": "USE WITH",
+              "collection": "use-with-sponge-brush"
+            }
+          },
+          "5064dc1b-8591-4b09-8d6b-881e7a37db43": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "3-pack-eyebrow-razors",
+              "section_title": "USE WITH",
+              "collection": "use-with-3x-eyebrow-razors"
+            }
+          },
+          "e298ead3-a458-43bf-bfa6-5133705ae107": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "stencil-expansion-pack",
+              "section_title": "USE WITH",
+              "collection": "use-with-stencil-xl"
+            }
+          },
+          "140699de-c7a1-489d-92e7-68df59ebf509": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "stencils",
+              "section_title": "USE WITH",
+              "collection": "use-with-stencil-pack"
+            }
+          },
+          "81afc41d-bfc2-4608-b14d-cdc7e5b30d0e": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "3x-bundle-replacement-signature-sponge-brush",
+              "section_title": "USE WITH",
+              "collection": "use-with-3x-sponge-brush"
+            }
+          },
+          "35ad7617-6357-4163-9446-ad32e44abdbb": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "trio-cleanse-set",
+              "section_title": "",
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "a5c4f9d3-4d6d-4dd0-aebd-ca4bd469c0d4",
+          "a4426a95-5703-453c-8cfe-eeb84d921554",
+          "ce94b13b-17c6-4142-892d-889f94bddd48",
+          "a425da72-55ef-4301-8596-80afdc5fb6a2",
+          "4eb5a95f-92cc-405e-9d89-e92e855bdc32",
+          "5064dc1b-8591-4b09-8d6b-881e7a37db43",
+          "e298ead3-a458-43bf-bfa6-5133705ae107",
+          "140699de-c7a1-489d-92e7-68df59ebf509",
+          "81afc41d-bfc2-4608-b14d-cdc7e5b30d0e",
+          "35ad7617-6357-4163-9446-ad32e44abdbb"
+        ],
+        "settings": {
+        }
+      },
+      "new-pro-rp": {
+        "type": "new-pro-rp",
+        "blocks": {
+          "723ea74c-1cb0-4fd5-8a37-d34d2e703523": {
+            "type": "select",
+            "settings": {
+              "product_handle": "the-brow-trio-kit",
+              "section_title": "Customers Also Viewed",
+              "collection": "customers-also-viewd"
+            }
+          },
+          "2107e2c6-6a63-4e9f-a7fb-110cb420f85d": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "replacement-pomade",
+              "section_title": "Customers Also Viewed",
+              "collection": "also-viewed-replacement-pomade"
+            }
+          },
+          "398ee3ab-590c-4f40-9df7-f398aa9f8a68": {
+            "type": "select",
+            "settings": {
+              "product_handle": "eyebrow-setting-gel",
+              "section_title": "CUSTOMERS ALSO VIEWED",
+              "collection": "also-viewed-eyebrow-setting-gel"
+            }
+          },
+          "5e147ef1-ca13-4c6a-9b8a-761e3aef2122": {
+            "type": "select",
+            "settings": {
+              "product_handle": "signature-sponge-brush-cleanser",
+              "section_title": "CUSTOMERS ALSO VIEWED",
+              "collection": "also-viewed-sponge-cleanser"
+            }
+          },
+          "1418ee1a-64d2-4365-8e0a-50a7e5f8a4de": {
+            "type": "select",
+            "settings": {
+              "product_handle": "replacement-sponge",
+              "section_title": "CUSTOMERS ALSO VIEWED",
+              "collection": "also-viewed-sponge-brush"
+            }
+          },
+          "8ce5d022-b287-448f-a88d-f0005373f315": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "3-pack-eyebrow-razors",
+              "section_title": "Customers Also Viewed",
+              "collection": "also-viewed-3x-eyebrow-razors"
+            }
+          },
+          "2ee2d075-9b83-440f-bd5f-23a2c8505f60": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "stencil-expansion-pack",
+              "section_title": "Customers Also Viewed",
+              "collection": "also-viewed-stencil-xl"
+            }
+          },
+          "40d37c24-f136-44f0-b9ec-598409d54525": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "stencils",
+              "section_title": "Customers Also Viewed",
+              "collection": "also-viewed-stencil-pack"
+            }
+          },
+          "0636dca9-3c1f-4eb8-b3cd-f4ba5dc617c3": {
+            "type": "select",
+            "disabled": true,
+            "settings": {
+              "product_handle": "3x-bundle-replacement-signature-sponge-brush",
+              "section_title": "Customers Also Viewed",
+              "collection": "also-viewed-3x-sponge-brush"
+            }
+          }
+        },
+        "block_order": [
+          "723ea74c-1cb0-4fd5-8a37-d34d2e703523",
+          "2107e2c6-6a63-4e9f-a7fb-110cb420f85d",
+          "398ee3ab-590c-4f40-9df7-f398aa9f8a68",
+          "5e147ef1-ca13-4c6a-9b8a-761e3aef2122",
+          "1418ee1a-64d2-4365-8e0a-50a7e5f8a4de",
+          "8ce5d022-b287-448f-a88d-f0005373f315",
+          "2ee2d075-9b83-440f-bd5f-23a2c8505f60",
+          "40d37c24-f136-44f0-b9ec-598409d54525",
+          "0636dca9-3c1f-4eb8-b3cd-f4ba5dc617c3"
+        ],
+        "settings": {
+        }
+      },
+      "product-main-new": {
+        "type": "product-main-new",
+        "settings": {
+          "video_poster": "shopify:\/\/shop_images\/F816FCF4-4150-441F-B2D7-F6C6D002918F_800x_7a04416e-3257-4694-9a70-6d36d8578c35.jpg",
+          "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Video_Jun_11_11_02_28_AM.mov?v=1623670301"
+        }
+      },
+      "framework--custom-content": {
+        "type": "framework--custom-content",
+        "settings": {
+          "custom_html": ""
+        }
+      },
+      "1633001847aee607aa": {
+        "type": "main-banner",
+        "disabled": true,
+        "settings": {
+          "video_banner": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Code_HOLIDAY25.mp4?v=1637703554",
+          "title": "All Things <em>Brows<\/em>",
+          "desciption": "Shop our collection of brow products that will fit perfectly into your daily beauty routine.",
+          "btn_title": "Shop Now",
+          "btn_link": "shopify:\/\/collections\/shop"
+        }
+      },
+      "1633002668036c37df": {
+        "type": "kit-col-homepage",
+        "disabled": true,
+        "blocks": {
+          "6de5964e-d9ee-4ebd-a30d-1211c693fe76": {
+            "type": "select",
+            "settings": {
+              "product_img": "shopify:\/\/shop_images\/Screen_Shot_2021-09-23_at_4.07.55_PM.png",
+              "title": "12 stencils",
+              "content": "4 regular arch, 4 low arch, and 4 high arch stencils, included to find your shape."
+            }
+          },
+          "9c89500c-6631-4044-aaae-2bc0f895a831": {
+            "type": "select",
+            "settings": {
+              "product_img": "shopify:\/\/shop_images\/Screen_Shot_2021-09-21_at_5.50.19_PM.png",
+              "title": "pomade",
+              "content": "Our pomade is smooth, waterproof, smudge-proof, and buildable."
+            }
+          },
+          "5bbf00e5-cf1e-47c8-93d0-2fcd513434d5": {
+            "type": "select",
+            "settings": {
+              "product_img": "shopify:\/\/shop_images\/goldennew-210.jpg",
+              "title": "sponge brush",
+              "content": "Designed with our signature sponge applicator and spoolie brush for easy application and blending."
+            }
+          },
+          "c1cabb48-dcb8-4825-9ad5-0f6462707927": {
+            "type": "select",
+            "settings": {
+              "product_img": "shopify:\/\/shop_images\/thebrowtrio-7.jpg",
+              "title": "zipper pouch",
+              "content": "Our kit comes in a dreamy pink zipper pouch for easy carry and storage."
+            }
+          }
+        },
+        "block_order": [
+          "6de5964e-d9ee-4ebd-a30d-1211c693fe76",
+          "9c89500c-6631-4044-aaae-2bc0f895a831",
+          "5bbf00e5-cf1e-47c8-93d0-2fcd513434d5",
+          "c1cabb48-dcb8-4825-9ad5-0f6462707927"
+        ],
+        "settings": {
+          "heading": "What’s included in the Brow Trio kit?",
+          "btn_title": "Shop The Kit",
+          "btn_url": "shopify:\/\/products\/the-brow-trio-kit"
+        }
+      },
+      "1633005646717a7a20": {
+        "type": "accessories-block",
+        "settings": {
+          "heading": "New <em>Arrivals<\/em>",
+          "collection_pro": "new-arrivals"
+        }
+      },
+      "163300809318b86fc9": {
+        "type": "insta-block",
+        "disabled": true,
+        "blocks": {
+          "03554652-4c56-42de-b28c-26b38dc06edc": {
+            "type": "select",
+            "settings": {
+              "instagram_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.45.25_AM.png",
+              "insta_url": "https:\/\/www.instagram.com\/p\/CYKL7PGvBYR\/"
+            }
+          },
+          "3bd888aa-bf38-4811-b5f6-4a1276980bc9": {
+            "type": "select",
+            "settings": {
+              "instagram_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.44.54_AM.png",
+              "insta_url": "https:\/\/www.instagram.com\/p\/CX_-xMLvDwr\/"
+            }
+          },
+          "203c474b-9386-44e3-9fbd-686dc2de4753": {
+            "type": "select",
+            "settings": {
+              "instagram_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.47.22_AM.png",
+              "insta_url": "https:\/\/www.instagram.com\/p\/CXo4KF4PEmb\/"
+            }
+          },
+          "987c409b-f174-43ee-adee-3b897b748506": {
+            "type": "select",
+            "settings": {
+              "instagram_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.49.20_AM.png",
+              "insta_url": "https:\/\/www.instagram.com\/p\/CWZCshXhtLq\/"
+            }
+          },
+          "52cb8abd-cb1d-4702-9982-8d1811ebca90": {
+            "type": "select",
+            "settings": {
+              "instagram_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-03_at_7.46.55_AM.png",
+              "insta_url": "https:\/\/www.instagram.com\/p\/CXwdIcdvqPS\/"
+            }
+          }
+        },
+        "block_order": [
+          "03554652-4c56-42de-b28c-26b38dc06edc",
+          "3bd888aa-bf38-4811-b5f6-4a1276980bc9",
+          "203c474b-9386-44e3-9fbd-686dc2de4753",
+          "987c409b-f174-43ee-adee-3b897b748506",
+          "52cb8abd-cb1d-4702-9982-8d1811ebca90"
+        ],
+        "settings": {
+          "heading": "Follow us on insta <em>@thebrowtrio<\/em>"
+        }
+      },
+      "16339741989d2f3076": {
+        "type": "framework--featured-content",
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/IMG_1962.jpg",
+          "image-height": "small",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "The Ultimate Brow Trio : Stencil Kit",
+          "description": "<p>Designed to guide you to create your best brow shape. Our most popular brow kit comes with 12 stencils options, waterproof and.<\/p>",
+          "link-url": "shopify:\/\/products\/the-brow-trio-kit",
+          "link-text": "explore the shades"
+        }
+      },
+      "1634142925a1bc04b6": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/warmhand_websize.jpg",
+          "image-height": "small",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Brow Trio Replacements",
+          "description": "<p>Need a replacement item from your Brow Trio kit? We have you covered. Shop our replacement stencils, pomades and signature brushes. <\/p>",
+          "link-url": "shopify:\/\/products\/eyebrow-setting-gel",
+          "link-text": "shop now"
+        }
+      },
+      "1634144035d9b0ac48": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": true,
+          "background-color": "light",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": true,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": true,
+          "image": "shopify:\/\/shop_images\/img_9c7550ce-35b2-4733-9328-6513cd3d3b08.jpg",
+          "image-height": "small",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "",
+          "description": "",
+          "link-url": "",
+          "link-text": ""
+        }
+      },
+      "1634847714f8405b0e": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": false,
+          "background-color": "accent",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/goldennew-244.jpg",
+          "image-height": "large",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Brow Swipe Pens",
+          "description": "<p>Create beautifully realistic hair strokes with the brow swipe pen. Our flexible, fine brush tip easily builds a dimensional look.<\/p>",
+          "link-url": "shopify:\/\/products\/brow-swipe-pen",
+          "link-text": "Shop Now"
+        }
+      },
+      "163580341801e8f740": {
+        "type": "framework--featured-content",
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/IMG_1653_c.jpg",
+          "image-height": "large",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "The Ultimate Brow Metamorphosis",
+          "description": "<p>The Butterfly Brow Trio provides the ultimate brow metamorphosis, allowing you to instantly recreate the trending lamination look without the commitment of a semi-permanent salon treatment.<\/p>",
+          "link-url": "shopify:\/\/products\/brow-highlighter",
+          "link-text": "Shop Now"
+        }
+      },
+      "framework--blog": {
+        "type": "framework--blog",
+        "settings": {
+          "show-title": false,
+          "show-tag-filter": false,
+          "show-excerpt": false,
+          "show-rss": false,
+          "columns": 3,
+          "show-featured": false,
+          "tag": "featured",
+          "image-height": "large",
+          "alt-color": true,
+          "parallax-enabled": false,
+          "apply-overlay": false
+        }
+      },
+      "tiktok-about": {
+        "type": "tiktok-about",
+        "settings": {
+          "title": "About Our Kit",
+          "content": "Meet the ultimate brow kit. Our most popular product,          was designed to effortlessly fill in your brows and give you your dream shape. It’s beginner friendly and takes only a few easy steps to transform your brows.",
+          "review_title": "REVIEWS",
+          "review_url": "shopify:\/\/pages\/reviews",
+          "about_img": "shopify:\/\/shop_images\/ioKit-01_03.png"
+        }
+      },
+      "tiktok-video": {
+        "type": "tiktok-video",
+        "settings": {
+          "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Untitled_3.mp4?v=1637763143"
+        }
+      },
+      "tiktok-whats-include": {
+        "type": "tiktok-whats-include",
+        "blocks": {
+          "1cdf5ad0-2931-4e51-bdd4-adc5dcf27b6e": {
+            "type": "select",
+            "settings": {
+              "box_title": "12 Stencils",
+              "box_content": "3 regular arch, 3 low arch, 3 high arch options and 3 XL options. Stencil designs include a 2 in 1 length choice, to help you find your perfect match."
+            }
+          },
+          "c952c35c-8bb9-43f6-b3d9-fa3e6e2b475e": {
+            "type": "select",
+            "settings": {
+              "box_title": "Pomade",
+              "box_content": "Pomade is a smooth, creamy, waterproof, smudge-proof, and buildable so you can alternate between natural looking day time brows, to filled in night time glam brows."
+            }
+          },
+          "0e556280-7cff-4a5e-a895-c7349f6608aa": {
+            "type": "select",
+            "settings": {
+              "box_title": "Dual Ended Signature Sponge Brush",
+              "box_content": "Apply and blend with one simple tool.\nPerfectly bouncy, washable sponge brush is specialized to apply the perfect amount of pomade according to your desired density. \nSmall enough for a precise application."
+            }
+          },
+          "ea9e3836-2690-4a00-8117-d8915e4fa779": {
+            "type": "select",
+            "settings": {
+              "box_title": "Trio Pouch",
+              "box_content": "Kit comes with a complimentary pouch for easy storage and travel."
+            }
+          }
+        },
+        "block_order": [
+          "1cdf5ad0-2931-4e51-bdd4-adc5dcf27b6e",
+          "c952c35c-8bb9-43f6-b3d9-fa3e6e2b475e",
+          "0e556280-7cff-4a5e-a895-c7349f6608aa",
+          "ea9e3836-2690-4a00-8117-d8915e4fa779"
+        ],
+        "settings": {
+          "heading": "What’s included in the Kit?",
+          "whats_img": "shopify:\/\/shop_images\/MobilePageBrowTrioKit-01_05.png"
+        }
+      },
+      "tiktok-accordion": {
+        "type": "tiktok-accordion",
+        "blocks": {
+          "8999c394-2de8-4879-96cc-3c8f8b633dc9": {
+            "type": "select",
+            "settings": {
+              "title": "how to apply",
+              "content": "<ul>\n  <li>Place stencil on the eyebrow using a widened two finger hold, using either the short or long length guide<\/li>\n  <li>Gently tap the sponge into the pomade and tap into the lid of the pomade to remove any excess product<\/li>\n  <li>Apply using a tapping motion starting at the tail of the eyebrow<\/li>\n  <li>Wipe stencil and flip stencil over to complete the other eyebrow<\/li>\n  <li>Use the spoolie end of the sponge brush to blend the pomade (especially at the front of the eyebrow for a softer look)<\/li>\n<\/ul>"
+            }
+          },
+          "e011a6a8-11e6-4787-8a44-551503fdea23": {
+            "type": "select",
+            "settings": {
+              "title": "ingredients",
+              "content": "Ingredients: cyclopentasiloxane, isododecane, cyclohexasiloxane, silica, polyethylene, trimet-hylsiloxysilicaye, ozokerite\/synthetic wax, bis-diglyceryl polyacyladipate-2, silica dimethyl silt-late, mica, tocopheryl acetate, caprylyl glycol, ethylhexylglycerin, May contain (+\/-) iron oxides (CI 77491, CI 77492, CI 77499), titanium dioxide CI 77891), bismuth oxychloride (CI 77163)"
+            }
+          },
+          "fb27d972-1548-4598-a3a7-f2d2ec624371": {
+            "type": "select",
+            "settings": {
+              "title": "frequent questions",
+              "content": "<b>How do I know what shade to choose?<\/b> <br>\nIt is best to match your brow hair when choosing a shade. If you’re in between colors, choosing the lighter shade is best as our formula is very pigmented.\n<br>\n<br>\n<b>How do I get both sides even?<\/b><br>\nAfter completing one brow, turn the stencil on its side and line up the bottom of both brows and press stencil into skin lightly. This will create a guide of where to start the other eyebrow.\n<br>\n<br>\n<b>How do I know which eyebrow stencil to use?<\/b><br>\nThe best stencil for you will be the one that incorporates the majority of your brow hair. If you have little to no brow hair, congratulations! You can be more flexible with your stencil choice.\n<br>\n<br>\n<b>How do I get the most natural look?<\/b><br>\nAs the pomade is buildable, start lightly. You can always apply more. The most natural look is created when the brow is more filled in from the arch to the tail and lighter and blended in the front. Be sure to blend the front of the brows with the spoolie for a natural fade."
+            }
+          },
+          "5c91893b-159b-40bf-8cad-f775e1f9c50f": {
+            "type": "select",
+            "settings": {
+              "title": "what makes our kit different",
+              "content": "Waterproof, smudge\/proof formula\n<br>\n12 eyebrow stencils that provide an option for all brow shapes\n<br>\nDouble ended signature sponge provides precise application and blending in one simple tool"
+            }
+          }
+        },
+        "block_order": [
+          "8999c394-2de8-4879-96cc-3c8f8b633dc9",
+          "e011a6a8-11e6-4787-8a44-551503fdea23",
+          "fb27d972-1548-4598-a3a7-f2d2ec624371",
+          "5c91893b-159b-40bf-8cad-f775e1f9c50f"
+        ],
+        "settings": {
+        }
+      },
+      "framework--article": {
+        "type": "framework--article",
+        "settings": {
+          "show-featured": false,
+          "title-position": "above",
+          "show-date": false,
+          "show-author": false,
+          "show-share": true,
+          "show-tags": true,
+          "show-recent": true,
+          "show-comments": false,
+          "enable-disqus": false,
+          "disqus-shortname": ""
+        }
+      },
+      "16412224691c03266a": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/pens-20.jpg",
+          "image-height": "small",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Look of Lamination",
+          "description": "<p>Get the full, fluffy & laminated brow look with our innovative brow gel\/wax formula. Our extreme hold, flake-free formula dries clear and lasts all day. <\/p>",
+          "link-url": "https:\/\/www.thebrowtrio.com\/collections\/shop\/products\/brow-lifting-wax",
+          "link-text": "Shop Now"
+        }
+      },
+      "1641223831ec3fbbdd": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/goldennew-446.jpg",
+          "image-height": "large",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Ready, Set, Hold!",
+          "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+          "link-url": "",
+          "link-text": ""
+        }
+      },
+      "1641928109fe3d61b7": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": false,
+          "background-color": "none",
+          "text-position": "right",
+          "text-width": "small",
+          "overlap": false,
+          "transparent-overlap": true,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/pens-21.jpg",
+          "image-height": "large",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Brow Bands",
+          "description": "<p>Our brow band is the perfect accessory to help make your brow routine easy. Look cute and keep hair out of your face as you do your brows. <\/p><p><strong>Receive a free Brow Band of your choosing on orders of $75+.<\/strong><\/p>",
+          "link-url": "https:\/\/www.thebrowtrio.com\/collections\/shop",
+          "link-text": "shop now"
+        }
+      },
+      "16419298711b7899be": {
+        "type": "blog-posts",
+        "disabled": true,
+        "blocks": {
+          "e7ca2364-e0a9-4144-9d8c-1dbf28441c1b": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/Screen_Shot_2022-01-11_at_12.43.48_PM.png",
+              "title": "How to Get Your Brows Symmetrical",
+              "btn_text": "Read Now",
+              "btn_url": "https:\/\/www.thebrowtrio.com\/blogs\/brow-talk\/symmetrical-brows"
+            }
+          },
+          "905fbdd6-b6f4-44b0-ba9c-56248a01d2c0": {
+            "type": "select",
+            "settings": {
+              "block_img": "shopify:\/\/shop_images\/goldennew-448.jpg",
+              "title": "Q&A W\/ Brow Trio Founder Bree",
+              "btn_text": "Read Now",
+              "btn_url": "https:\/\/www.thebrowtrio.com\/blogs\/brow-talk\/founder-interview"
+            }
+          }
+        },
+        "block_order": [
+          "e7ca2364-e0a9-4144-9d8c-1dbf28441c1b",
+          "905fbdd6-b6f4-44b0-ba9c-56248a01d2c0"
+        ],
+        "settings": {
+          "heading": "Brow Talk",
+          "blog_linklists": ""
+        }
+      },
+      "16419298755d72bba4": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "background-color": "none",
+          "home-product-slider-collection": "brow-accessories",
+          "max_products": 4
+        }
+      },
+      "1642015245454ef639": {
+        "type": "accessories-block",
+        "disabled": true,
+        "settings": {
+          "heading": "Brow <em>Bands<\/em>",
+          "collection_pro": "brow-bands"
+        }
+      },
+      "16428208028e8b4f18": {
+        "type": "framework--featured-content",
+        "disabled": true,
+        "settings": {
+          "full-width": true,
+          "background-color": "light",
+          "text-position": "left",
+          "text-width": "large",
+          "overlap": false,
+          "transparent-overlap": false,
+          "alternative-color": false,
+          "mobile-overlay": false,
+          "image": "shopify:\/\/shop_images\/seashell.jpg",
+          "image-height": "large",
+          "parallax-enabled": false,
+          "apply-overlay": false,
+          "title": "Beach Ready Brows",
+          "description": "<p>We officially have summertime on our minds. Are you prepared for summer at the beach or by the pool? Our waterproof pomade is ready for all your summer days soaking up the sun and catching some waves.<\/p>",
+          "link-url": "shopify:\/\/products\/the-brow-trio-kit",
+          "link-text": "shop now"
+        }
+      },
+      "pro-collection-tabs-v2": {
+        "type": "pro-collection-tabs-v2",
+        "blocks": {
+          "2930405b-9660-488d-b3a0-587c04141552": {
+            "type": "custom-card",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Untitled-2_1.jpg",
+              "inst_txt_anc": "<p><a href=\"https:\/\/www.instagram.com\/p\/CYxVb1svRpL\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/p\/CYxVb1svRpL\/\">@brianajane<\/a><\/p>",
+              "ins_txt": ""
+            }
+          },
+          "ecf3e7fd-fe30-493c-a3f6-f43a0b906258": {
+            "type": "custom-card",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Untitled-1_2.jpg",
+              "inst_txt_anc": "<p><a href=\"https:\/\/www.instagram.com\/marvels.makeup\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/marvels.makeup\/\">@marvels.makeup<\/a><\/p>",
+              "ins_txt": "Wearing Brow Lifting Wax"
+            }
+          },
+          "51c25892-a6e4-4e9c-ac30-d1c7575aaf51": {
+            "type": "custom-card",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Screen_Shot_2022-02-17_at_7.54.19_AM.png",
+              "inst_txt_anc": "<p><a href=\"https:\/\/www.instagram.com\/courtneybaldwin_\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/courtneybaldwin_\/\">@courtneybaldwin_<\/a><\/p>",
+              "ins_txt": "Wearing Brow Lifting Wax"
+            }
+          },
+          "4ddf195c-0df3-49dc-8da6-0e387a27a30f": {
+            "type": "custom-card",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Screen_Shot_2022-02-17_at_8.10.15_AM.png",
+              "inst_txt_anc": "<p><a href=\"https:\/\/www.instagram.com\/kimberjaynes\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/kimberjaynes\/\">@kimberjaynes<\/a><\/p>",
+              "ins_txt": "Ultimate Brow Stencil Kit"
+            }
+          }
+        },
+        "block_order": [
+          "2930405b-9660-488d-b3a0-587c04141552",
+          "ecf3e7fd-fe30-493c-a3f6-f43a0b906258",
+          "51c25892-a6e4-4e9c-ac30-d1c7575aaf51",
+          "4ddf195c-0df3-49dc-8da6-0e387a27a30f"
+        ],
+        "settings": {
+          "section_title": "Styled By You",
+          "sub_txt": "See how our #teamtrio styles our collection of<br> products to create their best brows."
+        }
+      },
+      "prod-spl-001": {
+        "type": "prod-spl-001",
+        "blocks": {
+          "8b1c2da7-30f5-42f8-8e6e-47c1658aff0c": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Place stencil on brow using a widened two finger hold, using either the short or long length guide."
+            }
+          },
+          "14e8e905-d83f-47dc-b183-02ecaa520973": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Gently tap the sponge into the pomade. Tap the sponge into the lid of the pomade to remove any excess product."
+            }
+          },
+          "7499479e-fbf2-4978-9cf5-630789ab30ff": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Apply using a tapping motion starting at the tail of the brow."
+            }
+          },
+          "16c58546-5599-43ee-9394-72fd231082f2": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Wipe stencil off and flip the stencil. Follow previous step on the other brow."
+            }
+          },
+          "de36d8bc-47cf-4264-ac7a-b98e77ea8bc0": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Use the spoolie end of the sponge brush to blend the pomade (especially at the front of the eyebrow for a softer look)."
+            }
+          }
+        },
+        "block_order": [
+          "8b1c2da7-30f5-42f8-8e6e-47c1658aff0c",
+          "14e8e905-d83f-47dc-b183-02ecaa520973",
+          "7499479e-fbf2-4978-9cf5-630789ab30ff",
+          "16c58546-5599-43ee-9394-72fd231082f2",
+          "de36d8bc-47cf-4264-ac7a-b98e77ea8bc0"
+        ],
+        "settings": {
+          "title": "How It Works",
+          "sub_title": "step by step",
+          "mp4_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Untitled_3_1.mp4?v=1637777737"
+        }
+      },
+      "prod-spl-002": {
+        "type": "prod-spl-002",
+        "blocks": {
+          "ac1c3b08-61df-456e-9681-3267c984adbd": {
+            "type": "block",
+            "settings": {
+              "point_txt": "what’s included",
+              "point_bdy": "<br><b>12 Stencils <\/b>:Kit includes 12 stencils. 4 regular arch, 4 low arch, and 4 high arch options, so you’ll always find your perfect brow! Stencil designs include a 2 in 1 length choice, so that whether you have a more lengthened brow, or a petite brow, we have you covered! Each stencil was created with thousands of brows in mind from experience in the permanent makeup industry.<br>\n\n<br><b>Pomade :<\/b> 36 hour wear formula, our pomade is smooth, creamy, waterproof, smudge-proof, and buildable so you can alternate between natural looking day time brows, to filled in night time glam brows. Pomade is beautifully blend-able until it dries. If used daily, each jar will last around 3 months. <br>\n \n<br><b>Dual Ended Signature Sponge Brush :<\/b>\nApply and blend with one simple tool.\nPerfectly bouncy, washable sponge brush (bye-bye bacteria!) is specialized to apply the perfect amount of pomade according to your desired density. Small enough for a precise application. <br>\n\n<br>All enclosed in a <b>zipper pouch<\/b> for your beauty drawer or handbag.<br>"
+            }
+          },
+          "44396f45-7f1a-4220-a2b9-1d62d2ff3bbd": {
+            "type": "block",
+            "disabled": true,
+            "settings": {
+              "point_txt": "about our stencils",
+              "point_bdy": "The Brow Trio founder Bree Olson created the stencils when she was a micro-blading artist in Southern California. She would use the stencils to pre-draw clients' brows before permanent makeup. Each stencil was designed with thousands of brows in mind from experience in the permanent makeup industry."
+            }
+          },
+          "3f6572d9-12a7-4353-b1fd-7413ef4c3e6f": {
+            "type": "block",
+            "settings": {
+              "point_txt": "best paired with products",
+              "point_bdy": "We recommend following our ultimate brow stencil kit with our brow swipe pen to add extra texture. At the end of your routine use our brow gel or brow lifting wax to hold your brows in place all day."
+            }
+          },
+          "98bd8261-d1b2-463c-b18d-17a512d0335d": {
+            "type": "block",
+            "settings": {
+              "point_txt": "frequent questions",
+              "point_bdy": "<b><br>How do I know which stencil is best for me?<\/b><br>\n\n <br>The stencil that incorporates the most of your brow hair will be the correct one. If you have little to no brow hair, you can be more flexible with your stencil choice.<br>\n\n<b><br>How can I get the most natural look while using the brow trio? <\/b><br>\n\n <br>Not filling in the front with too much pomade, and blending the front is key to a natural looking filled in brow.<br>\n\n <b><br>How do I know which shade to choose?<\/b><br>\n\n <br>Please take our color match quiz located on our website. Alternatively, you can email a picture of your brows to info@thebrowtrio.com and one of our color match specialists can recommend a shade for you.<br>\n\n <b><br>How often, and how do I clean the sponge?<\/b><br>\n\n <br>Sponge cleansing is advised weekly to avoid product buildup.<br>\n\n <br>This can be done by running the sponge under water for 1 minute, adding a little soap, and pomade will flake from sponge. Our signature sponge cleanser is great for this, as it has a textured mat inside the lid to help remove pomade.<br>\n\n <b><br>How do I get both brows as symmetrical as possible?<\/b><br>\n\n <br>After applying pomade to one brow, turn the stencil on its side and line up the bottom of both brows with the stencil. Press the stencil into the skin lightly to create an indentation. This will create a guide of where to start the other eyebrow for a balanced look.<br>\n\n <b><br>How long will my application last?<\/b><br>\n\n <br>Although the formula is waterproof and smudge proof, daily removal and application is advised. We do have many customers that wear the application for 2-3 days at a time.<br>\n\n <b><br>How do I clean the pomade from the stencils?<\/b><br>\n\n<br>After each side, wipe the pomade from the stencil with a tissue. If pomade has dried on the stencil, remove with a makeup wipe.<br>"
+            }
+          }
+        },
+        "block_order": [
+          "ac1c3b08-61df-456e-9681-3267c984adbd",
+          "44396f45-7f1a-4220-a2b9-1d62d2ff3bbd",
+          "3f6572d9-12a7-4353-b1fd-7413ef4c3e6f",
+          "98bd8261-d1b2-463c-b18d-17a512d0335d"
+        ],
+        "settings": {
+          "img2": "shopify:\/\/shop_images\/screen-01.png",
+          "title": "Pairs Well With",
+          "product": "brow-swipe-pen"
+        }
+      },
+      "trio-methods": {
+        "type": "trio-methods",
+        "blocks": {
+          "f81b57f7-3079-4eff-928b-69b25864151f": {
+            "type": "block",
+            "settings": {
+              "point_hd": "1. Shape",
+              "point_txt": "It is important to define the shape you desire for your brows and then decide how you want to go about creating or defining your shape. To do this you can use grooming tools, pomades, stencils, brow pens and pencils."
+            }
+          },
+          "e47a14f6-de63-4037-bc87-6d6ff4bf704d": {
+            "type": "block",
+            "settings": {
+              "point_hd": "2. Texturize",
+              "point_txt": "It is time to add texture to create a 3-dimensional look. Even if you don’t have a lot of hair to work with, there are ways to create dreamy depth. To add texture, create realistic hair strokes and shading using our brow pens and pencils."
+            }
+          },
+          "3315f723-e05a-458d-ada6-c861446545fa": {
+            "type": "block",
+            "settings": {
+              "point_hd": "3. Set",
+              "point_txt": "Once your brows have been filled in and texturized, it’s time to make sure they last. End your routine by setting your brows. Use our brow wax or gel to add lift, fluff, emphasize texture and hold your look in place.\n\nWant to have some fun? You can intensify your brow look with glowing highlighters in an array of shades."
+            }
+          }
+        },
+        "block_order": [
+          "f81b57f7-3079-4eff-928b-69b25864151f",
+          "e47a14f6-de63-4037-bc87-6d6ff4bf704d",
+          "3315f723-e05a-458d-ada6-c861446545fa"
+        ],
+        "settings": {
+          "title": "The Trio Method",
+          "desc": "We’ve created a simple 3 step routine that can be customized to create your best brows that are uniquely yours. This method can be followed using different combinations of our proucts depending on brow needs and goals.",
+          "img": "shopify:\/\/shop_images\/DSC05587-Editcopy.jpg",
+          "link_txt": "build your routine",
+          "link": "https:\/\/www.thebrowtrio.com\/collections\/shop"
+        }
+      },
+      "founder": {
+        "type": "founder",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/46A8542E-6D52-4A89-9AE6-3E1B685B4982.jpg",
+          "title_f": "Our Founder",
+          "desc_f": "<p>Brow Trio was created by Bree Olson in the spring of 2020 and is very much a pandemic success story. Bree had spent years building one of the most successful eyebrow microblading businesses in Southern California. Living eyebrows day in and day out exposed Bree to her client’s daily eyebrow frustrations. The eyebrow products that women needed didn’t exist or required expert makeup techniques which led women to seek out expensive permanent solutions, like microblading.<\/p><p>With the closure of her business due to Covid-19 restrictions, Bree set out to build a business that gave women the products that THEY needed. Products that were easy to use, and didn’t require permanent procedures. Products that give ALL women the confidence of beautiful brows. Boom! Brow Trio was born. An eyebrow first makeup brand focused on giving women inexpensive, innovative industry-leading eyebrow products. Products that women truly want.<\/p>",
+          "title_m": "Mission",
+          "desc_m": "We believe brows are personal. Our products are designed to meet you where you are, to celebrate your brows and to emphasize what makes your brows unique. Brows are not meant to be perfect and there isn’t one right way to do them. Fill them in, fluff them, highlight them, the options are endless. We hope our products bring you confidence and help you see just how beautiful you already are.",
+          "title_p": "Our Products",
+          "desc_p": "Our products are cruelty-free and vegan and formulated to emphasize what makes your brows unique. Our pomades, pens and pencils are beautifully pigmented and designed for a wide range of hair shades, and great for all skin tones."
+        }
+      },
+      "1658171876f36f8e57": {
+        "type": "001-ind-ban",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/Screen_Shot_2022-08-11_at_8.58.53_AM.png",
+          "title1": "",
+          "title2": "",
+          "subtitle1": "",
+          "btntxt1": "",
+          "btnurl1": ""
+        }
+      },
+      "1658171884909bc913": {
+        "type": "002-rich",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/h-banner-1.jpg",
+          "title1": "OUR PHILOSOPHY",
+          "subtitle1": "Trio Beauty is an evolving beauty collection that <br>centers on the power of <i>transformation<\/i>.",
+          "btntxt1": "learn more",
+          "btnurl1": "shopify:\/\/products\/berry-browband"
+        }
+      },
+      "165817199733ca6242": {
+        "type": "003-split",
+        "disabled": true,
+        "blocks": {
+          "7afe5731-d3d6-4711-b143-8fb05966e025": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_37-min.jpg"
+            }
+          },
+          "0d1ba9e5-5be2-4ac2-a4b8-2d4509ff7e20": {
+            "type": "card",
+            "settings": {
+              "title1": "Home of the Trending Brow Trio",
+              "subtitle1": "Designed to guide you to create your best brow shape. Our most popular brow kit comes with 12 stencils options, waterproof and smudge-proof pomade and our signature sponge brush.",
+              "btntxt1": "SHOP THE KIT",
+              "btnurl1": "shopify:\/\/products\/brow-highlighter"
+            }
+          }
+        },
+        "block_order": [
+          "7afe5731-d3d6-4711-b143-8fb05966e025",
+          "0d1ba9e5-5be2-4ac2-a4b8-2d4509ff7e20"
+        ],
+        "settings": {
+        }
+      },
+      "1658172016a3a6a273": {
+        "type": "004-logos",
+        "blocks": {
+          "6d212f22-f563-4e86-9a7c-6c5f9042ee19": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Bustle_logo_2020_1.png"
+            }
+          },
+          "820f92b2-4ece-4ef6-a9d4-dac80f3c8f58": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/1024px-Marie_Claire_Magazine_logo_1.png"
+            }
+          }
+        },
+        "block_order": [
+          "6d212f22-f563-4e86-9a7c-6c5f9042ee19",
+          "820f92b2-4ece-4ef6-a9d4-dac80f3c8f58"
+        ],
+        "settings": {
+          "title1": "Featured In"
+        }
+      },
+      "1658172034744aa17b": {
+        "type": "005-trending",
+        "blocks": {
+          "a75a0bae-4185-4e4e-b97c-3000ef7feb43": {
+            "type": "pr",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/pomades8.jpg",
+              "title1": "The Brow Trio :",
+              "subtitle1": "Stencil Kit",
+              "desc": "This before and after was created using our Brow Trio : Stencil Kit with pomade in the shade medium brown.",
+              "btntxt1": "shop the kit",
+              "btnurl1": "shopify:\/\/pages\/our-story"
+            }
+          },
+          "73c09ab9-a5e8-4b31-9fd3-9e5e30514c33": {
+            "type": "pr",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/mediumbrown2.jpg",
+              "title1": "The Brow Trio :",
+              "subtitle1": "Stencil Kit",
+              "desc": "This before and after was created using our Brow Trio : Stencil Kit with pomade in the shade medium brown.",
+              "btntxt1": "SHOP THE KIT",
+              "btnurl1": ""
+            }
+          },
+          "c4ef1e3a-57a2-4bad-b1b4-239b1f92c006": {
+            "type": "pr",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/caramel.jpg",
+              "title1": "The Brow Trio:",
+              "subtitle1": "Stencil Kit",
+              "desc": "This before and after was created using our Brow Trio : Stencil Kit with pomade in the shade medium brown.",
+              "btntxt1": "Shop the Kit",
+              "btnurl1": ""
+            }
+          }
+        },
+        "block_order": [
+          "a75a0bae-4185-4e4e-b97c-3000ef7feb43",
+          "73c09ab9-a5e8-4b31-9fd3-9e5e30514c33",
+          "c4ef1e3a-57a2-4bad-b1b4-239b1f92c006"
+        ],
+        "settings": {
+          "title": "Explore Our Transformations"
+        }
+      },
+      "1658172062e1fde5ea": {
+        "type": "003-split",
+        "disabled": true,
+        "blocks": {
+          "6dd3eea6-ea2e-4425-9b09-3966da20bdb6": {
+            "type": "card",
+            "settings": {
+              "title1": "The ultimate brow metamorphosis",
+              "subtitle1": "The Butterfly Brow Trio provides the ultimate brow metamorphosis, allowing you to instantly recreate the trending lamination look without the commitment of a semi-permanent salon treatment.",
+              "btntxt1": "SHOP THE KIT",
+              "btnurl1": ""
+            }
+          },
+          "7d00cfe6-64e2-411c-ace2-bc01668d1968": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_36-min.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "6dd3eea6-ea2e-4425-9b09-3966da20bdb6",
+          "7d00cfe6-64e2-411c-ace2-bc01668d1968"
+        ],
+        "settings": {
+        }
+      },
+      "165817207228dafa74": {
+        "type": "003-split",
+        "disabled": true,
+        "blocks": {
+          "f0a1d583-700a-402a-bf62-0120d6d041b8": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle-38-min.jpg"
+            }
+          },
+          "92384c68-fbbd-4bca-962c-d8cd7774342e": {
+            "type": "card",
+            "settings": {
+              "title1": "Beauty Is Yours To Define",
+              "subtitle1": "We take on many forms that make us feel powerful, beautiful, and true to who we are. At Trio Beauty we strive to create a community that celebrates.",
+              "btntxt1": "Our Story",
+              "btnurl1": ""
+            }
+          }
+        },
+        "block_order": [
+          "f0a1d583-700a-402a-bf62-0120d6d041b8",
+          "92384c68-fbbd-4bca-962c-d8cd7774342e"
+        ],
+        "settings": {
+        }
+      },
+      "16581720778bcf725a": {
+        "type": "006-overl",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/Screen_Shot_2022-08-11_at_8.58.53_AM.png",
+          "title1": "Team Trio :",
+          "title2": "Be a part of our team. <span><\/span>Give 10 and get 10 by refering a friend.",
+          "btntxt1": "get started",
+          "btnurl1": ""
+        }
+      },
+      "1658172133b2b6bfff": {
+        "type": "007-insta",
+        "blocks": {
+          "abd6f994-9a1c-4883-a7ee-d65940590906": {
+            "type": "post",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/insta-1.jpg",
+              "url": "#"
+            }
+          },
+          "e959d974-8a7a-4753-bcda-60da646cb61c": {
+            "type": "post",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/insta-2.jpg",
+              "url": "#"
+            }
+          },
+          "add4930c-2b5c-4946-844d-6c6db87a6aab": {
+            "type": "post",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13-min_1.jpg",
+              "url": ""
+            }
+          },
+          "2c7c7f53-4946-4473-95d5-9f2170d8efb2": {
+            "type": "post",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_14-min.jpg",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "abd6f994-9a1c-4883-a7ee-d65940590906",
+          "e959d974-8a7a-4753-bcda-60da646cb61c",
+          "add4930c-2b5c-4946-844d-6c6db87a6aab",
+          "2c7c7f53-4946-4473-95d5-9f2170d8efb2"
+        ],
+        "settings": {
+          "title1": "Find us on insta",
+          "btntxt1": "@triobeautyco",
+          "btnurl1": ""
+        }
+      },
+      "000-pdp-icons-sn": {
+        "type": "000-pdp-icons-sn",
+        "blocks": {
+          "aa6385fa-23e2-4bd5-8f75-1b3177cda299": {
+            "type": "icon",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Group-removebg-preview.png",
+              "ictxt": "vegan"
+            }
+          },
+          "0646c3f2-0738-4355-b436-97864cdb7dfb": {
+            "type": "icon",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/crueltyfree_1-removebg-preview.png",
+              "ictxt": "cruelty-free"
+            }
+          },
+          "26655082-992f-4468-8248-e60f517b6bef": {
+            "type": "icon",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/shell_1-removebg-preview.png",
+              "ictxt": "Waterproof"
+            }
+          }
+        },
+        "block_order": [
+          "aa6385fa-23e2-4bd5-8f75-1b3177cda299",
+          "0646c3f2-0738-4355-b436-97864cdb7dfb",
+          "26655082-992f-4468-8248-e60f517b6bef"
+        ],
+        "settings": {
+        }
+      },
+      "002-pdp-spl": {
+        "type": "002-pdp-spl",
+        "blocks": {
+          "8935381a-2ad8-440a-8c64-147e3958ad90": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Place stencil on brow using a widened two finger hold, using either the short or long length guide."
+            }
+          },
+          "b927979c-0cde-4cbb-9c2d-9bbc196fdff7": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Gently tap the sponge into the pomade. Tap the sponge into the lid of the pomade to remove any excess product."
+            }
+          },
+          "1f11348f-b990-49d5-b172-58abe3faddb2": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Apply using a tapping motion starting at the tail of the brow."
+            }
+          },
+          "675aabc0-2b0a-47ff-b09d-b1376d7e3e31": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Wipe stencil off and flip the stencil. Follow previous step on the other brow."
+            }
+          },
+          "78541286-3751-45aa-a113-2cfa6eab7458": {
+            "type": "block",
+            "settings": {
+              "point_txt": "Use the spoolie end of the sponge brush to blend the pomade (especially at the front of the eyebrow for a softer look)."
+            }
+          }
+        },
+        "block_order": [
+          "8935381a-2ad8-440a-8c64-147e3958ad90",
+          "b927979c-0cde-4cbb-9c2d-9bbc196fdff7",
+          "1f11348f-b990-49d5-b172-58abe3faddb2",
+          "675aabc0-2b0a-47ff-b09d-b1376d7e3e31",
+          "78541286-3751-45aa-a113-2cfa6eab7458"
+        ],
+        "settings": {
+          "title": "How It Works",
+          "sub_title": "step by stepD",
+          "img": "shopify:\/\/shop_images\/Rectangle_55-min.png",
+          "mp4_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0417\/9004\/6370\/files\/Untitled_3_1.mp4?v=1637777737"
+        }
+      },
+      "002-pdp-line": {
+        "type": "002-pdp-line",
+        "settings": {
+          "title1": "TRIO TIP :",
+          "subtitle1": "You define your beauty. Wear makeup the way you want and show yourself to the world with courage."
+        }
+      },
+      "003-pdp-faq": {
+        "type": "003-pdp-faq",
+        "blocks": {
+          "5434dead-fa15-4957-8e4a-8d86f8898972": {
+            "type": "block",
+            "settings": {
+              "qtxt": "what's included?",
+              "atxt": "<b>Pomade : <\/b>36 hour wear formula, our pomade is smooth, creamy,\nwaterproof, smudge-proof, and buildable so you can alternate\nbetween natural looking day time brows, to filled in night\ntime glam brows. Pomade is beautifully blend-able until it\ndries. If used daily, each jar will last around 3 months."
+            }
+          },
+          "e1056baa-72bd-44bb-adb0-99e5ac719fb2": {
+            "type": "block",
+            "settings": {
+              "qtxt": "what's included?",
+              "atxt": "<b>Dual Ended Signature Sponge Brush : <\/b>Apply and blend with one\nsimple tool. Perfectly bouncy, washable sponge brush (bye-\nbye bacteria!) is specialized to apply the perfect amount of\npomade according to your desired density. Small enough for a\nprecise application."
+            }
+          },
+          "a5240708-ae8e-4790-b467-5ff7fe3e343f": {
+            "type": "block",
+            "settings": {
+              "qtxt": "what's included?",
+              "atxt": "All enclosed in a <b>zipper pouch <\/b> for your beauty drawer or\nhandbag."
+            }
+          }
+        },
+        "block_order": [
+          "5434dead-fa15-4957-8e4a-8d86f8898972",
+          "e1056baa-72bd-44bb-adb0-99e5ac719fb2",
+          "a5240708-ae8e-4790-b467-5ff7fe3e343f"
+        ],
+        "settings": {
+          "title": "Frequently Asked Questions",
+          "img": "shopify:\/\/shop_images\/Rectangle_55-min.png"
+        }
+      },
+      "001-ph-slit": {
+        "type": "001-ph-slit",
+        "blocks": {
+          "050c8242-2df7-4ee6-9716-564b84d75dde": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/IMG_1594_c.jpg"
+            }
+          },
+          "5afdb741-cef4-499f-9276-9ff00fa6cbd0": {
+            "type": "card",
+            "settings": {
+              "title1": "Our Philosophy",
+              "subtitle1": "Trio Beauty is an evolving beauty collection that powers individuality, revealing the radiance that lies within each of us.\n<br><br>\nBeginning with our signature Brow Trio Kit, each Trio Beauty essential is envisioned as a means to define one's own beauty, elevating makeup to an intuitive art form.\n<br><br>\n Our journey began in 2020 with the introduction of the signature Brow Trio, a three-part stencil kit developed to create one's dream brow shape regardless of their natural eyebrow texture or shape. To this day, the Brow Trio defines our core principle — to express inner radiance through transformative beauty."
+            }
+          }
+        },
+        "block_order": [
+          "050c8242-2df7-4ee6-9716-564b84d75dde",
+          "5afdb741-cef4-499f-9276-9ff00fa6cbd0"
+        ],
+        "settings": {
+          "titleb": "Express your inner radiance through <i>transformative <\/i>  beauty."
+        }
+      },
+      "002-ph-img": {
+        "type": "002-ph-img",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/Screen_Shot_2022-08-11_at_8.58.53_AM.png"
+        }
+      },
+      "003-ph-rich": {
+        "type": "003-ph-rich",
+        "settings": {
+          "title1": "Our Mission",
+          "subtitle1": "Like a butterfly’s metamorphosis, it has taken us time to discover who we are and what we want to become.  Our journey began in 2020 with the introduction of the signature Brow Trio, a three-part stencil kit developed to create one's dream brow shape regardless of their natural eyebrow texture or shape. To this day, the Brow Trio defines our core principle — to express inner radiance through transformative beauty."
+        }
+      },
+      "004-ph-slit": {
+        "type": "004-ph-slit",
+        "blocks": {
+          "6fc5e056-83b8-42fb-8191-5d41b683c671": {
+            "type": "card",
+            "settings": {
+              "title1": "Our Founder",
+              "subtitle1": "Briana Olson grew up in Tasmania, Australia, surrounded by the ocean and the beauty of nature. Beginning at an early age, she explored makeup as a creative medium, and quickly realized its potential for artistry, experimentation, and self-expression.\n<br><br>\nOlson's early penchant for beauty led her to found La Perma Artistry, which soon became one of the most successful eyebrow microblading businesses in Southern California. After closing La Perma in 2020 to pandemic setbacks, she set her sights on creating thoughtful, personal products developed to enliven her client's beauty regimens. Thus, Olson founded Trio Beauty in 2020, centered upon the belief that the world of beauty can offer a profound experience of self-care."
+            }
+          },
+          "334ea1fc-018f-4524-a50c-aaceb67fdf37": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Photo_May_03_7_09_38_PM.jpg"
+            }
+          },
+          "6b0a8550-e516-4e40-bcd4-b993ed938d65": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "img": "shopify:\/\/shop_images\/IMG_1653_c.jpg"
+            }
+          },
+          "5553a479-b466-46a1-98b3-be3ebc4714c2": {
+            "type": "card",
+            "disabled": true,
+            "settings": {
+              "title1": "Our Philosophy",
+              "subtitle1": "At Trio Beauty we explore the magic of your daily beauty routine."
+            }
+          }
+        },
+        "block_order": [
+          "6fc5e056-83b8-42fb-8191-5d41b683c671",
+          "334ea1fc-018f-4524-a50c-aaceb67fdf37",
+          "6b0a8550-e516-4e40-bcd4-b993ed938d65",
+          "5553a479-b466-46a1-98b3-be3ebc4714c2"
+        ],
+        "settings": {
+          "titleb": ""
+        }
+      },
+      "001-collections-template": {
+        "type": "001-collections-template",
+        "settings": {
+          "subtitle": "Shape & define your brows.",
+          "addto": "add to bag"
+        }
+      }
+    },
+    "content_for_index": [
+      "16428208028e8b4f18",
+      "1633002668036c37df",
+      "16412224691c03266a",
+      "1641223831ec3fbbdd",
+      "1633001847aee607aa",
+      "1634847714f8405b0e",
+      "1641928109fe3d61b7",
+      "1642015245454ef639",
+      "16419298711b7899be",
+      "1634144035d9b0ac48",
+      "1634142925a1bc04b6",
+      "163300809318b86fc9",
+      "1658171876f36f8e57",
+      "1658171884909bc913",
+      "1633005646717a7a20",
+      "16419298755d72bba4",
+      "165817199733ca6242",
+      "1658172016a3a6a273",
+      "16339741989d2f3076",
+      "1658172034744aa17b",
+      "163580341801e8f740",
+      "16581720778bcf725a",
+      "1658172062e1fde5ea",
+      "165817207228dafa74",
+      "1658172133b2b6bfff"
+    ],
+    "blocks": {
+      "27529884595f3fb177": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": true
+        }
+      }
+    }
+  },
+  "presets": {
+    "Beauty": {
+      "color--accent": "#ffd7d7",
+      "color-text": "#212121",
+      "color--alternative": "#ffffff",
+      "color-page-bg": "#ffffff",
+      "color-panel-bg": "#fcfbfc",
+      "color-border": "#e0e0e0",
+      "color-button": "#ffffff",
+      "color-button-bg": "#212121",
+      "color-header-bg": "#ffeff0",
+      "color-header": "#212121",
+      "color-header-cart": "#272727",
+      "bg-color--footer": "#ffeff0",
+      "color--footer": "#212121",
+      "color-slider-caption": "#212121",
+      "color-slider-caption-bg": "#ffffff",
+      "color-slider-button": "#ffffff",
+      "color-slider-button-bg": "#212121",
+      "color-slider-nav": "#212121",
+      "color-tabs-accordions": "#f7f7f7",
+      "typography--heading": "roboto_n5",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "small",
+      "typography--accent": "karla_n4",
+      "typography--paragraph": "roboto_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "transparent-menu": false,
+            "header-account-show": true,
+            "cart--icon": "text",
+            "header-menu-center": true,
+            "menu": "main-menu",
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "header-logo-center": true,
+            "logo-height": 35
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "footer--about": {
+              "type": "about",
+              "settings": {
+                "about-title": "Store",
+                "text": "<p>© Your brand name here<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "footer--menu": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer--subscribe": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "Subscribe",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "footer--about",
+            "footer--menu",
+            "footer--subscribe"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product-breadcrumbs-show": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "smart-payment-button": true,
+            "product-unavailable-form-show": true,
+            "low-in-stock-amount": 0,
+            "image-zoom-enabled": true,
+            "loop-enabled": false,
+            "cart-form-position": "left",
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": "",
+            "product-share-show": true,
+            "product-share-twitter": true,
+            "product-share-facebook": true,
+            "product-share-pinterest": true
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collections-breadcrumbs-show": true,
+            "collections-tags-show": true,
+            "show-title": false,
+            "collections-products-per-row": "4",
+            "mobile-items-per-row": "2"
+          }
+        },
+        "1519177052247": {
+          "type": "slideshow",
+          "blocks": {
+            "1519177052247-0": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1519177052247-1": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1519177052247-0",
+            "1519177052247-1"
+          ],
+          "settings": {
+            "autoplay": true,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1519177108222": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "right",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": false,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177181912": {
+          "type": "featured-collection",
+          "settings": {
+            "background-color": "none",
+            "home-product-slider-collection": "",
+            "max_products": 12
+          }
+        },
+        "1519177213210": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": true,
+            "alternative-color": true,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177316120": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1521155965634": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1521155972652": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button"
+          }
+        },
+        "1521155992953": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br\/>San Francisco<br\/>CA 94108, USA<br\/><br\/>(555) 555-5555<\/p>",
+            "hours": "<p>Monday - Friday<br\/>10am - 6pm<br\/><br\/>Saturday - Sunday<br\/>12pm - 5pm<\/p>"
+          }
+        },
+        "1521156071253": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": true,
+            "background-color": "accent",
+            "alternative-color": false,
+            "text": "Add your announcement message"
+          }
+        },
+        "1599542427196": {
+          "type": "framework--featured-blog",
+          "settings": {
+            "background-color": "none",
+            "blog-heading": "Blog posts",
+            "blog": "news",
+            "tag-select": "pinned",
+            "show-date": true,
+            "show-excerpt": true,
+            "view-more-text": "View more"
+          }
+        },
+        "1605598890c8501c96": {
+          "type": "framework--image-text-overlay",
+          "blocks": {
+            "1605598890c8501c96-0": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": true,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-1": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-2": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-3": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598890c8501c96-0",
+            "1605598890c8501c96-1",
+            "1605598890c8501c96-2",
+            "1605598890c8501c96-3"
+          ],
+          "settings": {
+            "text-style": "light-with-overlay",
+            "background-color": "none",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "mobile-width": "2",
+            "title": "Grid with overlay",
+            "subtitle": "",
+            "link-text": ""
+          }
+        },
+        "1605598898e2d908c6": {
+          "type": "framework--image-with-text-below",
+          "blocks": {
+            "1605598898e2d908c6-0": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-1": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-2": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-3": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598898e2d908c6-0",
+            "1605598898e2d908c6-1",
+            "1605598898e2d908c6-2",
+            "1605598898e2d908c6-3"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "image-width": 0,
+            "mobile-width": "2",
+            "title": "Grid with text below",
+            "subtitle": "",
+            "link-text": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1519177052247",
+        "1519177181912",
+        "1519177108222",
+        "1605598890c8501c96",
+        "1519177213210",
+        "1605598898e2d908c6",
+        "1521155965634",
+        "1521155972652",
+        "1521156071253",
+        "1599542427196",
+        "1521155992953",
+        "1519177316120"
+      ]
+    },
+    "Adorn": {
+      "color--accent": "#f7f2f2",
+      "color-text": "#212121",
+      "color--alternative": "#ffffff",
+      "color-page-bg": "#ffffff",
+      "color-panel-bg": "#f7f7f7",
+      "color-border": "#e0e0e0",
+      "color-button": "#ffffff",
+      "color-button-bg": "#212121",
+      "color-header-bg": "#ffffff",
+      "color-header": "#212121",
+      "color-header-cart": "#212121",
+      "bg-color--footer": "#f7f2f2",
+      "color--footer": "#212121",
+      "color-slider-caption": "#212121",
+      "color-slider-caption-bg": "#ffffff",
+      "color-slider-button": "#ffffff",
+      "color-slider-button-bg": "#212121",
+      "color-slider-nav": "#212121",
+      "color-tabs-accordions": "#e0e0e0",
+      "typography--heading": "itc_caslon_no_224_n4",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "large",
+      "typography--accent": "avenir_next_n4",
+      "typography--paragraph": "avenir_next_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "transparent-menu": false,
+            "header-account-show": true,
+            "cart--icon": "text",
+            "header-menu-center": true,
+            "menu": "main-menu",
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "header-logo-center": true,
+            "logo-height": 35
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "footer--about": {
+              "type": "about",
+              "settings": {
+                "about-title": "Store",
+                "text": "<p>© Your brand name here<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "footer--menu": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer--subscribe": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "Subscribe",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "footer--about",
+            "footer--menu",
+            "footer--subscribe"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product-breadcrumbs-show": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "smart-payment-button": true,
+            "product-unavailable-form-show": true,
+            "low-in-stock-amount": 0,
+            "image-zoom-enabled": true,
+            "loop-enabled": false,
+            "cart-form-position": "left",
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": "",
+            "product-share-show": true,
+            "product-share-twitter": true,
+            "product-share-facebook": true,
+            "product-share-pinterest": true
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collections-breadcrumbs-show": true,
+            "collections-tags-show": true,
+            "show-title": false,
+            "collections-products-per-row": "4",
+            "mobile-items-per-row": "2"
+          }
+        },
+        "1519177052247": {
+          "type": "slideshow",
+          "blocks": {
+            "1519177052247-0": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1519177052247-1": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1519177052247-0",
+            "1519177052247-1"
+          ],
+          "settings": {
+            "autoplay": true,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1519177108222": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "right",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": false,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177181912": {
+          "type": "featured-collection",
+          "settings": {
+            "background-color": "none",
+            "home-product-slider-collection": "",
+            "max_products": 12
+          }
+        },
+        "1519177213210": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": true,
+            "alternative-color": true,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177316120": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1521155965634": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1521155972652": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button"
+          }
+        },
+        "1521155992953": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br\/>San Francisco<br\/>CA 94108, USA<br\/><br\/>(555) 555-5555<\/p>",
+            "hours": "<p>Monday - Friday<br\/>10am - 6pm<br\/><br\/>Saturday - Sunday<br\/>12pm - 5pm<\/p>"
+          }
+        },
+        "1521156071253": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": true,
+            "background-color": "accent",
+            "alternative-color": false,
+            "text": "Add your announcement message"
+          }
+        },
+        "1599542427196": {
+          "type": "framework--featured-blog",
+          "settings": {
+            "background-color": "none",
+            "blog-heading": "Blog posts",
+            "blog": "news",
+            "tag-select": "pinned",
+            "show-date": true,
+            "show-excerpt": true,
+            "view-more-text": "View more"
+          }
+        },
+        "1605598890c8501c96": {
+          "type": "framework--image-text-overlay",
+          "blocks": {
+            "1605598890c8501c96-0": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": true,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-1": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-2": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-3": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598890c8501c96-0",
+            "1605598890c8501c96-1",
+            "1605598890c8501c96-2",
+            "1605598890c8501c96-3"
+          ],
+          "settings": {
+            "text-style": "light-with-overlay",
+            "background-color": "none",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "mobile-width": "2",
+            "title": "Grid with overlay",
+            "subtitle": "",
+            "link-text": ""
+          }
+        },
+        "1605598898e2d908c6": {
+          "type": "framework--image-with-text-below",
+          "blocks": {
+            "1605598898e2d908c6-0": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-1": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-2": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-3": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598898e2d908c6-0",
+            "1605598898e2d908c6-1",
+            "1605598898e2d908c6-2",
+            "1605598898e2d908c6-3"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "image-width": 0,
+            "mobile-width": "2",
+            "title": "Grid with text below",
+            "subtitle": "",
+            "link-text": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1519177052247",
+        "1519177181912",
+        "1519177108222",
+        "1605598890c8501c96",
+        "1519177213210",
+        "1605598898e2d908c6",
+        "1521155965634",
+        "1521155972652",
+        "1521156071253",
+        "1599542427196",
+        "1521155992953",
+        "1519177316120"
+      ]
+    },
+    "Summer": {
+      "color--accent": "#ffe0c8",
+      "color-text": "#212121",
+      "color--alternative": "#ffffff",
+      "color-page-bg": "#ffffff",
+      "color-panel-bg": "#f7f7f7",
+      "color-border": "#e0e0e0",
+      "color-button": "#ffffff",
+      "color-button-bg": "#212121",
+      "color-header-bg": "#f7f7f7",
+      "color-header": "#212121",
+      "color-header-cart": "#212121",
+      "bg-color--footer": "#f7f7f7",
+      "color--footer": "#212121",
+      "color-slider-caption": "#212121",
+      "color-slider-caption-bg": "#ffffff",
+      "color-slider-button": "#ffffff",
+      "color-slider-button-bg": "#212121",
+      "color-slider-nav": "#212121",
+      "color-tabs-accordions": "#e0e0e0",
+      "typography--heading": "gill_sans_nova_n4",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "small",
+      "typography--accent": "gill_sans_nova_n4",
+      "typography--paragraph": "gill_sans_nova_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "transparent-menu": false,
+            "header-account-show": true,
+            "cart--icon": "text",
+            "header-menu-center": true,
+            "menu": "main-menu",
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "header-logo-center": true,
+            "logo-height": 35
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "footer--about": {
+              "type": "about",
+              "settings": {
+                "about-title": "Store",
+                "text": "<p>© Your brand name here<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "footer--menu": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer--subscribe": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "Subscribe",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "footer--about",
+            "footer--menu",
+            "footer--subscribe"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product-breadcrumbs-show": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "smart-payment-button": true,
+            "product-unavailable-form-show": true,
+            "low-in-stock-amount": 0,
+            "image-zoom-enabled": true,
+            "loop-enabled": false,
+            "cart-form-position": "left",
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": "",
+            "product-share-show": true,
+            "product-share-twitter": true,
+            "product-share-facebook": true,
+            "product-share-pinterest": true
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collections-breadcrumbs-show": true,
+            "collections-tags-show": true,
+            "show-title": false,
+            "collections-products-per-row": "4",
+            "mobile-items-per-row": "2"
+          }
+        },
+        "1519177052247": {
+          "type": "slideshow",
+          "blocks": {
+            "1519177052247-0": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1519177052247-1": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1519177052247-0",
+            "1519177052247-1"
+          ],
+          "settings": {
+            "autoplay": true,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1519177108222": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "right",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": false,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177181912": {
+          "type": "featured-collection",
+          "settings": {
+            "background-color": "none",
+            "home-product-slider-collection": "",
+            "max_products": 12
+          }
+        },
+        "1519177213210": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": true,
+            "alternative-color": true,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177316120": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1521155965634": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1521155972652": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button"
+          }
+        },
+        "1521155992953": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br\/>San Francisco<br\/>CA 94108, USA<br\/><br\/>(555) 555-5555<\/p>",
+            "hours": "<p>Monday - Friday<br\/>10am - 6pm<br\/><br\/>Saturday - Sunday<br\/>12pm - 5pm<\/p>"
+          }
+        },
+        "1521156071253": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": true,
+            "background-color": "accent",
+            "alternative-color": false,
+            "text": "Add your announcement message"
+          }
+        },
+        "1599542427196": {
+          "type": "framework--featured-blog",
+          "settings": {
+            "background-color": "none",
+            "blog-heading": "Blog posts",
+            "blog": "news",
+            "tag-select": "pinned",
+            "show-date": true,
+            "show-excerpt": true,
+            "view-more-text": "View more"
+          }
+        },
+        "1605598890c8501c96": {
+          "type": "framework--image-text-overlay",
+          "blocks": {
+            "1605598890c8501c96-0": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": true,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-1": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-2": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-3": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598890c8501c96-0",
+            "1605598890c8501c96-1",
+            "1605598890c8501c96-2",
+            "1605598890c8501c96-3"
+          ],
+          "settings": {
+            "text-style": "light-with-overlay",
+            "background-color": "none",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "mobile-width": "2",
+            "title": "Grid with overlay",
+            "subtitle": "",
+            "link-text": ""
+          }
+        },
+        "1605598898e2d908c6": {
+          "type": "framework--image-with-text-below",
+          "blocks": {
+            "1605598898e2d908c6-0": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-1": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-2": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-3": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598898e2d908c6-0",
+            "1605598898e2d908c6-1",
+            "1605598898e2d908c6-2",
+            "1605598898e2d908c6-3"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "image-width": 0,
+            "mobile-width": "2",
+            "title": "Grid with text below",
+            "subtitle": "",
+            "link-text": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1519177052247",
+        "1519177181912",
+        "1519177108222",
+        "1605598890c8501c96",
+        "1519177213210",
+        "1605598898e2d908c6",
+        "1521155965634",
+        "1521155972652",
+        "1521156071253",
+        "1599542427196",
+        "1521155992953",
+        "1519177316120"
+      ]
+    },
+    "Deli": {
+      "color--accent": "#fb8a68",
+      "color-text": "#212121",
+      "color--alternative": "#ffffff",
+      "color-page-bg": "#ffffff",
+      "color-panel-bg": "#f7f7f7",
+      "color-border": "#e0e0e0",
+      "color-button": "#ffffff",
+      "color-button-bg": "#212121",
+      "color-header-bg": "#fafafa",
+      "color-header": "#212121",
+      "color-header-cart": "#212121",
+      "bg-color--footer": "#f7f7f7",
+      "color--footer": "#212121",
+      "color-slider-caption": "#212121",
+      "color-slider-caption-bg": "#ffffff",
+      "color-slider-button": "#ffffff",
+      "color-slider-button-bg": "#212121",
+      "color-slider-nav": "#212121",
+      "color-tabs-accordions": "#e0e0e0",
+      "typography--heading": "futura_n4",
+      "typography--heading--uppercase": false,
+      "typography--heading--size": "medium",
+      "typography--accent": "karla_n4",
+      "typography--paragraph": "karla_n4",
+      "typography--paragraph--size": "medium",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "transparent-menu": false,
+            "header-account-show": true,
+            "cart--icon": "text",
+            "header-menu-center": true,
+            "menu": "main-menu",
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "header-logo-center": true,
+            "logo-height": 35
+          }
+        },
+        "framework--footer": {
+          "type": "framework--footer",
+          "blocks": {
+            "footer--about": {
+              "type": "about",
+              "settings": {
+                "about-title": "Store",
+                "text": "<p>© Your brand name here<\/p>",
+                "subscribe--show-social-icons": true
+              }
+            },
+            "footer--menu": {
+              "type": "menu",
+              "settings": {
+                "menu-title": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer--subscribe": {
+              "type": "subscribe",
+              "settings": {
+                "newsletter--heading": "Subscribe",
+                "newsletter--info": "<p>Sign up to our mailing list<\/p>",
+                "subscribe--show-newsletter": true
+              }
+            }
+          },
+          "block_order": [
+            "footer--about",
+            "footer--menu",
+            "footer--subscribe"
+          ],
+          "settings": {
+            "show-currency-selector": true,
+            "show-locale-selector": true,
+            "show-payment-icons": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product-breadcrumbs-show": true,
+            "variant-style": "dropdowns",
+            "swatches-enabled": false,
+            "smart-payment-button": true,
+            "product-unavailable-form-show": true,
+            "low-in-stock-amount": 0,
+            "image-zoom-enabled": true,
+            "loop-enabled": false,
+            "cart-form-position": "left",
+            "product-size-chart-enabled": false,
+            "product-size-chart-option": "size",
+            "product-size-chart-page-content": "",
+            "product-share-show": true,
+            "product-share-twitter": true,
+            "product-share-facebook": true,
+            "product-share-pinterest": true
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collections-breadcrumbs-show": true,
+            "collections-tags-show": true,
+            "show-title": false,
+            "collections-products-per-row": "4",
+            "mobile-items-per-row": "2"
+          }
+        },
+        "1519177052247": {
+          "type": "slideshow",
+          "blocks": {
+            "1519177052247-0": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            },
+            "1519177052247-1": {
+              "type": "image",
+              "settings": {
+                "slide-title": "Slideshow",
+                "slide-tagline": "Introduce your store or campaign with this slideshow section.",
+                "slide-link-title": "Link to content",
+                "slide-y-pos": "middle",
+                "slide-x-pos": "left",
+                "slide-text-pos": "text-left"
+              }
+            }
+          },
+          "block_order": [
+            "1519177052247-0",
+            "1519177052247-1"
+          ],
+          "settings": {
+            "autoplay": true,
+            "transition_style": "default",
+            "rotate-frequency-range": 7
+          }
+        },
+        "1519177108222": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "accent",
+            "text-position": "right",
+            "text-width": "small",
+            "overlap": false,
+            "transparent-overlap": false,
+            "alternative-color": true,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": false,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177181912": {
+          "type": "featured-collection",
+          "settings": {
+            "background-color": "none",
+            "home-product-slider-collection": "",
+            "max_products": 12
+          }
+        },
+        "1519177213210": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": true,
+            "background-color": "light",
+            "text-position": "center",
+            "text-width": "large",
+            "overlap": true,
+            "transparent-overlap": true,
+            "alternative-color": true,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "1519177316120": {
+          "type": "framework--newsletter",
+          "settings": {
+            "background-color": "none",
+            "heading": "Subscribe to our newsletter",
+            "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        },
+        "1521155965634": {
+          "type": "framework--featured-text",
+          "settings": {
+            "background-color": "none",
+            "heading": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1521155972652": {
+          "type": "framework--featured-video",
+          "settings": {
+            "video-url": "",
+            "full-width": true,
+            "background-color": "light",
+            "section-height": "regular",
+            "darken-video": true,
+            "alt-text": true,
+            "heading": "",
+            "sub-heading": "Add a subheading here",
+            "button-text": "button"
+          }
+        },
+        "1521155992953": {
+          "type": "framework--map",
+          "settings": {
+            "api-key": "",
+            "map-address": "391 Sutter St, San Francisco",
+            "background-color": "light",
+            "theme": "grayscale",
+            "heading": "Map",
+            "address": "<p>391 Sutter St,<br\/>San Francisco<br\/>CA 94108, USA<br\/><br\/>(555) 555-5555<\/p>",
+            "hours": "<p>Monday - Friday<br\/>10am - 6pm<br\/><br\/>Saturday - Sunday<br\/>12pm - 5pm<\/p>"
+          }
+        },
+        "1521156071253": {
+          "type": "framework--featured-content",
+          "settings": {
+            "full-width": false,
+            "background-color": "light",
+            "text-position": "left",
+            "text-width": "small",
+            "overlap": true,
+            "transparent-overlap": false,
+            "alternative-color": false,
+            "mobile-overlay": true,
+            "image-height": "medium",
+            "parallax-enabled": false,
+            "apply-overlay": true,
+            "title": "Image with Text",
+            "description": "<p>Use a combination of image and text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store<\/p>",
+            "link-text": ""
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "enabled": true,
+            "home-page-only": true,
+            "background-color": "accent",
+            "alternative-color": true,
+            "text": "Add your announcement message"
+          }
+        },
+        "1599542427196": {
+          "type": "framework--featured-blog",
+          "settings": {
+            "background-color": "none",
+            "blog-heading": "Blog posts",
+            "blog": "news",
+            "tag-select": "pinned",
+            "show-date": true,
+            "show-excerpt": true,
+            "view-more-text": "View more"
+          }
+        },
+        "1605598890c8501c96": {
+          "type": "framework--image-text-overlay",
+          "blocks": {
+            "1605598890c8501c96-0": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": true,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-1": {
+              "type": "image",
+              "settings": {
+                "wide": true,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-2": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            },
+            "1605598890c8501c96-3": {
+              "type": "image",
+              "settings": {
+                "wide": false,
+                "tall": false,
+                "retain-ratio": false,
+                "title": "Grid image",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598890c8501c96-0",
+            "1605598890c8501c96-1",
+            "1605598890c8501c96-2",
+            "1605598890c8501c96-3"
+          ],
+          "settings": {
+            "text-style": "light-with-overlay",
+            "background-color": "none",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "mobile-width": "2",
+            "title": "Grid with overlay",
+            "subtitle": "",
+            "link-text": ""
+          }
+        },
+        "1605598898e2d908c6": {
+          "type": "framework--image-with-text-below",
+          "blocks": {
+            "1605598898e2d908c6-0": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-1": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-2": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            },
+            "1605598898e2d908c6-3": {
+              "type": "image",
+              "settings": {
+                "title": "Grid image",
+                "description": "<p>Add your description text here<\/p>",
+                "link-text": "View more"
+              }
+            }
+          },
+          "block_order": [
+            "1605598898e2d908c6-0",
+            "1605598898e2d908c6-1",
+            "1605598898e2d908c6-2",
+            "1605598898e2d908c6-3"
+          ],
+          "settings": {
+            "background-color": "light",
+            "spacing": true,
+            "container-width": 4,
+            "width": 4,
+            "image-width": 0,
+            "mobile-width": "2",
+            "title": "Grid with text below",
+            "subtitle": "",
+            "link-text": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1519177052247",
+        "1519177181912",
+        "1519177108222",
+        "1605598890c8501c96",
+        "1519177213210",
+        "1605598898e2d908c6",
+        "1521155965634",
+        "1521155972652",
+        "1521156071253",
+        "1599542427196",
+        "1521155992953",
+        "1519177316120"
+      ]
+    }
+  }
+}

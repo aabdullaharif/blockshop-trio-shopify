@@ -1,0 +1,59 @@
+<div class="started-wrapper overflow-hidden"
+    style="background: #000 url('{{ section.settings.img | img_url: 'master' }}');background-position: center;background-size: cover;background-repeat: no-repeat;">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column">
+                <div class="content-container text-align-center">
+                    <h2 class="mb-4"><span class="em-ft">{{section.settings.title1}}</span> {{section.settings.title2}}
+                    </h2>
+                    {% if section.settings.btntxt1 != '' %}
+                    <a href="{{section.settings.btnurl1}}" class="btn btn-primary">{{section.settings.btntxt1}}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "006-overl",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+},
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Team Trio :"
+},
+{
+"type": "textarea",
+"id": "title2",
+"label": "title2",
+"default": "Be a part of our team."
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "btntxt1",
+"default": "get started"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "btnurl1"
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "006-overl",
+"category": "custom"
+}
+]
+}
+{% endschema %}

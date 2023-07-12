@@ -1,0 +1,31 @@
+<div class="story-main-banner overflow-hidden">
+    <div class="container-fluid">
+        <div class="queue">
+            <div class="column">
+                <div class="image-wrapper">
+                    <img src="{{ section.settings.img | img_url: 'master' }}" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "002-ph-img",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "002-ph-img",
+"category": "custom"
+}
+]
+}
+{% endschema %}

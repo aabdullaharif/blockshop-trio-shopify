@@ -1,0 +1,61 @@
+<div class="product-box">
+  <div class="box">
+    {% if section.settings.video_banner != blank %}
+    <video  autoplay="" preload="true" muted="" loop="" playsinline=""  class="video-container" id="vid">
+      <source class="source-vid" src="{{ section.settings.video_banner  }}">
+    </video>
+    {% endif %}
+  </div>
+  <div class="box d-flex align-items-center">
+    <div class="text-box">
+      {% if section.settings.title != blank %}<h1>{{ section.settings.title }}</h1>{% endif %}
+      {% if section.settings.desciption != blank %}<p>{{ section.settings.desciption }}</p>{% endif %}
+      {% if section.settings.btn_link != blank %}<a class="button" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }}</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Banner",
+    "settings": [
+      {
+        "type":      "url",
+        "id":        "video_banner",
+        "label":     "Column Video"
+      },
+      {
+        "type":      "text",
+        "id":        "title",
+        "label":     "Add Title"
+      },
+      {
+        "type":      "text",
+        "id":        "desciption",
+        "label":     "Add Desciption"
+      },
+      {
+        "type":      "text",
+        "id":        "btn_title",
+        "label":     "Button Title"
+      },
+      {
+        "type":      "url",
+        "id":        "btn_link",
+        "label":     "Button Url"
+      }
+	],    
+	"presets": [
+        {
+          "name": "Product Banner",
+          "category": "section"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

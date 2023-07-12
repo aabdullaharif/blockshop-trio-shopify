@@ -1,0 +1,69 @@
+<div class="main-banner-wrapper overflow-hidden">
+    <div class="vessel-fluid">
+        <div class="queue">
+            <div class="column padding-0">
+                <div class="main-container position-relative">
+                    <div class="image-container">
+                        <img class="height-100" src="{{ section.settings.img | img_url: 'master' }}" alt="img">
+                    </div>
+                    <div class="content-container">
+                        <h1>{{section.settings.title1}} <span> {{section.settings.title2}}</span></h1>
+                        <p class="text-capitalize">{{section.settings.subtitle1}}</p>
+                        {% if section.settings.btntxt1 != '' %}
+                        <a href="{{section.settings.btnurl1}}" class="btn btn-primary">{{section.settings.btntxt1}}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "001-ind-ban",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+},
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Butterfly"
+},
+{
+"type": "textarea",
+"id": "title2",
+"label": "title1",
+"default": "Brow Trio :"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "subtitle1",
+"default": "Get Ready For A Brow Metamorphosis. Create The Trending Lamination Look Instantly With Our Transformational 3 Step Trio."
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "btntxt1",
+"default": "SHOP NOW"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "btnurl1"
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "001-ind-ban",
+"category": "custom"
+}
+]
+}
+{% endschema %}

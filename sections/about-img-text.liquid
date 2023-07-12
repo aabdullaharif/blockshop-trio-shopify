@@ -1,0 +1,68 @@
+<div class="iq-mission-section">
+  <div class="vessel-fluid padding-0">
+    <div class="queue">
+      <div class="column-12 column-md-6">
+        <div class="image-holder">
+        	    {%
+                render "framework--image",
+                image: section.settings.img,
+                full_width: true
+            %}
+        </div>
+      </div>
+      <div class="column-12 column-md-6">
+        <div class="text-box">
+          <h2 class="iq-heading">{{ section.settings.heading }}</h2>
+          <p>{{ section.settings.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="iq-meet-section">
+  <div class="h-container">
+    <div class="holder">
+      <div class="img-box">
+        <img src="{{ section.settings.img| img_url: 'master' }}">
+      </div>
+      <div class="text-box">
+        <h3>{{ section.settings.title }}</h3>
+        <div class="sep"></div>
+        <p>{{ section.settings.description }}</p>
+        {% if section.settings.btn_link %}<a class="iq-btn" href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>{% endif %}
+        
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+{% schema %}
+  {
+    "name": "Image-Text Column",
+    "settings": [
+      {
+        "type":      "text",
+        "id":        "heading",
+        "label":     "Add Heading"
+      },
+      {
+        "type":      "text",
+        "id":        "content",
+        "label":     "Add Content"
+      },
+      {
+        "type":      "image_picker",
+        "id":        "img",
+        "label":     "Column image"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,166 @@
+{% comment %}
+  Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
+{% endcomment %}
+
+{% assign file_extension = 'png' %}
+
+{% if swatch == blank %}
+<div class="swatch error">
+  <p>You must include the snippet swatch.liquid with the name of a product option.</p> 
+  <p>Use: <code>{% raw %}{% include 'swatch' with 'name of your product option here' %}{% endraw %}</code></p>
+  <p>Example: <code>{% raw %}{% include 'swatch' with 'Color' %}{% endraw %}</code></p>
+</div>
+{% else %}
+
+{% assign found_option = false %}
+{% assign is_color = false %}
+{% assign option_index = 0 %}
+
+{% for option in product.options %}
+  {% if option == swatch %}
+    {% assign found_option = true %}
+    {% assign option_index = forloop.index0 %}
+    <style>
+      label[for="product-select-option-{{ option_index }}"] { display: none; }
+      #product-select-option-{{ option_index }} { display: none; }
+      #product-select-option-{{ option_index }} + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq({{ option_index }})').hide(); });</script>
+    {% assign downcased_option = swatch | downcase %}
+    {% if downcased_option contains 'color' or downcased_option contains 'colour' %}
+      {% assign is_color = true %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% unless found_option %}
+<div class="swatch error">
+  <p>You included the snippet swatch.liquid with the name of a product option — <code>'{{ swatch }}'</code> — that does not belong to your product.</p>
+  <p>Use <code>{% raw %}{% include 'swatch' with 'name of your product option here' %}{% endraw %}</code></p>
+  <p>Example: <code>{% raw %}{% include 'swatch' with 'Color' %}{% endraw %}</code></p>
+  <p><strong>This is case-sensitive!</strong> Do not put in <code>'color'</code> if your product option name is <code>'Color'</code>.</p>
+</div>
+{% else %}
+<div class="swatch clearfix" data-option-index="{{ option_index }}">
+<!--   <div class="header">{{ swatch }}</div> -->
+  
+  {% assign values = '' %}
+  {% for variant in product.variants %}
+    {% assign value = variant.options[option_index] %}
+    {% unless values contains value %}
+      {% assign values = values | join: ',' %}
+      {% assign values = values | append: ',' | append: value %} 
+      {% assign values = values | split: ',' %}
+      <div data-value="{{ value | escape }}" class="{% if product.id == 7219890290850%} brow_swipe_pen {% endif %} swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
+        {% if is_color %}
+        <div class="tooltip">{{ value }}</div>
+        {% endif %}
+        <input class="sw-{{forloop.index | minus:1}}" id="swatch-{{ option_index }}-{{ value | handle }}" data-slider="{{ value | handle }}" data-target="tagline-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if value contains 'Soft' %} checked{% endif %} />
+        {% if is_color %}
+        <label class="label-{{ option_index }}-{{ value | handle }}" for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({% if product.id == 7219890290850 %}https://cdn.shopify.com/s/files/1/0417/9004/6370/files/blonde_1.jpg?v=1642115128{% else %}{{ value | handle | append: '.' | append: file_extension | asset_url }}{% endif %})">
+          <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
+        </label>
+        {% else %}
+        <label for="swatch-{{ option_index }}-{{ value | handle }}">
+          {{ value }}
+          <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
+        </label>
+        {% endif %}
+      </div>
+  
+    {% endunless %}
+    {% if variant.available %}
+    <script>
+      jQuery('.swatch[data-option-index="{{ option_index }}"] .{{ value | handle }}').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+    </script>
+    {% endif %}
+  {% endfor %}
+  
+</div>
+
+{% if product.id == 7219890290850%}
+ <span class=" tagline tagline-pearl"><b>PEARL</b> | Silvery Pop</span> <span class=" tagline tagline-champagne"><b>CHAMPAGNE</b> | Golden Glow</span> <span class=" tagline tagline-rose"><b>ROSE</b>| Subtle Rose</span><span class=" tagline tagline-grey"><b>GREY</b> | For grey hair with a cool/ash undertones</span><span class=" tagline tagline-blonde"><b>BLONDE</b> | Blonde hair (blonde pomade shade)</span><span class=" tagline tagline-taupe"><b>TAUPE</b> | Dark blonde and brown hair (taupe to soft brown pomade shade) </span><span class=" tagline tagline-caramel"><b>CARAMEL</b> | Red hair (caramel and auburn pomade shade)</span><span class=" tagline tagline-soft-brown"><b>SOFT BROWN</b> | Soft and medium brown hair (medium brown to dark brown pomade shade)</span><span class=" tagline tagline-auburn"><b>AUBURN</b> | For Red hair with a dark undertone</span><span class=" tagline tagline-medium-brown"><b>MEDIUM BROWN</b> | Medium brown hair (medium brown to dark brown pomade shade)</span><span class=" tagline tagline-dark-brown"><b>DARK BROWN</b> | Dark brown to black hair (dark brown to Ebony pomade shade) </span><span class=" tagline tagline-ebony"><b>EBONY</b> | For Black hair with a neutral undertone</span>
+{% else %}
+<span class=" tagline tagline-pearl"><b>PEARL</b> | Silvery Pop</span> <span class=" tagline tagline-champagne"><b>CHAMPAGNE</b> | Golden Glow</span> <span class=" tagline tagline-rose"><b>ROSE</b>| Subtle Rose</span> <span class=" tagline tagline-grey"><b>GREY</b> | For grey hair with a cool/ash undertones</span><span class=" tagline tagline-blonde"><b>BLONDE</b> | For Blonde hair with a warm/gold undertones</span><span class=" tagline tagline-taupe"><b>TAUPE</b> | For Blonde hair with a cool/ash undertones</span><span class=" tagline tagline-caramel"><b>CARAMEL</b> | For Red hair with a light undertone</span><span class=" tagline tagline-soft-brown"><b>SOFT BROWN</b> | For Medium Brown hair with a neutral/warm undertones</span><span class=" tagline tagline-auburn"><b>AUBURN</b> | For Red hair with a dark undertone</span><span class=" tagline tagline-medium-brown"><b>MEDIUM BROWN</b> | For Medium Brown hair with a cool/ash undertones</span><span class=" tagline tagline-dark-brown"><b>DARK BROWN</b> | For Dark Brown hair with a neutral undertone</span><span class=" tagline tagline-ebony"><b>EBONY</b> | For Black hair with a neutral undertone</span>
+{% endif %}
+
+{% endunless %}
+
+{% endif %}
+
+
+<!-- //grey circle color override -->
+
+<style>
+ label.label-0-grey {
+    background: #877C69 !important;
+    border: solid 2px #d5d4d3;
+}
+  </style>
+
+
+
+{% for option in product.options %}
+  {% if option == swatch %}
+    {% assign found_option = true %}
+    {% assign option_index = forloop.index0 %}
+    <style>
+      label[for="product-select-option-{{ option_index }}"] { display: none; }
+      #product-select-option-{{ option_index }} { display: none; }
+      #product-select-option-{{ option_index }} + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq({{ option_index }})').hide(); });</script>
+    {% assign downcased_option = swatch | downcase %}
+    {% if downcased_option contains 'color' or downcased_option contains 'colour' %}
+      {% assign is_color = true %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+
+
+
+
+
+{% assign productTags = product.tags | join: ', ' %}
+{% if productTags contains 'dropdown' %}
+
+
+
+<select class="drp">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+    <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+    {% else %}
+    <option disabled="disabled">{{ variant.title }} - Sold Out</option>
+    {% endif %}
+  {% endfor %}
+  </select>
+
+
+
+<script>
+  $('.drp').change(function() {
+    
+      $(".sw-"+$(this).find('option:selected').index()).trigger("click");
+    
+})
+</script>
+
+<style>
+  select.drp {
+    border: black solid 0.1px;
+    width: fit-content;
+}
+  .swatch.clearfix {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    pointer-events: none;
+}
+</style>
+{% else %}
+
+{% endif %}
+
+

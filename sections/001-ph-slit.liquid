@@ -1,0 +1,77 @@
+<div class="ultimate-wrapper overflow-hidden custom-space sece-ultimate">
+    <div class="vessel">
+        <div class="queue  justify-content-lg-center">
+            {% for block in section.blocks %}
+            {% if block.type == 'image' %}
+            <div class="column-12 order-1 column-md-6 column-lg-6 order-md-0">
+                <div class="image-container">
+                    <img src="{{ block.settings.img | img_url: 'master' }}" alt="img">
+                </div>
+            </div>
+            {% endif %}
+            {% if block.type == 'card' %}
+            <div class="column-12 column-md-6 column-lg-5 mb-md-0">
+                <div class="content-container mb-4 mb-md-0">
+                    <h2 class="mb-4">{{block.settings.title1}}</h2>
+                    <p>{{block.settings.subtitle1}}</p>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="vegan-line1 text-align-center">
+            <strong>{{section.settings.titleb}}</strong>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "001-ph-slit",
+"max_blocks": 4,
+"settings": [
+{
+"type": "textarea",
+"id": "titleb",
+"label": "titleb",
+"default": "cruelty-free . vegan . multifaceted beauty "
+}
+],
+"blocks": [
+{
+"type": "image",
+"name":"image",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+}
+]
+},
+{
+"type": "card",
+"name":"card",
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Our Philosophy"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "desc",
+"default": "At Trio Beauty we explore the magic of your daily beauty routine."
+}
+]
+}
+],
+"presets": [
+{
+"name": "001-ph-slit",
+"category": "custom"
+}
+]
+}
+{% endschema %}

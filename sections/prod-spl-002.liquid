@@ -1,0 +1,124 @@
+<style>
+  .pair-block ul { margin: 0 0 20px; }
+  .pair-block ul li .accordion-section-title {
+    padding: 0;
+    display: block;
+    padding-right: 50px;
+    color: #212121 !important;
+    position: relative;
+    font: 400 16px/1.2 'Space Mono', sans-serif !important;
+  }
+
+  .accordion-section-title i {
+    top: 50%;
+    right: 15px;
+    pointer-events: none;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  .accordion-section-title .fa-angle-up,
+  .accordion-section-title.active .fa-angle-down {
+    display: none !important;
+  }
+
+  .accordion-section-title .fa-angle-down,
+  .accordion-section-title.active .fa-angle-up {
+    display: block !important;
+  }
+  .pair-block ul li .accordion-section-content { display: none; }
+  @media (min-width: 1199.98px) {
+    .pair-block ul li .accordion-section-title {
+      font-size: 18px;
+    }
+  }
+</style>
+{% assign prod = all_products[section.settings.product] %}
+<div class="pair-block">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column-12 column-md-6">
+                <div class="badges">
+                    <img src="{{ section.settings.img2 | img_url: 'original' }}" alt="badges">
+                </div>
+                <ul class="list-unstyled accordion">
+                    {% for block in section.blocks %}
+                    <li class="accordion-section">
+                        <a href="#accordion-{{forloop.index}}" class="accordion-section-title">
+                            {{ block.settings.point_txt }}
+                            <i class="fas fa-angle-up"></i>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div id="accordion-{{forloop.index}}" class="accordion-section-content">
+                            {{block.settings.point_bdy}}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="column-12 column-md-6">
+                <h2>{{ section.settings.title }}</h2>
+                <div class="pair-box">
+                   <a href="{{prod.url}}">
+                    <div class="image-holder">
+                            <img src="{{ prod.featured_image | img_url: 'original' }}" alt="image">
+                    </div>
+                    <strong class="title">{{ prod.title }}<span> {{ prod.price | money }}</span></strong>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "prod-spl-002",
+"settings": [
+{
+"type": "image_picker",
+"id": "img2",
+"label": "image"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+},
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "Pairs Well With"
+},
+{
+"type": "product",
+"id": "product",
+"label": "product"
+}
+],
+"blocks": [
+{
+"type": "block",
+"name": "point",
+"settings": [
+{
+"type": "textarea",
+"id": "point_txt",
+"label": "point_txt",
+"default": "Gently tap the sponge"
+},
+{
+"type": "textarea",
+"id": "point_bdy",
+"label": "point_bdy",
+"default": "Gently tap the sponge"
+}
+]
+}
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,442 @@
+<!doctype html> 
+<html class="no-js" lang="{{ shop.locale }}" fontify-lang="{{ shop.locale }}">
+  <head>
+
+<script>
+/* >> TriplePixel :: start*/
+~function(W,H,A,L,E,_){function O(T,R){void 0===R&&(R=!1),H=new XMLHttpRequest,H.open("GET","//triplewhale-pixel.web.app/triplepx.txt?"+~(Date.now()/9e7),!0),H.send(null),H.onreadystatechange=function(){4===H.readyState&&200===H.status?setTimeout(function(){return eval(H.responseText)},50):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(T-1))}}if(L=window,!L[H+"sn"]){L[H+"sn"]=1;try{A.setItem(H,1+(0|A.getItem(H)||0)),W.includes("⇈")&&A.setItem(H+"Stg",1+(0|A.getItem(H+"Stg")||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push(location.href),A.setItem(H+"U",JSON.stringify(E))}catch(e){}A.getItem('"!nC`')||(A=L,A[H]||(L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)},E=A[H]=function(t,e){return W=L(),(E._q=E._q||[]).push([W,t,e]),E._headless=!0,W},E.ch=W,O(5)))}}("","TriplePixel",localStorage);
+/* << TriplePixel :: end*/
+</script>
+
+
+<!--     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200796393-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-200796393-1');
+    </script>
+
+    <!-- Blockshop Theme - Version 6.8.0 by Troop Themes - https://troopthemes.com/ -->
+    <meta name="facebook-domain-verification" content="w5n10helcitbh9l2zd099z3m5b75c4" />
+    <meta name="p:domain_verify" content="862a494455829593fda3c31f22f49929"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+
+    <link rel="preload" href="{{ 'theme--critical.css' | asset_url }}" as="style">
+    <link rel="preload" href="{{ 'theme--async.css' | asset_url }}" as="style">
+    <link href="https://blogfonts.com/css/aWQ9MTgzMDA3JnN1Yj03JmM9bCZ0dGY9bHVpbXAudHRmJm49bHVpbXA/Luimp.ttf" rel="stylesheet" type="text/css"/>
+
+    
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+    <script src="{{ 'theme.min.js' | asset_url }}" async="async"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $('.tr_slick_main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: true,
+        adaptiveHeight: true,
+        mobileFirst: true,
+        asNavFor: '.tr_slick_thumb',
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            dots: false
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            dots: true
+          }
+        }]
+      });
+      $('.tr_slick_thumb').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.tr_slick_main',
+        dots: false,
+        arrows: false,
+        infinite: true,
+        centerMode: false,
+        mobileFirst: true,
+        focusOnSelect: true,
+        verticalSwiping: false,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            vertical: true,
+            slidesToShow: 5,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }]
+      });
+
+      $('.product-carousel').slick({
+        speed: 300,
+        dots: false,
+        autoplay: true,
+        draggable: false,
+        swipeToSlide: false,
+        touchMove: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      $('.search-result-carousel').slick({
+        speed: 300,
+        dots: false,
+        arrows: true,
+        draggable: false,
+        swipeToSlide: false,
+        touchMove: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      }).on('setPosition', function (event, slick) {
+        slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+      });
+
+      $(function() {
+        //----- OPEN
+        $('[data-popup-open]').on('click', function(e) {
+          var targeted_popup_class = jQuery(this).attr('data-popup-open');
+          $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+          e.preventDefault();
+        });
+
+        //----- CLOSE
+        $('[data-popup-close]').on('click', function(e) {
+          var targeted_popup_class = jQuery(this).attr('data-popup-close');
+          $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+          e.preventDefault();
+        });
+      });
+
+
+      $('.big-box').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.items-thumbs'
+      });
+
+      $('.items-thumbs').on('mouseover', function(e) {
+        "use strict";
+        var mouseSide;
+        if ((e.pageX - this.offsetLeft) < $(this).width() / 2) {
+          $('.items-thumbs').slick('slickPrev');
+        } else {
+          $('.items-thumbs').slick('slickNext');
+        }
+      });
+
+      $('.items-thumbs').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.big-box',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true
+      });
+
+      $('.tabs .tab-links a').on('click', function(e) {
+        var currentAttrValue = $(this).attr('href');
+        $('.tabs ' + currentAttrValue).show().siblings().hide();
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+        e.preventDefault();
+      });
+
+      $('.main-frame .prod-button').on('click', function(e) {
+        var currentAttrValue = $(this).attr('href');
+        $('.main-frame ' + currentAttrValue).show().siblings().hide();
+        $('.main-frame .prod-button.active').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+      });
+
+      $('.btn-close').on('click', function() {
+        $('.main-frame .prod-button.active').removeClass('active');
+        $('.main-frame .slider-tab').hide();
+      });
+
+      $('.main-frame .prod-button').on('click', function() {
+        $('.slider-tab .slick-slider').resize();
+        $('.slider-tab .slick-slider').slick('refresh');
+      });
+
+      $(function() {
+        function close_accordion_section() {
+          $('.accordion .accordion-section-title').removeClass('active');
+          $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+        }
+        $('.accordion-section-title').click(function(e) {
+          var currentAttrValue = $(this).attr('href');
+          if($(e.target).is('.active')) {
+            close_accordion_section();
+          }else {
+            close_accordion_section();
+            $(this).addClass('active');
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+          }
+          e.preventDefault();
+        });
+      });
+      //  $('input[type=radio][name=option-0]').change(function() {
+      //    var act_slides = $(this).attr("data-slider");
+      //    $('.tr_slick_thumb').slick('slickFilter','.'+act_slides);
+      // });
+    </script>
+
+    {%- if canonical_url != blank  -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {%- endif -%}
+
+    {% if settings.favicon != blank %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x' }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ settings.favicon | img_url: '180x' }}">
+    {% endif %}
+    {% render 'framework--social-meta-tags' %}
+
+    {% if template == 'index' %}
+    <title>{{ page_title }}</title>
+    {% elsif template == 'password' %}
+    <title>{{ shop.name }}</title>
+    {% else %}
+    <title>{{ page_title }} | {{ shop.name }}</title>
+    {% endif %}
+
+    {% render 'framework--css-variables' %}
+    {% render 'partial--css-variables' %}
+    {% render 'partial--js-variables' %}
+
+    <script>
+      function onLoadStylesheet() {
+        var link = document.querySelector('link[href="' + theme.assets.stylesheet + '"]');
+        link.loaded = true;
+        link.dispatchEvent(new Event('load'));
+      }
+    </script>
+
+    <link href="{{ 'theme--critical.css' | asset_url }}" rel="stylesheet" media="all"/>
+    <link
+          href="{{ 'theme--async.css' | asset_url }}"
+          rel="stylesheet"
+          media="print"
+          onload="this.media='all';onLoadStylesheet()"
+          >
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <style>{% render 'custom-styles' %}</style>
+
+
+    <style>
+      .footer--root, .layout--main-content>*, .modal--root, .modal--window, .popup-modal-close {
+        opacity: 1;
+      }
+      @media (max-width: 479px) {
+        .layout--main-content.ww_layout_con {
+          padding-top: 0px !important;
+        }
+      }
+    </style>
+
+    {% if template contains 'customers' %}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+    <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer="defer"></script>
+    {% endif %}
+
+    <!-- Yotpo's JavaScript -->
+    {% comment %} Yotpo content removed from here {% endcomment %}
+    {{ content_for_header }} 
+    {{ shop.metafields.fontify.stylesheets }}
+
+    <script src="https://www.dwin1.com/19038.js" type="text/javascript" defer="defer"></script>
+
+
+  
+  {% render 'shogun-head' %}
+  {% include 'qikify-smartbar' %}
+
+  
+  {% include 'friendbuy' %}
+</head>
+
+  <body
+        class="page-{{ page_title | handle }} template-{{ template | split: '.' | first | remove: '/' | remove: '_' }}"
+        data-theme-id="606"
+        data-theme-name="Blockshop"
+        data-theme-version="6.8.0"
+        >
+    {% unless template contains 'password' %}
+    <a data-item="a11y-button" href='#main-content'>
+      {{ 'general.skip_link' | t }}
+    </a>
+    {% endunless %}
+
+    <div
+         class="off-canvas--viewport"
+         data-js-class="OffCanvas"
+         data-off-canvas--state="closed"
+         ><div hidden id="1e7c9b96eab397d0921eef5a5a0b83e05e1d7a10"></div> 
+      <div class="off-canvas--overlay"></div>
+      <div class="off-canvas--close" aria-label="{{ 'general.close' | t }}">
+        {% render 'framework--icons', icon: 'cross' %}
+      </div>
+
+      <div class="off-canvas--left-sidebar">
+        <div class="off-canvas--focus-trigger" tabindex="0"></div>
+        {% render 'partial--mobile-nav' %}
+        <div class="off-canvas--focus-trigger" tabindex="0"></div>
+      </div>
+
+      <div class="off-canvas--right-sidebar" data-active="cart">
+        <div class="off-canvas--focus-trigger" tabindex="0"></div>
+        <div class="off-canvas--container" data-view="pickup"></div>
+
+        {% if settings.cart--type == 'drawer' %}
+        <div class="off-canvas--container" data-view="cart">
+          {% render 'framework--cart', view: 'mobile' %}
+        </div>
+        {% endif %}
+
+        <div class="off-canvas--focus-trigger" tabindex="0"></div>
+      </div>
+
+      <div class="off-canvas--main-content">
+        {% section 'announcement' %}
+        {% section 'header' %}
+
+        <section class="layout--main-content {% if template contains 'product' %} ww_layout_con{% endif %}" id="main-content">
+          {{ content_for_layout }}
+        </section>
+        {% section 'footer' %}
+
+
+        {% unless template == 'password' %}
+        <div class="popup-modal-close" aria-label="{{ 'general.close' | t }}">
+          {% render 'framework--icons', icon: 'cross' %}
+        </div>
+        <div class="popup-modal-mask"></div>
+        {% endunless %}
+      </div>
+
+      {% render 'framework--feedback-bar' %}
+      {% render 'partial--popup' %}
+
+    </div>
+    {% render 'afterpay' %}
+    {% render 'framework--search', view: 'modal' %}
+    {% render 'framework--modal' %}
+
+
+
+
+    <script>
+      jQuery(function() {
+        jQuery('.swatch :radio').change(function() {
+          var optionIndex = jQuery(this).closest('.swatch').attr('data-option-index');
+          var optionValue = jQuery(this).val();
+          jQuery(this)
+          .closest('form')
+          .find('.single-option-selector')
+          .eq(optionIndex)
+          .val(optionValue)
+          .trigger('change');
+        });
+      });
+
+    </script>
+
+	   {% render 'rebuy-extension' %}
+
+    <!-- Back in Stock helper snippet -->
+    {% render 'back-in-stock-helper' %}
+    <!-- End Back in Stock helper snippet -->
+    <script src="https://cdn.attn.tv/thebrowtrio/dtag.js"></script>
+  </body>
+</html>
+
+
+
+    <style>
+
+    </style>
+

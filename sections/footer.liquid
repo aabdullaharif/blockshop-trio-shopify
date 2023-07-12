@@ -1,0 +1,340 @@
+<style type="text/css">
+  
+  
+  .iq-footer {
+    overflow: hidden;
+    padding: 50px 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #513454!important;
+    font-family:avenirbook;
+  }
+ 
+  .iq-footer .f1 {
+    overflow: hidden;
+    margin: 0 -15px;
+  }
+
+  .iq-footer .col {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .iq-footer .col ul li a {
+    margin: 6px 0;
+    display: inline-block;
+    vertical-align: top;
+        color: #F8FBF8;
+  }
+
+  .iq-footer .col ul li a img {
+    width: 30px;
+  }
+
+  .iq-footer .col p {
+    text-align: center;
+    margin: 6px 0 10px;
+  }
+
+  .iq-footer .col .small-txt {
+    display: block;
+    font-size: 10px;
+    line-height: normal;
+    margin: 0 0 10px;
+    color:#F8FBF8;
+  }
+
+  .iq-footer .col button {
+    width: 100%;
+  }
+
+  .input-holder {
+    height: 45px;
+  }
+
+  .iq-footer .f2 {
+    text-align: center;
+    padding: 20px 0 0;
+    color: #F8FBF8;
+  }
+  .iq-footer .f2 a{color: #F8FBF8;}
+  .iq-footer .col h3{color: #F8FBF8;}
+
+  .footer-hr {
+    height: 1px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display:none;
+    background: #fff;
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    .iq-footer .col {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-hr {
+
+      display:block;
+
+    }
+  }
+</style>
+
+<div class="iq-footer">
+  <div class="h-container">
+    <div class="f1">
+      <div class="col">
+        <ul>
+          {% if section.settings.email_link %}<li><a href="{{ section.settings.email_link }}" target="_blank" rel="noreferrer noopener">{{ section.settings.email_text }}</a></li>{% endif %}
+
+          {% if section.settings.contact_url %}<li><a href="{{ section.settings.contact_url }}">{{ section.settings.contact_title }}</a></li>{% endif %}
+          <li>
+            {% if section.settings.insta_url%}<a href="{{ section.settings.insta_url}}"><img src="https://cdn.shopify.com/s/files/1/1331/4649/t/9/assets/FooterIcons_Instagram.png?v=1615904798" width="30"></a>{% endif %}
+            {% if section.settings.fb_url%}<a href="{{ section.settings.fb_url}}"><img src="https://cdn.shopify.com/s/files/1/1331/4649/t/9/assets/FooterIcons_facebook.png?v=1615904799" width="30"></a>{% endif %}
+            {% if section.settings.yt_url%}<a href="{{ section.settings.yt_url}}"><img src="https://cdn.shopify.com/s/files/1/1331/4649/t/9/assets/FooterIcons_Youtube.png?v=1615904801" width="30"></a>{% endif %}
+          </li>
+        </ul>
+      </div>
+      <hr class="footer-hr">
+      <div class="col">
+        <ul>
+          {%- assign footer_linklists = section.settings.footer_linklists -%}
+          {% if linklists[footer_linklists].links.size > 0 %}
+          {% for link in linklists[footer_linklists].links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+      <hr class="footer-hr">
+      <div class="col">
+        <ul>    
+          {%- assign footer_linklists_two = section.settings.footer_linklists_two -%}
+          {% if linklists[footer_linklists_two].links.size > 0 %}
+          {% for link in linklists[footer_linklists_two].links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+      <hr class="footer-hr">
+      <div class="col">
+
+        <!--         	<p>{{ section.settings.add_one }}</p>
+<p>{{ section.settings.add_two }}</p>
+<p>{{ section.settings.add_three }}</p>
+<p>{{ section.settings.add_four }}</p> -->
+
+        <h3 style="text-align: center; margin-bottom: 15px;">SIGN UP FOR EXCLUSIVE CONTENT</h3>
+
+        {% form 'customer' %}
+        {{ form.errors | default_errors }}
+        {% if form.posted_successfully? %}
+        <p class="note form-success">Thankyou for Subscribing.</p>
+        {% else %}
+        <input type="email" name="contact[email]"  class="input-holder">
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        {% comment %}
+        <select class="input-holder">
+          <option>Phone Number</option>
+
+        </select>
+        {% endcomment %}
+        <span class="small-txt">By clicking SIGN UP NOW, you agree to receive marketing text messages from The Brow Trio at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.</span> 
+        <button type="submit">SUBSCRIBE NOW</button>
+        {% endif %}
+        {% endform %}  
+      </div>
+    </div>
+    <div class="f2">
+      <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }}. ALL RIGHTS RESERVED</span>
+    </div>
+  </div>
+  <div>
+
+
+    
+    
+        {% comment %}
+
+    <div style="background: #b07c83;text-align: center;" id="ex1" class="modal-c">
+  
+      
+      
+      <div class="pop1">
+<div class="cnt-p">
+<h3 style="
+    font-size: 40px;
+    padding: 3px;
+    margin: 20px 0;
+    color: white;
+">You are shopping on the<br>United States Website</h3>
+<p style="
+    color: white;margin-bottom: 10px;
+">Do you want to continue shopping<br>on our US website? Select your<br>preferred store below.</p>
+</div>
+<div style=" margin-bottom: 30px; " class="cnt-b">
+  
+  <a href="#" rel="modal:close" class="button" style="
+    background: white !important;
+    height: 36px;
+    line-height: 36px;
+    font-family: Space Mono;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    width: 50%;
+    margin: 0 AUTO;
+    text-align: center;
+    color: #b07c83 !important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+">stay on US store</a>
+  
+  <a class="button" href="https://uk.thebrowtrio.com/" style="
+    background: white !important;
+    height: 36px;
+    line-height: 36px;
+    font-family: Space Mono;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    width: 50%;
+    margin: 0 AUTO;
+    text-align: center;
+    color: #b07c83 !important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+">go to UK store</a>
+  </div>
+</div>
+      
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+      
+         
+    
+      
+      
+    </script>
+         <link href="{{ 'pop-mod.css' | asset_url }}" rel="stylesheet" media="all"/>
+   
+<a hidden id="mod-c" href="#ex1" rel="modal:open">Open Modal</a>
+ 
+    {% endcomment %}
+    
+    {% schema %}
+    {
+    "name": "Footer",
+    "settings": [
+    {
+    "type":      "text",
+    "id":        "email_text",
+    "label":     "Add Email"
+    },
+    {
+    "type":      "url",
+    "id":        "email_link",
+    "label":     "Email Link"
+    },
+    {
+    "type":      "text",
+    "id":        "contact_title",
+    "label":     "Contact Title"
+    },
+    {
+    "type":      "url",
+    "id":        "contact_url",
+    "label":     "Contact-us Url"
+    },
+    {
+    "type": "header",
+    "content": "Social Icons"
+    },
+    {
+    "type":      "url",
+    "id":        "insta_url",
+    "label":     "Instagram Url"
+    },
+    {
+    "type":      "url",
+    "id":        "fb_url",
+    "label":     "Facebook Url"
+    },
+    {
+    "type":      "url",
+    "id":        "yt_url",
+    "label":     "Youtube Url"
+    },
+    {
+    "type":       "link_list",
+    "id":         "footer_linklists",
+    "label":      "1st Footer Menu"
+    },
+    {
+    "type":       "link_list",
+    "id":         "footer_linklists_two",
+    "label":      "2nd Footer Menu"
+    },
+    {
+    "type":      "text",
+    "id":        "add_one",
+    "label":     "Address"
+    },
+    {
+    "type":      "text",
+    "id":        "add_two",
+    "label":     "Address"
+    },
+    {
+    "type":      "text",
+    "id":        "add_three",
+    "label":     "Address"
+    },
+    {
+    "type":      "text",
+    "id":        "add_four",
+    "label":     "Address"
+    }
+    ]
+    }
+    {% endschema %}
+
+    {% stylesheet %}
+    {% endstylesheet %}
+
+    {% javascript %}
+    {% endjavascript %}
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+<script>
+window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"><\/script>');
+</script>
+    
+    
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>

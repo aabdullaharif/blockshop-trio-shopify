@@ -1,0 +1,164 @@
+<style>
+    .trio-methods {
+        padding: 30px 0;
+        overflow: hidden;
+        background: #f1dbdf;
+    }
+
+    .trio-methods p {
+        margin: 0 0 20px;
+        font: 400 14px/2.167 'Avenir', Arial, sans-serif;
+    }
+
+    .trio-methods .step-box {
+        overflow: hidden;
+        margin: 0 0 20px;
+    }
+
+    .trio-methods .step-box p {
+        font-size: 13px;
+    }
+
+    .trio-methods .step-box h3 {
+        text-align: center;
+    }
+
+    .trio-methods .image-holder {
+        overflow: hidden;
+        margin: 0 0 15px;
+    }
+
+    .trio-methods .image-holder img {
+        width: 100%;
+        display: block;
+    }
+
+    .trio-methods .title {
+        display: block;
+        text-align: center;
+        font: 400 20px/24px 'Space Mono', Arial, sans-serif;
+    }
+
+    .trio-methods .title a {
+        display: inline-block;
+        text-decoration: underline;
+    }
+
+    @media (min-width: 991.98px) {
+        .trio-methods {
+            padding: 50px 0;
+        }
+
+        .trio-methods p {
+            font-size: 16px;
+            margin: 0 0 40px;
+        }
+
+        .trio-methods .step-box p {
+            font-size: 15px;
+            margin: 0 0 20px;
+        }
+    }
+
+    @media (min-width: 1199.98px) {
+        .trio-methods p {
+            font-size: 18px;
+            margin: 0 0 60px;
+        }
+
+        .trio-methods .step-box p {
+            font-size: 17px;
+            margin: 0 0 20px;
+        }
+    }
+</style>
+<div class="trio-methods">
+    <div class="vessel">
+        <div class="queue content-justify-center">
+            <div class="column-12 column-md-8 text-center">
+                <h2 class="iq-heading">{{ section.settings.title }}</h2>
+                <p>{{ section.settings.desc }}</p>
+            </div>
+        </div>
+        <div class="queue">
+            <div class="column-12 column-md-6">
+                {% for block in section.blocks %}
+                <li></li>
+                <div class="step-box">
+                    <h3 class="iq-heading">{{ block.settings.point_hd }}</h3>
+                    <p>{{ block.settings.point_txt }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="column-12 column-md-6">
+                <div class="image-holder">
+                {%
+                    render "framework--image",
+                    image: section.settings.img,
+                    full_width: true
+                   %}
+                </div>
+                <strong class="title"><a href="{{ section.settings.link }}">{{ section.settings.link_txt }}</a></strong>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "trio-methods",
+"settings": [
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "How It Works"
+},
+{
+"type": "textarea",
+"id": "desc",
+"label": "desc",
+"default": "step by step"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "label"
+},
+{
+"type": "textarea",
+"id": "link_txt",
+"label": "link txt",
+"default": "build your routine"
+},
+{
+"type": "url",
+"id": "link",
+"label": "link"
+}
+],
+"blocks": [
+{
+"type": "block",
+"name": "point",
+"settings": [
+{
+"type": "textarea",
+"id": "point_hd",
+"label": "point_heading",
+"default": "Gently tap the sponge"
+},
+{
+"type": "textarea",
+"id": "point_txt",
+"label": "point_txt",
+"default": "Gently tap the sponge"
+}
+]
+}
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

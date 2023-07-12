@@ -1,0 +1,78 @@
+<div class="ultimate-wrapper em-ultimate overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue  justify-content-lg-center">
+            <div class="column-12 column-md-6 column-lg-5 mb-md-0">
+                <div class="content-container mb-4 mb-md-0">
+                    <h2 class="mb-4">{{ section.settings.title }}</h2>
+                    <ul class="working-list">
+                        {% for block in section.blocks %}
+                        <li>{{ block.settings.point_txt }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="column-12  column-md-6 column-lg-6 d-flex justify-content-center flex-columns">
+                <div class="video-container position-relative ">
+                    <video id="community_video"onclick="pauseVideo()" class="communityvideo" poster="{{ section.settings.img | img_url: 'master' }}"
+                        >
+                        <source src="{{ section.settings.mp4_link }}" type="video/mp4">
+                    </video>
+                    <div class="play-btn">
+                        <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/Polygon_1.svg?v=1657144603"
+                            
+                          alt="img"onclick="playVideo()">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "002-pdp-spl",
+"settings": [
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "How It Works"
+},
+{
+"type": "textarea",
+"id": "sub_title",
+"label": "sub_title",
+"default": "step by step"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+},
+{
+"type": "textarea",
+"id": "mp4_link",
+"label": "mp4_link",
+"default": "https://cdn.shopify.com/s/files/1/0417/9004/6370/files/Untitled_3_1.mp4?v=1637777737"
+}
+],
+"blocks": [
+{
+"type": "block",
+"name": "point",
+"settings": [
+{
+"type": "textarea",
+"id": "point_txt",
+"label": "point_txt",
+"default": "Gently tap the sponge"
+}
+]
+}
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

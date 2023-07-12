@@ -1,0 +1,23 @@
+<div class="iq-banner">
+  <img src="{{ section.settings.img| img_url: 'master' }}">
+</div>
+
+ 
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "type":   "image_picker",
+        "id":     "img",
+        "label":  "Banner image"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

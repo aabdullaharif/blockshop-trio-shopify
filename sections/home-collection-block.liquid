@@ -1,0 +1,110 @@
+<div class="replacements-block">
+  <div class="container">
+    <div class="queue justify-content-center">
+      <div class="col-12 col-md-6 text-center">
+        {% if section.settings.heading != blank %}<h2>{{ section.settings.heading }}</h2>{% endif %}
+        {% if section.settings.content != blank %}<p>{{ section.settings.content }}</p>{% endif %}
+      </div>
+    </div>
+    <div class="queue justify-content-center">
+      {% for block in section.blocks %}
+      <div class="col col-sm-4">
+        <div class="box">
+          {% if block.settings.product_img != blank %}
+          <div class="image-holder">
+            <img src="{{ block.settings.product_img | img_url: 'master' }}" alt="image">
+          </div>
+          {% endif %}
+          {% if block.settings.title != blank %}<strong class="title">{{ block.settings.title }}</strong>{% endif %}
+          {% if block.settings.description != blank %}<p>{{ block.settings.description }}</p>{% endif %}
+          {% if block.settings.btn_url != blank %}<a href="{{ block.settings.btn_url }}" class="link">{{ block.settings.btn_title }}</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.shop_url != blank %}
+    <div class="queue">
+      <div class="col-12 d-flex justify-content-center">
+        <a class="button" href="{{ section.settings.shop_url }}">{{ section.settings.shop_collection }}</a>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .replacements-block .link{text-decoration: none;border-bottom: 1px solid #000 !important;display: inline-block;}
+</style>
+
+{% schema %}
+  {
+    "name": "Collection Block",
+    "settings": [
+          {
+            "type":      "text",
+            "id":        "heading",
+            "label":     "Add Heading"
+          },
+          {
+            "type":      "text",
+            "id":        "content",
+            "label":     "Add Content"
+          },
+          {
+            "type":      "text",
+            "id":        "shop_collection",
+            "label":     "Shop Btn Text"
+          },
+          {
+            "type":      "url",
+            "id":        "shop_url",
+            "label":     "Shop Btn Url"
+          } 
+     ],
+      "blocks": [
+      {
+        "type": "select",
+        "name": "Add More Block",
+        "settings": [
+          {
+            "type":      "image_picker",
+            "id":        "product_img",
+            "label":     "Add Image"
+          },
+          {
+            "type":      "text",
+            "id":        "title",
+            "label":     "Add title"
+          },
+          {
+            "type":      "text",
+            "id":        "description",
+            "label":     "Add Description"
+          },
+          {
+            "type":      "text",
+            "id":        "btn_title",
+            "label":     "Button Text"
+          },
+          {
+            "type":      "url",
+            "id":        "btn_url",
+            "label":     "Button Url"
+          }        
+		]
+      }
+    ],    
+	"presets": [
+        {
+          "name": "Collection Block",
+          "category": "section"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

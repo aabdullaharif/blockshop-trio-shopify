@@ -1,0 +1,55 @@
+<div class="collection-wrapper overflow-hidden custom-style00">
+    <div class="main-collection-wrap">
+        <div class="vessel">
+            <div class="queue">
+                <div class="column-12 column-lg-6 mb-3 mb-md-4 mb-lg-5">
+                    <div class="img-wrap0"><img
+                            src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/collect1.jpg?v=1657132055"
+                            alt="images"></div>
+                </div>
+                {% for product in collection.products %}
+                <div class="column-6 column-lg-3 mb-3 mb-md-4 mb-lg-5 d-flex flex-columns">
+                    <div class="img-wrap mb-2 mb-lg-4">
+                        <a href="{{product.url}}" class="d-block"><img
+                                src="{{ product.featured_image | img_url: 'master' }}" alt="image"></a>
+                    </div>
+                    <div class="pro-content text-align-center d-flex flex-columns justify-content-between align-items-center f-grow-1">
+                        <strong class="d-block canela-thin">{{product.title}}</strong>
+                        <i class="d-block canela-thinitalic mb-2 ">{{section.settings.subtitle}}</i>
+                        <span class="d-flex justify-content-center mb-2">
+                            <div class="rating_holder">
+                                {% render 'okendo-reviews-product-rating-summary', product: product %}
+                            </div>
+                        </span>
+                        <span class="price d-block canela-regular mb-2">{{ product.price_min | money }}</span>
+                        <button type="submit"
+                            class="btn btn-primary btn-seceondry franklin-regular">{{section.settings.addto}}</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% schema %}
+{
+"name": "001-collections-template",
+"settings": [
+{
+"type": "textarea",
+"id": "subtitle",
+"label": "subtitle",
+"default": "Shape & define your brows."
+},
+{
+"type": "textarea",
+"id": "addto",
+"label": "add to cart",
+"default": "add to bag"
+}
+],
+"blocks": [
+]
+}
+{% endschema %}

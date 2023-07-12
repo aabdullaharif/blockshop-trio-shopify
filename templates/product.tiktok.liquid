@@ -1,0 +1,408 @@
+{% assign variant = product.selected_or_first_available_variant %}
+<div class="main-container">
+  <div class="w1">
+    <div class="title-block">
+      <div class="vessel">
+        <div class="queue">
+          <div class="column-12 text-center">
+            <h1>{{ product.title }}</h1>
+            <div style="margin-bottom:12px;">
+              {% render 'okendo-reviews-product-rating-summary', product: product %}          
+            </div>
+            <strong class="price kit-price d-block" id="tr_price">{{ variant.price | money }}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-details-block" id="tiktok_product">
+      <div class="vessel">
+        <div class="queue margin-0">
+          <div class="column-12 column-md-7 column-lg-6">
+            <div class="sliders-holder">
+              <div class="tr_slick_main tiktok-main-imgs">
+                {% for media in product.media %}
+                <div class="slide {{ media.src.alt }}"><a href="javascript:void(0);" class="mob_move_{{ media.id }} {{ media.src.alt }}"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+                {% endfor %}
+              </div>
+              <div class="tr_slick_thumb tiktok-main-imgs" style="display:none;">
+                {% for media in product.media %}
+                <div class="slide {{ media.src.alt }}"><a class="move_{{ media.id }} {{ media.src.alt }}" href="javascript:void(0);"><img class="{{ media.src.alt }}" src="{{ media.src | img_url: 'master' }}" alt="image"></a></div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="column-12 column-md-5 column-lg-6">
+            <div class="colors-box">
+              {% form 'product', product, data-productid: product.id %}
+              <select name="id" id="productSelect" style="display:none;" class="product-single__variants">
+                {% for variant in product.variants %}
+                <option data-slider="{{ variant.title | handleize }}" data-image-id="{{ variant.featured_media.id }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+                {% endfor %}
+              </select>
+              {% if product.available and product.variants.size > 1 %}
+              {% for option in product.options %}
+              {% include 'swatch' with option %}
+              {% endfor %}
+              {% endif %}
+              <div class="widget-box shade-box">
+<!--                 <button class="btn" data-popup-open="popup-1"><h3><span>FIND MY SHADE</span></h3></button> -->
+                <a href="https://www.thebrowtrio.com/pages/color-match-quiz" class="btn" style=" display: flex; flex-direction: row; align-content: left; justify-content: left; align-items: left; "><h3><span>FIND MY SHADE</span></h3></a>
+                
+                <div class="buttons-bar">
+                  {% assign variant = product.variants.first %}
+                  {% if variant.inventory_quantity <= 0 and variant.available and variant.inventory_management != '' %}
+                  <button type="submit" class="button disabled" id="ww_submit" disabled="disabled">Sold Out</button>
+                  {% else %}
+                  <button type="submit" class="button" id="ww_submit">add to cart - {{ product.price | money }}</button>
+                  {% endif %}
+                  {{ form | payment_button }}
+                </div>
+              </div>
+              {% endform %}
+            </div>
+          </div>
+        </div>
+        {% section 'tiktok-about'%}
+        {% section 'tiktok-video'%}
+        <div class="queue content-justify-center">
+          <div class="column-12 col-md-8">
+            {% section 'tiktok-whats-include' %}
+            {% section 'tiktok-accordion'%}
+          </div>
+        </div>
+        <div class="queue content-justify-center">
+          <div class="column-12 column-md-8">
+            <div class="reviews-frame">
+              <h2 class="text-center">Reviews</h2>
+              <div class="tiktok_review_code">
+                {% render 'okendo-reviews-widget', product: product %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+
+<script>
+  var count = 0;
+  var selectCallback = function(variant, selector) {
+
+    if (variant && variant.available == true) {
+      jQuery('#ww_submit').removeClass('disabled').removeAttr('disabled');
+      if (variant.inventory_management !== '') {
+        jQuery('#ww_submit').text('Add to bag - {{ product.price | money }}');
+      }
+    } else {
+      jQuery('#ww_submit').addClass('disabled').attr('disabled', 'disabled');
+      jQuery('#ww_submit').html('Sold Out');
+    }
+
+
+    if (variant) {
+      var form = jQuery('#' + selector.domIdPrefix).closest('form');
+      for (var i=0,length=variant.options.length; i<length; i++) {
+        var radioButton = form.find('.swatch[data-option-index="' + i + '"] :radio[value="' + variant.options[i] +'"]');
+        if (radioButton.size()) {
+          radioButton.get(0).checked = true;
+        }
+      }
+    }
+    if(count == 1){
+      if ($(window).width() > 767){
+        var act_slides = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-slider");
+        $('.tr_slick_thumb').slick('slickUnfilter');
+        $('.tr_slick_thumb').slick('slickFilter','.'+act_slides).slick('refresh');
+        $('.tr_slick_main').slick('slickUnfilter');
+        $('.tr_slick_main').slick('slickFilter','.'+act_slides).slick('refresh');
+        var image_id = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-image-id");
+        var img_class= '.move_'+image_id;
+        var slide_index= $('.tr_slick_thumb').find(img_class).parent().attr('data-slick-index');
+        $('.tr_slick_main').slick('slickGoTo', slide_index);
+      }else {
+        var act_slides = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-slider");
+        $('.tr_slick_main').slick('slickUnfilter');
+        $('.tr_slick_main').slick('slickFilter','.'+act_slides).slick('refresh');
+        var image_ids = jQuery('#productSelect option[value="'+variant.id+'"]').attr("data-image-id");
+        var img_classs= '.mob_move_'+image_ids;
+        var slide_indexs= $('.tr_slick_main').find(img_classs).parent().attr('data-slick-index');
+        $('.tr_slick_main').slick('slickGoTo', slide_indexs);
+      }
+    }
+    jQuery('.tagline').css("display","none");
+    if(count == 0){
+      setTimeout(function(){
+        var optin_0 = jQuery('input[name=option-0]:checked').attr("data-target");
+        jQuery('.'+optin_0).css("display","block");
+      }, 2000);
+    }else{
+      var optin_0 = jQuery('input[name=option-0]:checked').attr("data-target");
+      jQuery('.'+optin_0).css("display","block");
+    }
+    count = 1;
+  };
+
+  $(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+    $('.selector-wrapper:eq(0)').append('<i class="fas fa-chevron-down arrow-down"></i>');
+    {% endif %}
+
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+    $('.selector-wrapper').hide();
+    {% endif %}
+  });
+
+</script>
+
+
+<style>
+  #tiktok_product .widget-box.shade-box button.btn {
+    background: transparent;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+  #tiktok_product .tr_slick_main .slick-dots{margin:20px 0;}
+  #tiktok_product .tr_slick_thumb.tiktok-main-imgs.slick-vertical.slick-initialized.slick-slider {display: none !important;}
+  #tiktok_product .sliders-holder {padding-left: 0 !important;  position: static; margin-bottom: 0;}
+  #tiktok_product .tr_slick_main .slide a{height:auto;}
+  .colors-box .swatch label{width:45px!important; height:45px!important;}
+  .prod-details-block .shopify-cleanslate ._3G6VJhJYno-AX3-X38f1TA{margin-left:5px !important;}
+
+</style>
+
+
+
+
+
+
+
+
+<!-- quiz-popups-html-css-js-code -->
+
+<div class="selection-popup popup" data-popup="popup-1">
+  <div class="popup-inner">
+    <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    <div class="steps-frame">
+      <div class="step-box current first">
+        <strong class="heading">What is your hair <span style="display: inline-block;">c</span>olor?</strong>
+        <!-- The Brow Trio ® -->
+        <ul class="steps-list" id="first_step_color">
+          <li>
+            <input id="radio1" type="radio" name="color" checked="checked" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/blonde.png?v=1628690411" variant-darker="41221668176034" variant-darker-title="Taupe" variant-same="41221668143266" variant-same-title="Blonde" variant-lighter="41221668143266" variant-lighter-title="Blonde">
+            <label for="radio1" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/blonde.png?v=1628690411" alt="image">
+              </span>
+              <span class="title">Blonde</span>
+            </label>
+          </li>
+          <li>
+            <input id="radio2" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-blonde.png?v=1628690605" variant-darker="41221668241570" variant-darker-title="Soft Brown" variant-same="41221668176034" variant-same-title="Taupe" variant-lighter="41221668143266" variant-lighter-title="Blonde">
+            <label for="radio2" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-blonde.png?v=1628690605" alt="image">
+              </span>
+              <span class="title">Dark Blonde or Grey</span>
+            </label>
+          </li>
+          <li class="break"></li>
+          <li>
+            <input id="radio3" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/Brunette.png?v=1628690746" variant-darker="41221668307106" variant-darker-title="Medium Brown" variant-same="41221668241570" variant-same-title="Soft Brown" variant-lighter="41221668176034" variant-lighter-title="Taupe">
+            <label for="radio3" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/Brunette.png?v=1628690746" alt="image">
+              </span>
+              <span class="title">Brunette</span>
+            </label>
+          </li>
+          <li>
+            <input id="radio4" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/red.png?v=1628691284" variant-darker="41221668274338" variant-darker-title="Auburn" variant-same="41221668208802" variant-same-title="Caramel" variant-lighter="41221668208802" variant-lighter-title="Caramel">
+            <label for="radio4" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/red.png?v=1628691284" alt="image">
+              </span>
+              <span class="title">Red</span>
+            </label>
+          </li>
+          <li>
+            <input id="radio5" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-red.png?v=1628691528" variant-darker="41221668274338" variant-darker-title="Auburn" variant-same="41221668274338" variant-same-title="Auburn" variant-lighter="41221668208802" variant-lighter-title="Caramel">
+            <label for="radio5" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-red.png?v=1628691528" alt="image">
+              </span>
+              <span class="title">Dark Red</span>
+            </label>
+          </li>
+          <li class="break"></li>
+          <li>
+            <input id="radio6" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-brown.png?v=1628691620" variant-darker="41221668372642" variant-darker-title="Ebony" variant-same="41221668339874" variant-same-title="Dark Brown" variant-lighter="41221668307106" variant-lighter-title="Medium Brown">
+            <label for="radio6" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/dark-brown.png?v=1628691620" alt="image">
+              </span>
+              <span class="title">Dark Brown</span>
+            </label>
+          </li>
+          <li>
+            <input id="radio7" type="radio" name="color" data-image="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/black.png?v=1628691664" variant-darker="41221668372642" variant-darker-title="Ebony" variant-same="41221668372642" variant-same-title="Ebony" variant-lighter="41221668339874" variant-lighter-title="Dark Brown">
+            <label for="radio7" class="label">
+              <span class="image-frame">
+                <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/black.png?v=1628691664" alt="image">
+              </span>
+              <span class="title">Black</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="step-box">
+        <strong class="heading">Which of the following is true about your brow hair?</strong>
+        <ul class="list" id="second_step_color">
+          <li>
+            <input id="brow1" type="radio" name="brow_color" checked="checked">
+            <label for="brow1" id="click">My brow hair is lighter than my hair</label>
+          </li>
+          <li>
+            <input id="brow2" type="radio" name="brow_color">
+            <label for="brow2">My brow hair is the same color as my hair</label>
+          </li>
+          <li>
+            <input id="brow3" type="radio" name="brow_color">
+            <label for="brow3">My brow hair is darker than my hair</label>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="step-box step-three last">
+        <strong class="lead">TA-DA!<br>The perfect shade<br>for you is:</strong>
+        <strong class="heading" id="matched_variant_title">AUBURN</strong>
+        <div class="color-item">
+          <div class="image-holder">
+            <img src="https://cdn.shopify.com/s/files/1/0417/9004/6370/products/image_ba49b409-3a8b-4872-9b17-3b54eb44547f.jpg?v=1626736922" alt="image">
+          </div>
+        </div>
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" id="matched_variant" />
+          <input min="1" type="hidden" name="quantity" value="1"/>
+          <div style="display: flex; justify-content: center;">
+            <button type="submit" class="btn">Add to cart</button>
+          </div>
+        </form> 
+      </div>
+      <!-- next-previous-buttons -->
+      <div style="display: flex; justify-content: center; margin-top:10px;">
+        <button name="prev" id="wr_prev" class="btn" style="margin:0 5px;">Prev</button>
+        <button name="next" id="wr_next" class="btn" style="margin:0 5px;">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var variant_darker = '';
+  var variant_same = '';
+  var variant_lighter = '';
+  var variant_darker_title = '';
+  var variant_same_title = '';
+  var variant_lighter_title = '';
+  var matched_var_title = '';
+  var matched_var = '';
+
+  $( document ).ready(function() {
+
+    variant_darker = $('input[name=color]:checked', '#first_step_color').attr('variant-darker');
+    variant_same = $('input[name=color]:checked', '#first_step_color').attr('variant-same');
+    variant_lighter = $('input[name=color]:checked', '#first_step_color').attr('variant-lighter');
+    variant_darker_title = $('input[name=color]:checked', '#first_step_color').attr('variant-darker-title');
+    variant_same_title = $('input[name=color]:checked', '#first_step_color').attr('variant-same-title');
+    variant_lighter_title = $('input[name=color]:checked', '#first_step_color').attr('variant-lighter-title');
+    $('#brow1').val(variant_lighter);
+    $('#brow2').val(variant_same);
+    $('#brow3').val(variant_darker);
+    $('#brow1').attr("variant-title",variant_lighter_title);
+    $('#brow2').attr("variant-title",variant_same_title);
+    $('#brow3').attr("variant-title",variant_darker_title);
+    $('#matched_variant_title').text(variant_lighter_title);
+    $('#matched_variant').val(variant_lighter);
+
+  });
+  $('#first_step_color input').on('change', function() {
+
+    variant_darker = $('input[name=color]:checked', '#first_step_color').attr('variant-darker');
+    variant_same = $('input[name=color]:checked', '#first_step_color').attr('variant-same');
+    variant_lighter = $('input[name=color]:checked', '#first_step_color').attr('variant-lighter');
+    variant_darker_title = $('input[name=color]:checked', '#first_step_color').attr('variant-darker-title');
+    variant_same_title = $('input[name=color]:checked', '#first_step_color').attr('variant-same-title');
+    variant_lighter_title = $('input[name=color]:checked', '#first_step_color').attr('variant-lighter-title');
+    $('#brow1').val(variant_lighter);
+    $('#brow2').val(variant_same);
+    $('#brow3').val(variant_darker);
+    $('#brow1').attr("variant-title",variant_lighter_title);
+    $('#brow2').attr("variant-title",variant_same_title);
+    $('#brow3').attr("variant-title",variant_darker_title);
+    $('#matched_variant_title').text(variant_lighter_title);
+    $('#matched_variant').val(variant_lighter);
+  });
+  $('#second_step_color input').on('change', function() {
+    matched_var_title = $('input[name=brow_color]:checked', '#second_step_color').attr('variant-title');
+    matched_var = $('input[name=brow_color]:checked', '#second_step_color').val();
+    $('#matched_variant_title').text(matched_var_title);
+    $('#matched_variant').val(matched_var);
+  });
+
+  $('#wr_next').click(function() {
+    $('.current').removeClass('current').hide()
+    .next().show().addClass('current');
+    if ($('.current').hasClass('last')) {
+      $('#wr_next').css('display', 'none');
+    }
+    $('#wr_prev').css('display', 'block');
+  });
+
+  $('#wr_prev').click(function() {
+    $('.current').removeClass('current').hide()
+    .prev().show().addClass('current');  
+    if ($('.current').hasClass('first')) {
+      $('#wr_prev').css('display', 'none');
+    }
+    $('#wr_next').css('display', 'block');
+  });
+
+  $("#wr_prev").click(function(){
+    $("label#click").click(); 
+    return false;
+  });
+</script>
+
+
+<style>
+  
+   
+@media only screen and (max-width:500px){
+.colors-box .swatch label {
+    width: 30px!important;
+    height: 30px!important;
+}
+  
+}
+</style>

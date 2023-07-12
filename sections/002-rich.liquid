@@ -1,0 +1,58 @@
+<div class="mission-wrapper overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column">
+                <div class="mission-container text-align-center">
+                    <span class="text-uppercase mb-3">{{section.settings.title1}}</span>
+                    <p>{{section.settings.subtitle1}}</p>
+                    {% if section.settings.btntxt1 != '' %}
+                    <a href="{{section.settings.btnurl1}}" class="btn btn-outline-primary">{{section.settings.btntxt1}}</a>
+                    {% endif %}
+                </div>	
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "002-ind-rich",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "img"
+},
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "OUR MISSION"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "subtitle1",
+"default": "Vegan and cruelty-free beauty inspired by all your unique forms. "
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "btntxt1",
+"default": "LEARN MORE"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "btnurl1"
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "002-ind-rich",
+"category": "custom"
+}
+]
+}
+{% endschema %}

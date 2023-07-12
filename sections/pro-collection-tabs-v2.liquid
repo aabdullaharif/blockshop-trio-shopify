@@ -1,0 +1,188 @@
+<div class="main-frame">
+  <div class="slider-container">
+    <div class="queue">
+      <div class="block">
+        <h2 style=" text-align: center; ">{{ section.settings.section_title }}</h2>
+        <p style=" text-align: center;margin-bottom:15px;  ">{{ section.settings.sub_txt }}</p>
+        <!--         <h2 style=" text-align: center; ">BROW TRIO BESTIES</h2> -->
+      </div>
+      <div class="block">
+        <div class="product-carousel">
+          {% for block in section.blocks %}
+          {% assign col_total = collections[block.settings.collection] %}
+          {% if block.type == 'select' %}
+          <div class="slide">
+ 
+            <div class="item-box">
+              <!--               <a href="#block-{{ block.id }}" class="prod-button"> -->
+              <!--                 <i class="fas fa-shopping-bag"></i>
+<span class="text">{{ block.settings.collection_title }}</span>
+<span class="counter">{{ col_total.all_products_count }}</span> -->
+<!--               </a>  -->
+            <div class="image-holder">
+              <img src="{{ block.settings.collection_image | img_url: 'master' }}" alt="image">
+            </div>
+              
+          </div>
+
+        </div>
+                  {% endif %}
+          
+          
+          
+           {% if block.type == 'custom-card' %}
+          <div class="slide">
+ 
+            <div class="item-box">
+              <!--               <a href="#block-{{ block.id }}" class="prod-button"> -->
+              <!--                 <i class="fas fa-shopping-bag"></i>
+<span class="text">{{ block.settings.collection_title }}</span>
+<span class="counter">{{ col_total.all_products_count }}</span> -->
+<!--               </a>  -->
+            <div class="image-holder">
+              <img src="{{ block.settings.img | img_url: 'master' }}" alt="image">
+            </div>
+              <div style="margin-top:20px;" class="cnt">
+                  <p>{{ block.settings.inst_txt_anc }}</p>
+                  <p>{{ block.settings.ins_txt }}</p>
+                  </div>
+          </div>
+
+        </div>
+                  {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="blocks-frame">
+  {% for block in section.blocks %}
+  <div class="slider-tab" id="block-{{ block.id }}">
+    <div class="slider-container">
+      <div class="queue">
+        <div class="block" style="margin: 0 0 30px; display: flex; align-items: center; justify-content: space-between;">
+          <h3>{{ block.settings.collection_title }}</h3>
+          <a href="javascript:void(0)" class="btn-close">Close</a>
+        </div>
+        <div class="block">
+          <div class="search-result-carousel">
+            {% for product in collections[block.settings.collection].products %}
+            <div class="slide">
+              <div class="frame">
+                <div class="image-holder">
+                <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="image">
+                </div>
+                
+              </div>
+              <div class="text-info-frame">
+                <strong class="title"><a href="{{ product.url | within: collection }}">{{ product.title }}</a></strong>
+                <div class="reviews-bar">
+
+                </div>
+                {% comment %}
+                <p>Waterproof eyebrow pomade to fill and detail brows.</p>
+                {% endcomment %}
+                <strong class="price">{{ product.price | money }}</strong>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% comment %}
+      <button type="button" class="add-all">Add all to Cart</button>
+      {% endcomment %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</div>
+
+
+
+{% schema %}
+{
+"name": "Collection tabs",
+"settings": [
+		{
+		  "id": "section_title",
+	  	  "type": "text",
+      	  "label": "Section Title"
+		  
+		},
+{
+		  "id": "sub_txt",
+	  	  "type": "textarea",
+      	  "label": "sub txt",
+"default": "See how our #teamtrio styles our collection of<br> products to create their best brows."
+		  
+		}
+],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "new collection",
+      "settings": [
+		{
+		  "id": "collection_image",
+	  	  "type": "image_picker",
+      	  "label": "Collection Image"
+		},
+		{
+		  "id": "collection_title",
+	  	  "type": "text",
+      	  "label": "Collection Title"
+		},
+		{
+		  "id": "collection",
+	  	  "type": "collection",
+      	  "label": "Select Collection"
+		},
+		{
+		  "id": "btn_title",
+	  	  "type": "text",
+      	  "label": "Add button title"
+		}
+
+      ]
+	},
+{
+      "type": "custom-card",
+      "name": "custom-card",
+      "settings": [
+		{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+},
+{
+		  "id": "inst_txt_anc",
+	  	  "type": "richtext",
+      	  "label": "insta",
+"default": "<p>@instagram</p>"
+		},
+{
+		  "id": "ins_txt",
+	  	  "type": "text",
+      	  "label": "ins_txt",
+			"default": "Brow"
+
+		}
+
+		
+
+      ]
+	}
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

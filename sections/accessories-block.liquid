@@ -1,0 +1,64 @@
+<div class="accessories-block em-cus-001 custom-space">
+  <div class="vessel">
+    <div class="queue">
+      <div class="column-12">
+        <h2 class="mb-4 mb-lg-5">{{ section.settings.heading }}</h2>
+      </div>
+    </div>
+    <div class="queue justify-content-center">
+      <div class="column-md-10">
+        <div class="queue">
+          {% for product in collections[section.settings.collection_pro].products %}
+          {% assign image = product.featured_image %}
+          <div class="column-12 column-sm-3">
+            <div class="box">
+              <a href="{{ product.url | within: collection }}">
+                <div class="image-holder">
+                   {%
+                    render "framework--image",
+                    image: image,
+                    full_width: true
+                   %}
+                </div>
+                <strong class="title">{{ product.title }}</strong>
+                <strong class="price">{{ product.price | money }}</strong>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Home Collection",
+    "settings": [
+        {
+          "type":     "text",
+          "id":       "heading",
+          "label":    "Add Heading"
+        },
+        {
+          "type":     "collection",
+          "id":       "collection_pro",
+          "label":    "Add Collection"
+        }
+     ],    
+  "presets": [
+        {
+          "name": "Homepage Collection",
+          "category": "section"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

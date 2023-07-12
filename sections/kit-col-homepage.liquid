@@ -1,0 +1,89 @@
+<div class="product-kit">
+  <div class="container">
+    <div class="queue">
+      <div class="col-12">
+        {% if section.settings.heading != blank %}<h2 class="text-center">{{ section.settings.heading }}</h2>{% endif %}
+      </div>
+    </div>
+    <div class="queue">
+      {% for block in section.blocks %}
+      <div class="col col-md-3">
+        <div class="box">
+          {% if block.settings.product_img != blank %}
+          <div class="image-holder">
+            <img class="lazyload" src="{{ block.settings.product_img | img_url: 'master' }}" alt="image">
+          </div>
+          {% endif %}
+          {% if block.settings.title != blank %}<strong class="title">{{ block.settings.title }}</strong>{% endif %}
+          {% if block.settings.content != blank %}<p>{{ block.settings.content }}</p>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="queue">
+      <div class="col-12 d-flex justify-content-center">
+        {% if section.settings.btn_url != blank %}<a class="button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_title }}</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Product Blocks",
+    "settings": [
+      {
+        "type":      "text",
+        "id":        "heading",
+        "label":     "Add Heading"
+      },
+      {
+        "type":      "text",
+        "id":        "btn_title",
+        "label":     "Button Text"
+      },
+      {
+        "type":      "url",
+        "id":        "btn_url",
+        "label":     "Button Url"
+      }
+	],
+      "blocks": [
+      {
+        "type": "select",
+        "name": "Add Product Block",
+        "settings": [
+          {
+            "type":      "image_picker",
+            "id":        "product_img",
+            "label":     "Add Image"
+          },
+          {
+            "type":      "text",
+            "id":        "title",
+            "label":     "Add title"
+          },
+          {
+            "type":      "text",
+            "id":        "content",
+            "label":     "Add Description"
+          }
+        ]
+      }
+   ],    
+	"presets": [
+        {
+          "name": "Product Blocks",
+          "category": "section"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

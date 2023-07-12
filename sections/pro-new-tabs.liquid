@@ -1,0 +1,129 @@
+<!-- product-main-tabs-html-code -->
+{% assign product_handle = product.handle %}
+{% for block in section.blocks %}
+{% if block.settings.product_handle == product_handle %}
+<div class="tabs" {% if product.id == 7219890290850 %} id="swipe-pro" {% endif %}>
+  <ul class="tab-links">
+    <li class="active"><a href="#details">Details</a></li>
+    {% if block.settings.tab_video_link != blank %}
+    <li><a href="#videos">Videos</a></li>
+    {% endif %}
+    {% if block.settings.ingredients != blank %}
+    <li><a href="#ingredients">Ingredients</a></li>
+    {% endif %}
+  </ul>
+
+  <div class="tab-content">
+    <div id="details" class="tab active">
+      <div class="holder">
+        {{ product.description }}
+      </div>
+      <div class="accordion" style="margin:0;">
+        {% if block.settings.how_to_apply != blank %}
+        <div class="accordion-section">
+          <a class="accordion-section-title" href="#accordion-2">
+            How to apply
+            <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div id="accordion-2" class="accordion-section-content">
+            <ul class="list">
+              {{ block.settings.how_to_apply }}
+            </ul>
+          </div>
+        </div>
+        {% endif %}
+        {% if block.settings.why_love != blank %}
+        <div class="accordion-section">
+          <a class="accordion-section-title" href="#accordion-1">
+            Why you'll love it
+            <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div id="accordion-1" class="accordion-section-content">
+            <ul class="list">
+              {{ block.settings.why_love }}
+            </ul>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if block.settings.tab_video_link %}
+    <div id="videos" class="tab">
+      <div class="holder">
+        <video width="700px"  autoplay muted loop playsinline type="video/mp4">
+          <source src="{{ block.settings.tab_video_link }}" type="video/mp4" /> 
+        </video>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if block.settings.ingredients %}
+    <div id="ingredients" class="tab">
+      <div class="holder">
+        {{ block.settings.ingredients }}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+<!-- end-products-main-tabs-html-code -->
+
+<style>
+  #swipe-pro .list{margin:0; max-width:100%;}
+  #swipe-pro .accordion-section-content{ font-size:16px !important; line-height:1.5 !important;}
+  
+  @media only screen and (max-width: 767px){
+    #swipe-pro .accordion-section-content{ font-size:15px !important;}
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Tabs",
+    "settings": [],
+      "blocks": [
+       {
+          "type": "select",
+          "name": "Products Tabs",
+          "settings": [
+             {
+               "type": "product",
+               "id": "product_handle",
+               "label": "Select a product"
+             },
+              {
+                "type": "textarea",
+                "id": "how_to_apply",
+                "label": "How to Apply"
+              },
+              {
+                "type": "textarea",
+                "id": "why_love",
+                "label": "Why Love It"
+              },
+              {
+                "type": "text",
+                "id": "tab_video_link",
+                "label": "Video Link"
+              },
+              {
+                "type": "textarea",
+                "id": "ingredients",
+                "label": "Ingredients"
+              }
+            ]
+	     }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

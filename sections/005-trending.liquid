@@ -1,0 +1,87 @@
+<div class="trio-beauty-wrapper overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column">
+                <div class="content-container text-align-center mb-4 mb-lg-5">
+                    <h2>{{section.settings.title}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="queue justify-content-lg-center">
+            {% for block in section.blocks %}
+            <div class="column-12 column-sm-4 column-lg-3 mb-4 mb-sm-0">
+                <div class="tb-container">
+                    <div class="image"><img src="{{ block.settings.img | img_url: 'master' }}" alt="img"></div>
+                    <h3>{{block.settings.title1}}<span>{{block.settings.subtitle1}}</span></h3>
+                    <p>{{block.settings.desc}}</p>
+                    {% if block.settings.btntxt1 != '' %}
+                    <a href="{{block.settings.btnurl1}}" class="btn btn-outline-primary">{{block.settings.btntxt1}}</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "005-trending",
+"max_blocks": 20,
+"settings": [
+{
+"type": "textarea",
+"id": "title",
+"label": "title",
+"default": "What’s Trending at Trio Beauty?"
+}
+],
+"blocks": [
+{
+"type": "pr",
+"name":"pr",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+},
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "The Cheek Trio:"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "subtitle1",
+"default": "Clear As Crystal"
+},
+{
+"type": "textarea",
+"id": "desc",
+"label": "desc",
+"default": "Set and fluff your Brows for an all day flexible hold."
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "btntxt1",
+"default": "SHOP THE KIT"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "btnurl1"
+}
+]
+}
+],
+"presets": [
+{
+"name": "005-trending",
+"category": "custom"
+}
+]
+}
+{% endschema %}

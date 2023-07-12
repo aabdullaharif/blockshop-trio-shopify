@@ -1,0 +1,79 @@
+<div class="find-us-wrapper overflow-hidden custom-space">
+    <div class="vessel">
+        <div class="queue">
+            <div class="column">
+                <div class="content-container text-align-center mb-4">
+                    <span>{{section.settings.title1}}
+                        {% if section.settings.btntxt1 != '' %}
+                        <a href="{{section.settings.btnurl1}}">{{section.settings.btntxt1}}</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="queue">
+            <div class="column">
+                <div class="find-container d-flex flex-wrap justify-content-center">
+                    {% for block in section.blocks %}
+                    <div class="image-container">
+                        <a href="{{ block.settings.url}}" target="_blank" class="image"><img
+                                src="{{ block.settings.img | img_url: 'master' }}" alt="img"></a>
+                        <div class="icon"><img
+                                src="https://cdn.shopify.com/s/files/1/0417/9004/6370/files/insta.svg?v=1657132108"
+                                alt="icon"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "007-insta",
+"max_blocks": 8,
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "Find us on insta "
+},
+{
+"type": "textarea",
+"id": "btntxt1",
+"label": "insta handle",
+"default": "@triobeautyco"
+},
+{
+"type": "url",
+"id": "btnurl1",
+"label": "handle url"
+}
+],
+"blocks": [
+{
+"type": "post",
+"name":"post",
+"settings": [
+{
+"type": "image_picker",
+"id": "img",
+"label": "image"
+},
+{
+"type": "url",
+"id": "url",
+"label": "url"
+}
+]
+}
+],
+"presets": [
+{
+"name": "007-insta",
+"category": "custom"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,59 @@
+<div class="kit-adons text-center">
+  {% if section.settings.heading != blank %}<h2>{{ section.settings.heading }}</h2>{% endif %}
+  {% if section.settings.whats_img != blank %}
+  <div class="image-holder">
+    <img src="{{ section.settings.whats_img | img_url: 'master' }}" alt="image">
+  </div>
+  {% endif %}
+  {% for block in section.blocks %} 
+  <div class="box">
+    {% if block.settings.box_title != blank or block.settings.box_content != blank %}
+    <h3>{{ block.settings.box_title }}</h3>
+    <p>{{ block.settings.box_content }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "What's Include",
+    "settings": [
+            {
+              "type":      "text",
+              "id":        "heading",
+              "label":     "Add Heading"
+            },
+            {
+              "type":      "image_picker",
+              "id":        "whats_img",
+              "label":     "Add Image"
+            }
+	],
+      "blocks": [
+      {
+        "type": "select",
+        "name": "Add More Block",
+        "settings": [
+            {
+              "type":      "text",
+              "id":        "box_title",
+              "label":     "Add Title"
+            },
+            {
+              "type":      "textarea",
+              "id":        "box_content",
+              "label":     "Add Content"
+            }
+     	]
+   	  }
+ 	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

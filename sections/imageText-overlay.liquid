@@ -1,0 +1,67 @@
+<div class="h-banner picture-banner">
+  <img src="{{ section.settings.banner_img | img_url: 'master' }}">
+  <div class="caption">
+    <div class="h-container">
+      <span><b>{{ section.settings.title }}</b></span>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>
+        <b>{{ section.settings.content }}</b>
+      </p>
+      <a href="{{ section.settings.btn_url }}" class="button">{{ section.settings.btn_title }}</a>
+    </div>
+  </div>
+</div>
+ 
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "id":        "banner_img",
+        "type":      "image_picker",
+        "label":     "Add Background Image"
+      },
+      {
+        "type":      "text",
+        "id":        "title",
+        "label":     "Add Title",
+        "default":   "add text"
+      },
+      {
+        "type":      "text",
+        "id":        "heading",
+        "label":     "Add Heading",
+        "default":   "add text"
+      },
+      {
+        "type":      "textarea",
+        "id":        "content",
+        "label":     "Add Description",
+        "default":   "add text"
+      },
+      {
+        "type":      "text",
+        "id":        "btn_title",
+        "label":     "Button Text"
+      },
+      {
+        "type":      "url",
+        "id":        "btn_url",
+        "label":     "Button Url"
+      }
+	],    
+	"presets": [
+        {
+          "name": "Image With Text",
+          "category": "section"
+        }
+      ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

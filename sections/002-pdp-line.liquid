@@ -1,0 +1,37 @@
+<div class="line-banner">
+    <div class="vessel">
+        <div class="content">
+            <p class="margin-0">
+                <strong class="margin-0">{{section.settings.title1}}</strong>
+                {{section.settings.subtitle1}}
+            </p>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "002-pdp-line",
+"settings": [
+{
+"type": "textarea",
+"id": "title1",
+"label": "title1",
+"default": "TRIO TIP :"
+},
+{
+"type": "textarea",
+"id": "subtitle1",
+"label": "desc",
+"default": "You define your beauty. Wear makeup the way you want and show yourself to the world with courage."
+}
+],
+"blocks": [
+],
+"presets": [
+{
+"name": "002-pdp-line",
+"category": "custom"
+}
+]
+}
+{% endschema %}

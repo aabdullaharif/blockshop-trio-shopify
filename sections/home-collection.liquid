@@ -1,0 +1,82 @@
+<div class="product-section">
+  <div class="h-container">
+    <div class="holder">
+      <div class="alignleft">
+        {% if section.settings.collection_title %}
+        	<h3><b>{{ section.settings.collection_title }}</b></h3>
+        {% endif %} 
+        <a class="link" href="{{ section.settings.btn_url }}">{{ section.settings.btn_title }}</a>
+      </div>
+      <div class="alignright">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            {% for product in collections[section.settings.collection_pro].products %}
+            <div class="swiper-slide">
+              <div class="product-holder">
+                <a class="product-img" href="{{ product.url | within: collection }}">
+                  <img class="img-responsive" src="{{ product.featured_image.src | product_img_url:'master' }}" alt="Glossy Lip Balm">
+                </a>
+                <div class="text-holder">
+                  <h2>{{ product.title }}</h2>
+                  <span class="price">{{ product.price | money }}</span>
+                  <div class="btn-holder">
+                    <a class="btn" href="{{ product.url | within: collection }}">Add to Bag</a>
+                  </div>
+                  <div class="rating_holder">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination" style="position: static; margin: 80px 0 0;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+"name": "Home Collection",
+"settings": [
+{
+"type":     "text",
+"id":       "collection_title",
+"label":    "Collection Title"
+},
+{
+"type":     "text",
+"id":       "btn_title",
+"label":    "Button Title"
+},
+{
+"type":     "url",
+"id":       "btn_url",
+"label":    "Button Url"
+},
+{
+"type":     "collection",
+"id":       "collection_pro",
+"label":    "Add Collection"
+}
+],    
+"presets": [
+{
+"name": "Home Collection",
+"category": "section"
+}
+]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
